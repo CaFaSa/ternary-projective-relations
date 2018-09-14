@@ -81,7 +81,7 @@ class PolygonDrawer(object):
         cv2.waitKey()
 
         cv2.destroyWindow(self.window_name)
-        return canvas
+        return self.points
 
 # ============================================================================
 

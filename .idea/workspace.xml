@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a72ab92-8cee-402f-882b-b2516d883f8f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/allBAK.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/internalTangents/internalTangents" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/internalTangents/internalTangents.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/internalTangents/internalTangents.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/internalTangents/internalTangents.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/internalTangents/internalTangents.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/internalTangents/internalTangents.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/internalTangents/internalTangentsMain.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/internalTangents/internalTangentsMain.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/internalTangents/makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ternaryRelationsFromPickle.py" beforeDir="false" afterPath="$PROJECT_DIR$/ternaryRelationsFromPickle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ternaryRelations.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ternaryRelations.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,13 +18,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="internalTangents.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/internalTangents.py">
+      <file leaf-file-name="Main.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="207" column="30" selection-start-line="207" selection-start-column="30" selection-end-line="207" selection-end-column="30" />
+            <state>
               <folding>
-                <element signature="e#0#31#0" expanded="true" />
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -79,8 +69,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="ternaryRelations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ternaryRelations" type="462c0819:PsiDirectoryNode" />
+              <item name="ternary-projective-relations" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ternary-projective-relations" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -172,20 +162,20 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-35" width="1920" height="1115" extended-state="6" />
+    <frame x="0" y="-1" width="1920" height="1080" extended-state="6" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" x="0" y="0" width="430" height="915" id="Documentation" order="5" sideWeight="0.039054472" side_tool="true" visible="true" weight="0.29427084" />
+      <window_info anchor="right" x="0" y="0" width="430" height="880" id="Documentation" order="5" sideWeight="0.040498443" side_tool="true" visible="true" weight="0.29427084" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32908705" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.30421376" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14375" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14375" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info active="true" anchor="right" id="SciView" order="4" sideWeight="0.96094555" visible="true" weight="0.29427084" />
+      <window_info anchor="right" id="SciView" order="4" sideWeight="0.95950156" visible="true" weight="0.29427084" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3987667" />
@@ -218,26 +208,11 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/internalTangents.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4598">
-          <caret line="242" column="16" selection-start-line="242" selection-start-column="16" selection-end-line="242" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/internalTangents.py" />
     <entry file="file://$PROJECT_DIR$/internalTangents/internalTangents.py" />
     <entry file="file://$PROJECT_DIR$/internalTangents/internalTangents.py" />
     <entry file="file://$PROJECT_DIR$/internalTangents/internalTangents.py" />
-    <entry file="file:///usr/lib/python3/dist-packages/osgeo/ogr.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79249">
-          <caret line="4171" selection-start-line="4171" selection-end-line="4171" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///usr/lib/python3/dist-packages/osgeo/ogr.py" />
     <entry file="file://$PROJECT_DIR$/internalTangents/internalTangents.py" />
     <entry file="file:///usr/lib/python3/dist-packages/apport_python_hook.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -246,20 +221,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/lib/python3/dist-packages/osgeo/ogr.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///usr/lib/python3/dist-packages/osgeo/ogr.py" />
     <entry file="file://$PROJECT_DIR$/internalTangents/internalTangents.py" />
-    <entry file="file://$PROJECT_DIR$/internalTangents.py">
+    <entry file="file://$PROJECT_DIR$/internalTangents.py" />
+    <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="207" column="30" selection-start-line="207" selection-start-column="30" selection-end-line="207" selection-end-column="30" />
+        <state>
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
