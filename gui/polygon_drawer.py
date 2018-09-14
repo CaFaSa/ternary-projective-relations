@@ -41,11 +41,13 @@ class PolygonDrawer(object):
         elif event == cv2.EVENT_RBUTTONDOWN:
             # Right click means we're done
             print("Completing polygon with %d points." % len(self.points))
+            self.points.append(self.points[0])
             self.done = True
-
             self.polygon = Polygon(self.vertex_points)
-            self.polygon.draw()
-            plt.show()
+            #cv2.destroyWindow(self.window_name)
+            #self.polygon.draw()
+            #plt.show()
+
 
 
     def run(self):
@@ -78,9 +80,9 @@ class PolygonDrawer(object):
         # And show it
         cv2.imshow(self.window_name, canvas)
         # Waiting for the user to press any key
-        cv2.waitKey()
+        #cv2.waitKey()
 
-        cv2.destroyWindow(self.window_name)
+        cv2.destroyAllWindows()
         return self.points
 
 # ============================================================================
