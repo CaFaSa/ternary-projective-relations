@@ -4,6 +4,7 @@
 '''
 
 import pickle
+import os
 from ternaryOperations import delta,relationParser
 
 
@@ -12,7 +13,7 @@ def rowParsing(subRowKey,rowString,startIndex,endIndex):
 
 
 def readFile():
-    fname="tabella.tex"
+    fname=os.path.join(os.path.dirname(__file__),"data","tabella.tex")
     with open(fname) as f:
         rawContent = f.read()
 
@@ -24,7 +25,7 @@ def readFile():
         for column in rowSplittedByColumn:
             cleanContent.append(column.replace("\\delta","DELTA").replace("%","").replace("$","").replace("\cup","").replace("\\\\\\","").replace("\\s ",":").replace("\\quad","").replace("\\","").replace("cline{3-8}","").replace("r_2backslash r_1","").replace("D_c","Dc").replace("D_d","Dd").strip())
     
-    cleaned_file = open("tabellaPulita.txt","w")
+    cleaned_file = open(os.path.join(os.path.dirname(__file__),"data","tabellaPulita.txt"),"w")
     cleaned_file.write(str(cleanContent))
     rows=[]
     lastNumber=0
@@ -81,7 +82,7 @@ def readFile():
 
         table[rowKey]=listsToAdd
 
-    with open("tableWithDeltasExpanded.pickle", 'wb') as f:
+    with open(os.path.join(os.path.dirname(__file__),"data","tableWithDeltasExpanded.pickle"), 'wb') as f:
         pickle.dump(table, f)
 
 
@@ -112,7 +113,7 @@ def contentParser(rawContent):
 
 def main():
     readFile()
-    with open("tableWithDeltasExpanded.pickle", 'rb') as f:
+    with open(os.path.join(os.path.dirname(__file__),"data","tableWithDeltasExpanded.pickle"), 'rb') as f:
         table = pickle.load(f)
         #print(table["bf:ls:af"][1][0])
 

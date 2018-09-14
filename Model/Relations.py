@@ -1,6 +1,7 @@
 import copy
 import itertools
 import pickle
+import os
 from collections import defaultdict
 
 # Relation's constants
@@ -363,7 +364,7 @@ class Table5_composition:
     __table = None
 
     def readTable(self):
-        fileName = "tableWithDeltasExpanded.pickle"
+        fileName = os.path.join(os.path.dirname(__file__),"data","tableWithDeltasExpanded.pickle")
         with open(fileName, 'rb') as f:
             return pickle.load(f)
 

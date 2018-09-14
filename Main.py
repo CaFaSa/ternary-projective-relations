@@ -33,7 +33,7 @@ if __name__ == '__main__':
     points = pd.run()
     poly3=CGU.createPolygon(points)
 
-    TRC = ternaryRelationCalculator(-100, 800, poly3, poly2, poly1)
+    TRC = TernaryRelationCalculator(-100, 800, poly3, poly2, poly1)
     TRC.classify()
     TRC.view()
 

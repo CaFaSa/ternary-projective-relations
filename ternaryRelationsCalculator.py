@@ -176,7 +176,7 @@ class ComputationalGeometryUtilities:
         return self.buildLongLine(centre,angularCoefficient1,intercept1,puntoA.Distance(puntoB)*10),self.buildLongLine(centre,angularCoefficient2,intercept2,puntoA.Distance(puntoB)*10)
 
 
-class ternaryRelationCalculator:
+class TernaryRelationCalculator:
     boundary_min_XY=0
     boundary_max_XY=0
     boundaryPolygon=None
@@ -370,7 +370,7 @@ def main():
     secondPolygon=CGU.randomPolyGenerator(12,None)
     thirdPolygon=CGU.randomPolyGenerator(15,secondPolygon)
     firstPolygon=CGU.randomPolyGenerator(4,None,totallyRandom=True)
-    TRC=ternaryRelationCalculator(-100,200,thirdPolygon,secondPolygon,firstPolygon)
+    TRC=TernaryRelationCalculator(-100,200,thirdPolygon,secondPolygon,firstPolygon)
     TRC.classify()
     TRC.view()
 

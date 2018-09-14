@@ -2,11 +2,11 @@
     Fabio Romano <fabio.romano1990@outlook.it>
     Relations File parser - Composition Table
 '''
-
+import os
 
 
 def readFile():
-    fname="tcf.txt"
+    fname= os.path.join(os.path.dirname(__file__),"data","tcf.txt")
     with open(fname) as f:
         content = f.read()
     content= content[1:]

@@ -3,16 +3,18 @@
     Relations File parser
 '''
 import pickle
+import os
 from ternaryOperations import composition
 from ternaryOperations import relationParser
 
+
 def readTable(deltasExpanded=True):
 
-    fileName=""    
+    fileName=""
     if(deltasExpanded==True):
-        fileName="tableWithDeltasExpanded.pickle"
+        fileName= os.path.join(os.path.dirname(__file__),"data","tableWithDeltasExpanded.pickle")
     else:
-        fileName="tableWithCompactNotation.pickle"
+        fileName= os.path.join(os.path.dirname(__file__),"data","tableWithCompactNotation.pickle")
 
     with open(fileName, 'rb') as f:
         return pickle.load(f)
