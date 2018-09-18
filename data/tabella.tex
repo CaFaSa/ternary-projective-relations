@@ -1,0 +1,156 @@
+\begin{table*}[!]
+\footnotesize
+\[
+\begin{array}{|l|l||l|l|l|l|l|l|}\hline
+& r_2\backslash r_1 &  & bt & rs & bf & ls & af \\\hline\hline
+%
+1 & bt &
+               a & bt & \delta(bt,bf,ls,af) & \delta(bt,af) & \delta(bt,rs,bf,af) & \delta(bt,bf) \\
+\cline{3-8} && b & bt & \delta(bt,ls) & \delta(bt,rs,ls,af) & \delta(bt,rs) & \delta(bt,rs,bf,ls) \\
+\cline{3-8} && c & bt & \delta(bt,bf) & \delta(bt,bf,ls,af) & \delta(bt,af) & \delta(bt,rs,bf,af)\\
+\cline{3-8} && d & bt & \delta(bt,af) & \delta(bt,rs,bf,af) & \delta(bt,bf) & \delta(bt,bf,ls,af) \\
+\hline\hline
+2 & rs&
+               a & \delta(bt,rs,bf) & \delta(bt,rs,ls,af) & \delta(rs,af) & \delta(rs,bf) & \delta(bt,bf,ls)\\
+\cline{3-8} && b & \delta(bt,rs,bf) & \delta(bt,rs,ls,af) & rs & \delta(rs,bf,ls) & \delta(bt,bf,ls)\\
+\hline\hline
+3 &  bf &
+               a & \delta(bt,bf) & \delta(rs,bf) & \delta(rs,bf,ls) & \delta(bf,ls) & D_d\\
+\cline{3-8} && b & \delta(bt,bf) & \delta(bt,rs,bf,af) & \delta(rs,bf,af) & bf & \delta(bt,bf,ls,af)\\
+\cline{3-8} && c & \delta(bt,bf) & bf & \delta(bf,ls,af) & \delta(bt,bf,ls,af) & \delta(bt,rs,bf,af)\\
+\cline{3-8} && d & \delta(bt,bf) & \delta(bt,rs,bf,af) & bf & \delta(bt,bf,ls,af) & \delta(bt,af)\\
+\hline\hline
+4 & ls &
+               a & \delta(bt,bf,ls) & \delta(bf,ls) & \delta(ls,af) & \delta(bt,rs,ls,af) & \delta(bt,rs,bf)\\
+\cline{3-8} && b & \delta(bt,bf,ls) & \delta(rs,bf,ls) & ls & \delta(bt,rs,ls,af) & \delta(bt,rs,bf)\\
+\hline\hline
+5 & af &
+               a & D_d & \delta(bf,ls,af) & \delta(bt,af) & \delta(rs,bf,af) & bf\\
+\cline{3-8} && b & \delta(bt,af) & \delta(bt,bf,ls,af) & \delta(bt,af) & \delta(bt,rs,bf,af) & \delta(bt,bf)\\
+\cline{3-8} && c & \delta(bt,rs,bf,af) & \delta(bt,bf,ls,af) & \delta(bt,af) & \delta(rs,bf,af) & \delta(bt,bf)\\
+\cline{3-8} && d & \delta(bt,bf,ls,af) & \delta(bf,ls,af) & \delta(bt,af) & \delta(bt,rs,bf,af) & \delta(bt,bf)\\
+\hline\hline
+6 & bt\s rs &
+               a & \delta(bt,rs,bf,af) & \delta(bt,ls) & \delta(bt,rs,ls,af) & rs & \delta(bt,rs,bf,ls)\\
+\cline{3-8} && b & \delta(bt,rs,bf,af) & \delta(bt,ls,af) & \delta(bt,rs,af) & \delta(rs,bf) & \delta(bt,bf,ls)\\
+\cline{3-8} && c & \delta(bt,rs,bf,af) & \delta(bt,af) & \delta(bt,rs,bf,af) & bf & \delta(bt,bf,ls,af)\\
+\hline\hline
+7 & bt\s bf &
+               a & \delta(bt,rs,bf,af) & \delta(bt,af) & \delta(bt,rs,bf,af) & bf & \delta(bt,bf,ls,af)\\
+\cline{3-8} && b & \delta(bt,bf,ls,af) & bf & \delta(bt,bf,ls,af) & \delta(bt,af) & \delta(bt,rs,bf,af)\\
+\hline\hline
+8 & bt\s ls &
+               a & \delta(bt,bf,ls,af) & ls & \delta(bt,rs,ls,af) & \delta(bt,rs) & \delta(bt,rs,bf,ls)\\
+\cline{3-8} && b & \delta(bt,bf,ls,af) & \delta(bf,ls) & \delta(bt,ls,af) & \delta(bt,rs,af) & \delta(bt,rs,bf)\\
+\cline{3-8} && c & \delta(bt,bf,ls,af) & bf & \delta(bt,bf,ls,af) & \delta(bt,af) & \delta(bt,rs,bf,af)\\
+\hline\hline
+9 & bt\s af &
+               a & D_d & \delta(bf,ls,af) & \delta(bt,af) & \delta(rs,bf,af) & bf\\
+\cline{3-8} && b & \delta(bt,af) & \delta(bt,bf,ls,af) & \delta(bt,af) & \delta(bt,rs,bf,af) & \delta(bt,bf)\\
+\cline{3-8} && c & \delta(bt,af) & \delta(bt,ls) & \delta(bt,rs,ls,af) & \delta(bt,rs) & \delta(bt,rs,bf,ls)\\
+\cline{3-8} && d & \delta(bt,af) & \delta(bt,bf) & \delta(bt,bf,ls,af) & \delta(bt,af) & \delta(bt,rs,bf,af)\\
+\cline{3-8} && e & \delta(bt,af) & \delta(bt,af) & \delta(bt,rs,bf,af) & \delta(bt,bf) & \delta(bt,bf,ls,af)\\
+\cline{3-8} && f & \delta(bt,rs,bf,af) & \delta(bt,ls) & \delta(bt,rs,ls,af) & rs & \delta(bt,rs,bf,ls)\\
+\cline{3-8} && g & \delta(bt,bf,ls,af) & ls & \delta(bt,rs,ls,af) & \delta(bt,rs) & \delta(bt,rs,bf,ls)\\
+\hline\hline
+10 & rs\s bf &
+               a & \delta(bt,rs,bf) & \delta(bt,rs,af) & \delta(rs,bf,af) & bf & \delta(bt,bf,ls,af)\\
+\cline{3-8} && b & \delta(bt,rs,bf) & rs & \delta(rs,bf,ls) & \delta(bf,ls) & D_d\\
+\cline{3-8} && c & \delta(bt,rs,bf) & \delta(bt,rs,af) & \delta(rs,bf) & \delta(bf,ls) & \delta(bt,bf,ls,af)\\
+\hline\hline
+11 & rs\s ls &
+               a & D_d & ls & \delta(bt,rs,ls,af) & rs & \delta(rs,bf,ls)\\
+\cline{3-8} && b & \delta(bt,rs,bf,ls) & rs & \delta(rs,bf,ls) & ls & \delta(bt,rs,ls,af)\\
+\hline\hline
+12 & rs\s af &
+               a & D_d & \delta(ls,af)& \delta(bt,rs,af) & \delta(rs,bf)& \delta(bf,ls)\\
+\cline{3-8} && b & \delta(bt,rs,bf,af) & \delta(bt,ls,af) & \delta(bt,rs,af) & \delta(rs,bf) & \delta(bt,bf,ls)\\
+\hline\hline
+13 & bf\s ls &
+               a & \delta(bt,bf,ls) & bf & \delta(bf,ls,af) & \delta(bt,ls,af)& \delta(bt,rs,bf,af)\\
+\cline{3-8} && b & \delta(bt,bf,ls) & \delta(rs,bf) & \delta(rs,bf,ls)& ls & D_d\\
+\cline{3-8} && c & \delta(bt,bf,ls) & \delta(rs,bf) & \delta(bf,ls) & \delta(bt,ls,af) & \delta(bt,rs,bf,af)\\
+\hline\hline
+14 & bf\s af &
+               a & \delta(bt,rs,bf,af) & \delta(bt,af) & \delta(bt,rs,bf,af) & bf & \delta(bt,bf,ls,af)\\
+\cline{3-8} && b & D_d & af & \delta(bt,rs,bf,af) & bf & \delta(bf,ls,af)\\
+\cline{3-8} && c & \delta(bt,bf,ls,af) & bf & \delta(bt,bf,ls,af) & \delta(bt,af) & \delta(bt,rs,bf,af)\\
+\cline{3-8} && d & D_d & bf & \delta(bt,bf,ls,af) & af & \delta(rs,bf,af)\\
+\hline\hline
+15 & ls\s af &
+               a & D_d & \delta(bf,ls) & \delta(bt,ls,af) & \delta(rs,af)& \delta(rs,bf)\\
+\cline{3-8} && b & \delta(bt,bf,ls,af) & \delta(bf,ls) & \delta(bt,ls,af) & \delta(bt,rs,af) & \delta(bt,rs,bf)\\
+\hline
+& r_2\backslash r_1 &  & bt & rs & bf & ls & af \\\hline\hline
+16 & bt\s rs\s bf &
+               a & \delta(bt,rs,bf,af) & \delta(bt,af) & \delta(bt,rs,bf,af) & bf & \delta(bt,bf,ls,af)\\
+\hline \hline
+17 & bt\s rs\s ls &
+              a & D_d & ls & \delta(bt,rs,ls,af) & rs & \delta(rs,bf,ls)\\
+\hline \hline
+18 & bt\s rs\s af &
+               a & D_d & \delta(ls,af) & \delta(bt,rs,af) & \delta(rs,bf)& \delta(bf,ls)\\
+\cline{3-8} && b & \delta(bt,rs,bf,af) & \delta(bt,ls,af) & \delta(bt,rs,af) & \delta(rs,bf) & \delta(bt,bf,ls)\\
+\cline{3-8} && c & \delta(bt,rs,bf,af) & \delta(bt,ls) & \delta(bt,rs,ls,af) & rs & \delta(bt,rs,bf,ls)\\
+\cline{3-8} && d & \delta(bt,rs,bf,af) & \delta(bt,af) & \delta(bt,rs,bf,af) & bf & \delta(bt,bf,ls,af)\\
+\cline{3-8} && e & D_d & ls & \delta(bt,rs,ls,af) & rs & \delta(rs,bf,ls)\\
+\hline \hline
+19 & bt\s bf\s ls &
+               a & \delta(bt,bf,ls,af) & bf & \delta(bt,bf,ls,af) & \delta(bt,af) & \delta(bt,rs,bf,af)\\
+\hline \hline
+20 & bt\s bf\s af &
+               a & \delta(bt,rs,bf,af) & \delta(bt,af) & \delta(bt,rs,bf,af) & bf & \delta(bt,bf,ls,af)\\
+\cline{3-8} && b & D_d & af & \delta(bt,rs,bf,af) & bf & \delta(bf,ls,af)\\
+\cline{3-8} && c & \delta(bt,bf,ls,af) & bf & \delta(bt,bf,ls,af) & \delta(bt,af) & \delta(bt,rs,bf,af)\\
+\cline{3-8} && d & D_d & bf & \delta(bt,bf,ls,af) & af & \delta(rs,bf,af)\\
+\hline \hline
+21 & bt\s ls\s af &
+               a & D_d & \delta(bf,ls) & \delta(bt,ls,af) & \delta(rs,af)& \delta(rs,bf)\\
+\cline{3-8} && b & \delta(bt,bf,ls,af) & \delta(bf,ls) & \delta(bt,ls,af) & \delta(bt,rs,af) & \delta(bt,rs,bf)\\
+\cline{3-8} && c & \delta(bt,bf,ls,af) & ls & \delta(bt,rs,ls,af) & \delta(bt,rs) & \delta(bt,rs,bf,ls)\\
+\cline{3-8} && d & \delta(bt,bf,ls,af) & bf & \delta(bt,bf,ls,af) & \delta(bt,af) & \delta(bt,rs,bf,af)\\
+\cline{3-8} && e & D_d & ls & \delta(bt,rs,ls,af) & rs & \delta(rs,bf,ls)\\
+\hline \hline
+22 & rs\s bf\s ls &
+               a & \delta(bt,rs,bf,ls) & rs & \delta(rs,bf,ls) & ls & \delta(bt,rs,ls,af)\\
+\hline \hline
+23 & rs\s bf\s af &
+               a & \delta(bt,rs,bf,af) & \delta(bt,af) & \delta(bt,rs,bf,af) & bf & \delta(bt,bf,ls,af)\\
+\cline{3-8} && b & D_d & af & \delta(bt,rs,bf,af) & bf & \delta(bf,ls,af)\\
+\hline \hline
+24 & rs\s ls\s af &
+               a & D_d & ls & \delta(bt,rs,ls,af) & rs & \delta(rs,bf,ls)\\
+\hline \hline
+25 & bf\s ls\s af &
+               a & \delta(bt,bf,ls,af) & bf & \delta(bt,bf,ls,af) & \delta(bt,af) & \delta(bt,rs,bf,af)\\
+\cline{3-8} && b & D_d & bf & \delta(bt,bf,ls,af) & af & \delta(rs,bf,af)\\
+\hline \hline
+26 & bt\s rs\s bf\s ls &
+               a & IMP & IMP & IMP & IMP & IMP\\
+\hline \hline
+27 & bt\s rs\s bf\s af &
+               a & \delta(bt,rs,bf,af) & \delta(bt,af) & \delta(bt,rs,bf,af) & bf & \delta(bt,bf,ls,af)\\
+\cline{3-8} && b & D_d & af & \delta(bt,rs,bf,af) & bf & \delta(bf,ls,af)\\
+\hline \hline
+28 & bt\s rs\s ls\s af &
+               a & D_d & ls & \delta(bt,rs,ls,af) & rs & \delta(rs,bf,ls)\\
+\hline \hline
+29 & bt\s bf\s ls\s af &
+               a & \delta(bt,bf,ls,af) & bf & \delta(bt,bf,ls,af) & \delta(bt,af) & \delta(bt,rs,bf,af)\\
+\cline{3-8} && b & D_d & bf & \delta(bt,bf,ls,af) & af & \delta(rs,bf,af)\\
+\hline \hline
+30 & rs\s bf\s ls\s af &
+a & IMP & IMP & IMP & IMP & IMP\\
+\hline \hline
+31 & bt\s rs\s bf\s ls\s af &
+               a & IMP & IMP & IMP & IMP & IMP\\
+\hline \hline
+32 & in &
+               a & in & D_c & D_c & D_c & D_c\\
+\hline \hline
+33 & ou &
+               a & D_c & D_c & ou & D_c & D_c\\
+\hline \hline
+34 & in\s ou &
+               a & D_c & D_c & D_c & D_c & D_c\\
+\hline 35
