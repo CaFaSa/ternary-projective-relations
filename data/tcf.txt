@@ -1,0 +1,3617 @@
+
+
+
+
+bt
+bt
+  bt; 
+rs
+  bt; rs; bf; bt:rs; bt:bf; rs:bf; bt:rs:bf; 
+bf
+  bt; bf; bt:bf; 
+ls
+  bt; bf; ls; bt:bf; bt:ls; bf:ls; bt:bf:ls; 
+af
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; 
+rs:af; bf:ls; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+bt:bf:ls; bt:bf:af; bt:ls:af; rs:bf:af; rs:ls:af; 
+bf:ls:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs
+  bt; rs; bf; bt:rs; bt:bf; rs:bf; bt:rs:bf; 
+bt:bf
+  bt; bf; bt:bf; 
+bt:ls
+  bt; bf; ls; bt:bf; bt:ls; bf:ls; bt:bf:ls; 
+bt:af
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; 
+rs:af; bf:ls; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+bt:bf:ls; bt:bf:af; bt:ls:af; rs:bf:af; bf:ls:af; 
+bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+rs:bf
+  bt; rs; bf; bt:rs; bt:bf; rs:bf; bt:rs:bf; 
+rs:ls
+  
+rs:af
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; 
+rs:af; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; 
+bt:bf:af; bt:ls:af; rs:bf:af; rs:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bf:ls
+  bt; bf; ls; bt:bf; bt:ls; bf:ls; bt:bf:ls; 
+bf:af
+  
+ls:af
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:af; 
+bf:ls; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; 
+bt:bf:af; bt:ls:af; rs:bf:af; rs:ls:af; bf:ls:af; 
+bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+bt:rs:bf
+  bt; rs; bf; bt:rs; bt:bf; rs:bf; bt:rs:bf; 
+bt:rs:ls
+  bt; rs; bf; ls; bt:rs; bt:bf; bt:ls; rs:bf; bf:ls; 
+bt:rs:bf; bt:rs:ls; bt:bf:ls; bt:rs:bf:ls; 
+bt:rs:af
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; 
+rs:af; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; 
+bt:bf:af; bt:ls:af; rs:bf:af; rs:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:bf:ls
+  bt; bf; ls; bt:bf; bt:ls; bf:ls; bt:bf:ls; 
+bt:bf:af
+  bt; bf; af; bt:rs; bt:bf; bt:ls; bt:af; bt:rs:af; 
+bt:bf:af; 
+bt:ls:af
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:af; 
+bf:ls; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; 
+bt:bf:af; bt:ls:af; rs:bf:af; rs:ls:af; bf:ls:af; 
+bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+rs:bf:ls
+  bt; rs; bf; ls; bt:bf; rs:bf; bf:ls; bt:rs:bf; bt:bf:ls; 
+rs:bf:ls; bt:rs:bf:ls; 
+rs:bf:af
+  bt; rs; bf; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; rs:af; 
+bt:rs:bf; bt:rs:af; bt:bf:af; bt:ls:af; rs:bf:af; 
+bt:rs:bf:af; bt:rs:ls:af; bt:rs:bf:ls:af; 
+rs:ls:af
+  bt; rs; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; rs:af; 
+bf:ls; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; 
+bt:ls:af; rs:ls:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bf:ls:af
+  bt; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; bf:ls; ls:af; 
+bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; 
+bf:ls:af; bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+bt:rs:bf:ls
+  
+bt:rs:bf:af
+  bt; rs; bf; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; rs:af; 
+ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:af; bt:rs:bf:af; bt:rs:ls:af; 
+bt:rs:bf:ls:af; 
+bt:rs:ls:af
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; 
+rs:af; bf:ls; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+bt:bf:ls; bt:bf:af; bt:ls:af; rs:bf:af; rs:ls:af; 
+bf:ls:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:bf:ls:af
+  bt; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; bf:ls; ls:af; 
+bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; 
+bf:ls:af; bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+rs:bf:ls:af
+  
+bt:rs:bf:ls:af
+  
+in
+  in; 
+out
+  in; out; in:out; 
+in:out
+  in; out; in:out; 
+
+
+
+
+rs
+bt
+  bt; bf; ls; af; bt:bf; bt:ls; bt:af; bf:ls; ls:af; 
+bt:bf:ls; bt:bf:af; bt:ls:af; bf:ls:af; bt:bf:ls:af; 
+rs
+  bt; rs; ls; af; bt:rs; bt:ls; bt:af; rs:af; ls:af; 
+bt:rs:ls; bt:rs:af; bt:ls:af; rs:ls:af; bt:rs:ls:af; 
+bf
+  bt; rs; bf; af; bt:rs; bt:bf; bt:af; rs:bf; rs:af; 
+bt:rs:bf; bt:rs:af; bt:bf:af; rs:bf:af; bt:rs:bf:af; 
+ls
+  rs; bf; ls; rs:bf; bf:ls; rs:bf:ls; 
+af
+  bt; bf; ls; af; bt:bf; bt:ls; bt:af; bf:ls; ls:af; 
+bt:bf:ls; bt:bf:af; bt:ls:af; bf:ls:af; bt:bf:ls:af; 
+bt:rs
+  bt; ls; af; bt:ls; bt:af; ls:af; bt:ls:af; 
+bt:bf
+  bt; bf; af; bt:af; 
+bt:ls
+  bf; ls; bf:ls; 
+bt:af
+  bt; bf; ls; af; bt:bf; bt:ls; bt:af; bf:ls; ls:af; 
+bt:bf:ls; bt:bf:af; bt:ls:af; bf:ls:af; bt:bf:ls:af; 
+rs:bf
+  bt; rs; af; bt:rs; bt:af; rs:af; bt:rs:af; 
+rs:ls
+  
+rs:af
+  bt; ls; af; bt:ls; bt:af; ls:af; bt:ls:af; 
+bf:ls
+  rs; bf; rs:bf; 
+bf:af
+  
+ls:af
+  bf; ls; bf:ls; 
+bt:rs:bf
+  bt; af; bt:af; 
+bt:rs:ls
+  ls; 
+bt:rs:af
+  bt; ls; af; bt:ls; bt:af; ls:af; bt:ls:af; 
+bt:bf:ls
+  bf; 
+bt:bf:af
+  bf; af; bt:af; 
+bt:ls:af
+  bf; ls; bf:ls; 
+rs:bf:ls
+  rs; 
+rs:bf:af
+  bt; af; bt:af; 
+rs:ls:af
+  ls; 
+bf:ls:af
+  bf; 
+bt:rs:bf:ls
+  
+bt:rs:bf:af
+  bt; af; bt:af; 
+bt:rs:ls:af
+  ls; 
+bt:bf:ls:af
+  bf; 
+rs:bf:ls:af
+  
+bt:rs:bf:ls:af
+  
+in
+  in; out; in:out; 
+out
+  in; out; in:out; 
+in:out
+  in; out; in:out; 
+
+
+
+
+bf
+bt
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; 
+rs:af; bf:ls; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+bt:bf:ls; bt:bf:af; bt:ls:af; rs:bf:af; rs:ls:af; 
+bf:ls:af; bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; 
+rs
+  rs; af; rs:af; 
+bf
+  rs; bf; ls; af; rs:bf; rs:af; bf:ls; ls:af; rs:bf:af; 
+bf:ls:af; 
+ls
+  ls; af; ls:af; 
+af
+  af; 
+bt:rs
+  bt; rs; bf; ls; af; bt:rs; bt:ls; bt:af; rs:bf; rs:af; 
+ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:ls:af; rs:bf:af; 
+rs:ls:af; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; 
+rs:af; bf:ls; ls:af; bt:rs:bf; bt:rs:af; bt:bf:ls; 
+bt:bf:af; bt:ls:af; rs:bf:af; bf:ls:af; bt:rs:bf:af; 
+bt:bf:ls:af; 
+bt:ls
+  bt; rs; bf; ls; af; bt:rs; bt:ls; bt:af; rs:af; bf:ls; 
+ls:af; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:ls:af; rs:ls:af; 
+bf:ls:af; bt:rs:ls:af; bt:bf:ls:af; 
+bt:af
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; 
+rs:af; bf:ls; ls:af; bt:rs:bf; bt:rs:af; bt:bf:ls; 
+bt:bf:af; bt:ls:af; rs:bf:af; rs:ls:af; bf:ls:af; 
+bt:rs:bf:af; bt:bf:ls:af; 
+rs:bf
+  rs; bf; ls; af; rs:bf; rs:af; bf:ls; rs:bf:ls; rs:bf:af; 
+rs:ls
+  
+rs:af
+  rs; af; rs:af; 
+bf:ls
+  rs; bf; ls; af; rs:bf; bf:ls; ls:af; rs:bf:ls; bf:ls:af; 
+bf:af
+  
+ls:af
+  ls; af; ls:af; 
+bt:rs:bf
+  bt; rs; bf; af; bt:rs; bt:af; rs:bf; rs:af; bt:rs:bf; 
+bt:rs:af; rs:bf:af; bt:rs:bf:af; 
+bt:rs:ls
+  bt; rs; ls; af; bt:rs; bt:ls; bt:af; rs:af; ls:af; 
+bt:rs:ls; bt:rs:af; bt:ls:af; rs:ls:af; bt:rs:ls:af; 
+bt:rs:af
+  bt; rs; bf; ls; af; bt:rs; bt:ls; bt:af; rs:bf; rs:af; 
+ls:af; bt:rs:bf; bt:rs:af; bt:ls:af; rs:bf:af; rs:ls:af; 
+bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls
+  bt; bf; ls; af; bt:ls; bt:af; bf:ls; ls:af; bt:bf:ls; 
+bt:ls:af; bf:ls:af; bt:bf:ls:af; 
+bt:bf:af
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; 
+rs:af; bf:ls; ls:af; bt:rs:bf; bt:rs:af; bt:bf:ls; 
+bt:bf:af; bt:ls:af; rs:bf:af; bf:ls:af; bt:rs:bf:af; 
+bt:bf:ls:af; 
+bt:ls:af
+  bt; rs; bf; ls; af; bt:rs; bt:ls; bt:af; rs:af; bf:ls; 
+ls:af; bt:rs:af; bt:bf:ls; bt:ls:af; rs:ls:af; bf:ls:af; 
+bt:rs:ls:af; 
+rs:bf:ls
+  rs; bf; ls; rs:bf; bf:ls; rs:bf:ls; 
+rs:bf:af
+  rs; bf; af; rs:bf; rs:af; rs:bf:af; 
+rs:ls:af
+  rs; ls; af; rs:af; ls:af; rs:ls:af; 
+bf:ls:af
+  bf; ls; af; bf:ls; ls:af; bf:ls:af; 
+bt:rs:bf:ls
+  
+bt:rs:bf:af
+  bt; rs; bf; af; bt:rs; bt:af; rs:bf; rs:af; bt:rs:bf; 
+bt:rs:af; rs:bf:af; bt:rs:bf:af; 
+bt:rs:ls:af
+  bt; rs; ls; af; bt:rs; bt:ls; bt:af; rs:af; ls:af; 
+bt:rs:af; bt:ls:af; rs:ls:af; bt:rs:ls:af; 
+bt:bf:ls:af
+  bt; bf; ls; af; bt:ls; bt:af; bf:ls; ls:af; bt:bf:ls; 
+bt:ls:af; bf:ls:af; bt:bf:ls:af; 
+rs:bf:ls:af
+  
+bt:rs:bf:ls:af
+  
+in
+  in; out; in:out; 
+out
+  out; 
+in:out
+  in; out; in:out; 
+
+
+
+
+ls
+bt
+  bt; rs; bf; af; bt:rs; bt:bf; bt:af; rs:bf; rs:af; 
+bt:rs:bf; bt:rs:af; rs:bf:af; bt:rs:bf:af; 
+rs
+  rs; bf; ls; rs:bf; bf:ls; rs:bf:ls; 
+bf
+  bt; bf; ls; af; bt:bf; bt:ls; bt:af; bf:ls; ls:af; 
+bt:bf:ls; bt:bf:af; bt:ls:af; bf:ls:af; bt:bf:ls:af; 
+ls
+  bt; rs; ls; af; bt:rs; bt:ls; bt:af; rs:af; ls:af; 
+bt:rs:ls; bt:rs:af; bt:ls:af; rs:ls:af; bt:rs:ls:af; 
+af
+  bt; rs; bf; af; bt:rs; bt:bf; bt:af; rs:bf; rs:af; 
+bt:rs:bf; bt:rs:af; bt:bf:af; rs:bf:af; bt:rs:bf:af; 
+bt:rs
+  rs; bf; rs:bf; 
+bt:bf
+  bt; bf; af; bt:af; 
+bt:ls
+  bt; rs; af; bt:rs; bt:af; rs:af; bt:rs:af; 
+bt:af
+  bt; rs; bf; af; bt:rs; bt:bf; bt:af; rs:bf; rs:af; 
+bt:rs:bf; bt:rs:af; bt:bf:af; rs:bf:af; bt:rs:bf:af; 
+rs:bf
+  bf; ls; bf:ls; 
+rs:ls
+  
+rs:af
+  rs; bf; rs:bf; 
+bf:ls
+  bt; ls; af; bt:ls; bt:af; ls:af; bt:ls:af; 
+bf:af
+  
+ls:af
+  bt; rs; af; bt:rs; bt:af; rs:af; bt:rs:af; 
+bt:rs:bf
+  bf; 
+bt:rs:ls
+  rs; 
+bt:rs:af
+  rs; bf; rs:bf; 
+bt:bf:ls
+  bt; af; bt:af; 
+bt:bf:af
+  bf; af; bt:af; 
+bt:ls:af
+  bt; rs; af; bt:rs; bt:af; rs:af; bt:rs:af; 
+rs:bf:ls
+  ls; 
+rs:bf:af
+  bf; 
+rs:ls:af
+  rs; 
+bf:ls:af
+  bt; af; bt:af; 
+bt:rs:bf:ls
+  
+bt:rs:bf:af
+  bf; 
+bt:rs:ls:af
+  rs; 
+bt:bf:ls:af
+  bt; af; bt:af; 
+rs:bf:ls:af
+  
+bt:rs:bf:ls:af
+  
+in
+  in; out; in:out; 
+out
+  in; out; in:out; 
+in:out
+  in; out; in:out; 
+
+
+
+
+af
+bt
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; 
+rs:af; bf:ls; ls:af; bt:rs:bf; bt:rs:af; bt:bf:ls; 
+bt:bf:af; bt:ls:af; rs:bf:ls; rs:bf:af; bf:ls:af; 
+bt:rs:bf:af; bt:bf:ls:af; 
+rs
+  bt; bf; ls; bt:bf; bt:ls; bf:ls; bt:bf:ls; 
+bf
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; 
+rs:af; bf:ls; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+bt:bf:ls; bt:bf:af; bt:ls:af; rs:bf:af; rs:ls:af; 
+bf:ls:af; bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; 
+ls
+  bt; rs; bf; bt:rs; bt:bf; rs:bf; bt:rs:bf; 
+af
+  bt; bf; bt:bf; 
+bt:rs
+  bt; rs; bf; ls; af; bt:bf; bt:ls; bt:af; rs:bf; bf:ls; 
+ls:af; bt:bf:ls; bt:ls:af; rs:bf:ls; bf:ls:af; 
+bt:bf:ls:af; 
+bt:bf
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; 
+rs:af; bf:ls; ls:af; bt:rs:bf; bt:rs:af; bt:bf:ls; 
+bt:bf:af; bt:ls:af; rs:bf:af; bf:ls:af; bt:rs:bf:af; 
+bt:bf:ls:af; 
+bt:ls
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:af; rs:bf; rs:af; 
+bf:ls; bt:rs:bf; bt:rs:af; rs:bf:ls; rs:bf:af; 
+bt:rs:bf:af; 
+bt:af
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; 
+rs:af; bf:ls; ls:af; bt:rs:bf; bt:rs:af; bt:bf:ls; 
+bt:bf:af; bt:ls:af; rs:bf:ls; rs:bf:af; bf:ls:af; 
+bt:rs:bf:af; bt:bf:ls:af; 
+rs:bf
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:af; 
+bf:ls; ls:af; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:ls:af; bf:ls:af; bt:rs:ls:af; bt:bf:ls:af; 
+rs:ls
+  
+rs:af
+  bt; bf; ls; bt:bf; bt:ls; bf:ls; bt:bf:ls; 
+bf:ls
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; 
+rs:af; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:af; 
+bt:ls:af; rs:bf:af; rs:ls:af; bt:rs:bf:af; bt:rs:ls:af; 
+bf:af
+  
+ls:af
+  bt; rs; bf; bt:rs; bt:bf; rs:bf; bt:rs:bf; 
+bt:rs:bf
+  bt; bf; ls; af; bt:bf; bt:ls; bt:af; bf:ls; ls:af; 
+bt:bf:ls; bt:bf:af; bt:ls:af; bf:ls:af; bt:bf:ls:af; 
+bt:rs:ls
+  rs; bf; ls; rs:bf; bf:ls; rs:bf:ls; 
+bt:rs:af
+  bt; rs; bf; ls; af; bt:bf; bt:ls; bt:af; rs:bf; bf:ls; 
+ls:af; bt:bf:ls; bt:ls:af; rs:bf:ls; bf:ls:af; 
+bt:bf:ls:af; 
+bt:bf:ls
+  bt; rs; bf; af; bt:rs; bt:bf; bt:af; rs:bf; rs:af; 
+bt:rs:bf; bt:rs:af; bt:bf:af; rs:bf:af; bt:rs:bf:af; 
+bt:bf:af
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; 
+rs:af; bf:ls; ls:af; bt:rs:bf; bt:rs:af; bt:bf:ls; 
+bt:bf:af; bt:ls:af; rs:bf:af; bf:ls:af; bt:rs:bf:af; 
+bt:bf:ls:af; 
+bt:ls:af
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:af; rs:bf; rs:af; 
+bf:ls; bt:rs:bf; bt:rs:af; rs:bf:ls; rs:bf:af; 
+bt:rs:bf:af; 
+rs:bf:ls
+  bt; rs; ls; af; bt:rs; bt:ls; bt:af; rs:af; ls:af; 
+bt:rs:ls; bt:rs:af; bt:ls:af; rs:ls:af; bt:rs:ls:af; 
+rs:bf:af
+  bt; bf; ls; af; bt:bf; bt:ls; bt:af; bf:ls; ls:af; 
+bt:bf:ls; bt:bf:af; bt:ls:af; bf:ls:af; bt:bf:ls:af; 
+rs:ls:af
+  rs; bf; ls; rs:bf; bf:ls; rs:bf:ls; 
+bf:ls:af
+  bt; rs; bf; af; bt:rs; bt:bf; bt:af; rs:bf; rs:af; 
+bt:rs:bf; bt:rs:af; bt:bf:af; rs:bf:af; bt:rs:bf:af; 
+bt:rs:bf:ls
+  
+bt:rs:bf:af
+  bt; bf; ls; af; bt:bf; bt:ls; bt:af; bf:ls; ls:af; 
+bt:bf:ls; bt:bf:af; bt:ls:af; bf:ls:af; bt:bf:ls:af; 
+bt:rs:ls:af
+  rs; bf; ls; rs:bf; bf:ls; rs:bf:ls; 
+bt:bf:ls:af
+  bt; rs; bf; af; bt:rs; bt:bf; bt:af; rs:bf; rs:af; 
+bt:rs:bf; bt:rs:af; bt:bf:af; rs:bf:af; bt:rs:bf:af; 
+rs:bf:ls:af
+  
+bt:rs:bf:ls:af
+  
+in
+  in; out; in:out; 
+out
+  in; out; in:out; 
+in:out
+  in; out; in:out; 
+
+
+
+
+bt:rs
+bt
+  bt; bt:bf; bt:ls; bt:af; bt:bf:ls; bt:ls:af; 
+bt:bf:ls:af; 
+rs
+  bt; rs; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; rs:af; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:af; rs:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:rs:bf:ls:af; 
+bf
+  bt; bf; bt:rs; bt:bf; bt:af; rs:bf; bt:rs:bf; bt:rs:af; 
+bt:bf:af; rs:bf:af; bt:rs:bf:af; 
+ls
+  bf; ls; bt:bf; bt:ls; rs:bf; bf:ls; bt:rs:bf; bt:bf:ls; 
+rs:bf:ls; bt:rs:bf:ls; 
+af
+  bt; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:af; bf:ls; 
+ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:af; rs:ls:af; bf:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs
+  bt; bt:rs; bt:bf; bt:ls; bt:af; bt:rs:bf; bt:rs:ls; 
+bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:bf
+  bt; bf; bt:bf; bt:af; bt:bf:af; 
+bt:ls
+  bf; ls; bt:bf; bt:ls; bf:ls; bt:bf:ls; 
+bt:af
+  bt; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; bf:ls; ls:af; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; bf:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:bf
+  bt; rs; bt:rs; bt:bf; bt:af; rs:bf; rs:af; bt:rs:bf; 
+bt:rs:af; bt:bf:af; rs:bf:af; bt:rs:bf:af; 
+rs:ls
+  
+rs:af
+  bt; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:af; ls:af; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:af; rs:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bf:ls
+  bf; bt:bf; rs:bf; bf:ls; bt:rs:bf; bt:bf:ls; rs:bf:ls; 
+bt:rs:bf:ls; 
+bf:af
+  
+ls:af
+  bf; ls; bt:bf; bt:ls; bf:ls; ls:af; bt:rs:ls; bt:bf:ls; 
+bt:bf:af; bt:ls:af; rs:ls:af; bf:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs:bf
+  bt; bt:rs; bt:bf; bt:af; bt:rs:bf; bt:rs:af; bt:bf:af; 
+bt:rs:bf:af; 
+bt:rs:ls
+  ls; bt:ls; bf:ls; bt:rs:ls; bt:bf:ls; bt:rs:bf:ls; 
+bt:rs:af
+  bt; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:af; ls:af; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:ls:af; bf:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:bf:ls
+  bf; bt:bf; bf:ls; bt:bf:ls; 
+bt:bf:af
+  bt; bf; af; bt:bf; bt:af; bt:bf:af; 
+bt:ls:af
+  bf; ls; bt:bf; bt:ls; bf:ls; ls:af; bt:rs:bf; bt:rs:ls; 
+bt:bf:ls; bt:bf:af; bt:ls:af; bf:ls:af; bt:rs:bf:ls; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:bf:ls
+  rs; rs:bf; bt:rs:bf; rs:bf:ls; 
+rs:bf:af
+  bt; af; bt:rs; bt:bf; bt:af; rs:af; bt:rs:bf; bt:rs:af; 
+bt:bf:af; bt:ls:af; rs:bf:af; bt:rs:bf:af; bt:rs:ls:af; 
+bt:rs:bf:ls:af; 
+rs:ls:af
+  ls; bt:ls; ls:af; bt:rs:ls; bt:bf:ls; bt:ls:af; rs:ls:af; 
+bt:rs:bf:ls; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bf:ls:af
+  bf; bt:bf; bf:ls; bt:bf:ls; bt:bf:af; bf:ls:af; 
+bt:bf:ls:af; 
+bt:rs:bf:ls
+  
+bt:rs:bf:af
+  bt; af; bt:rs; bt:bf; bt:af; rs:af; bt:rs:bf; bt:rs:af; 
+bt:bf:af; bt:ls:af; bt:rs:bf:af; bt:rs:bf:ls:af; 
+bt:rs:ls:af
+  ls; bt:ls; bf:ls; ls:af; bt:rs:ls; bt:bf:ls; bt:ls:af; 
+rs:ls:af; bf:ls:af; bt:rs:bf:ls; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+bt:bf:ls:af
+  bf; bt:bf; bf:ls; bt:bf:ls; bt:bf:af; bf:ls:af; 
+bt:bf:ls:af; 
+rs:bf:ls:af
+  
+bt:rs:bf:ls:af
+  
+in
+  in; in:out; 
+out
+  in; out; in:out; 
+in:out
+  in; out; in:out; 
+
+
+
+
+bt:bf
+bt
+  bt; bt:rs; bt:bf; bt:ls; bt:af; bt:rs:bf; bt:rs:ls; 
+bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; 
+rs
+  rs; bt:rs; rs:bf; rs:af; bt:rs:bf; bt:rs:af; rs:bf:af; 
+bt:rs:bf:af; 
+bf
+  bf; bt:bf; rs:bf; bf:ls; bt:rs:bf; bt:bf:ls; rs:bf:ls; 
+rs:bf:af; bf:ls:af; 
+ls
+  ls; bt:ls; bf:ls; ls:af; bt:bf:ls; bt:ls:af; bt:bf:ls:af; 
+af
+  af; bt:af; rs:af; ls:af; bt:rs:af; bt:bf:af; bt:ls:af; 
+rs:bf:af; bf:ls:af; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs
+  bt; rs; bf; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; rs:af; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:af; bt:ls:af; 
+rs:bf:af; rs:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:rs:bf:ls:af; 
+bt:bf
+  bt; bf; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; bf:ls; 
+bt:rs:bf; bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; 
+rs:bf:af; bf:ls:af; bt:rs:bf:af; bt:bf:ls:af; 
+bt:ls
+  bt; bf; ls; bt:rs; bt:bf; bt:ls; bt:af; bf:ls; ls:af; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:ls:af; bf:ls:af; bt:rs:bf:ls; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:af
+  bt; rs; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:af; ls:af; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:af; rs:ls:af; bf:ls:af; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:bf
+  rs; bf; bt:rs; bt:bf; rs:bf; rs:af; bf:ls; bt:rs:bf; 
+rs:bf:ls; rs:bf:af; 
+rs:ls
+  
+rs:af
+  rs; af; bt:rs; bt:af; rs:bf; rs:af; ls:af; bt:rs:bf; 
+bt:rs:ls; bt:rs:af; bt:bf:af; bt:ls:af; rs:bf:af; 
+rs:ls:af; bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+bf:ls
+  bf; ls; bt:bf; bt:ls; rs:bf; bf:ls; ls:af; bt:bf:ls; 
+rs:bf:ls; bf:ls:af; 
+bf:af
+  
+ls:af
+  ls; af; bt:ls; bt:af; rs:af; bf:ls; ls:af; bt:rs:ls; 
+bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; rs:ls:af; 
+bf:ls:af; bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+bt:rs:bf
+  bt; rs; bf; bt:rs; bt:bf; bt:af; rs:bf; rs:af; bt:rs:bf; 
+bt:rs:af; bt:bf:af; rs:bf:af; bt:rs:bf:af; 
+bt:rs:ls
+  bt; rs; ls; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; rs:af; 
+bf:ls; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; 
+bt:bf:af; bt:ls:af; rs:bf:af; rs:ls:af; bf:ls:af; 
+bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+bt:rs:af
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; 
+rs:af; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; 
+bt:bf:af; bt:ls:af; rs:bf:af; rs:ls:af; bf:ls:af; 
+bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+bt:bf:ls
+  bt; bf; ls; bt:bf; bt:ls; bt:af; bf:ls; ls:af; bt:bf:ls; 
+bt:bf:af; bt:ls:af; bf:ls:af; bt:bf:ls:af; 
+bt:bf:af
+  bt; bf; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; bf:ls; 
+bt:rs:bf; bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:ls:af
+  bt; rs; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:af; bf:ls; 
+ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:af; rs:ls:af; bf:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:bf:ls
+  rs; bf; ls; bt:bf; rs:bf; bf:ls; bt:rs:bf; bt:bf:ls; 
+rs:bf:ls; bt:rs:bf:ls; 
+rs:bf:af
+  rs; bf; af; bt:rs; bt:bf; bt:af; rs:bf; rs:af; bt:rs:bf; 
+bt:rs:af; rs:bf:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:bf:ls:af; 
+rs:ls:af
+  rs; ls; af; bt:rs; bt:ls; bt:af; rs:af; ls:af; bt:rs:bf; 
+bt:rs:ls; bt:rs:af; bt:bf:ls; bt:ls:af; rs:ls:af; 
+bt:rs:bf:af; bt:rs:ls:af; bt:rs:bf:ls:af; 
+bf:ls:af
+  bf; ls; af; bt:bf; bt:ls; bt:af; bf:ls; ls:af; bt:bf:ls; 
+bt:ls:af; bf:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls
+  
+bt:rs:bf:af
+  bt; rs; bf; af; bt:rs; bt:bf; bt:af; rs:bf; rs:af; 
+bt:rs:bf; bt:rs:af; bt:bf:af; bt:ls:af; rs:bf:af; 
+bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; bt:rs:bf:ls:af; 
+bt:rs:ls:af
+  bt; rs; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; rs:af; 
+bf:ls; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; 
+bt:bf:af; bt:ls:af; rs:bf:af; rs:ls:af; bf:ls:af; 
+bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+bt:bf:ls:af
+  bt; bf; ls; af; bt:bf; bt:ls; bt:af; bf:ls; ls:af; 
+bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; 
+bf:ls:af; bt:rs:bf:ls; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+rs:bf:ls:af
+  
+bt:rs:bf:ls:af
+  
+in
+  in; in:out; 
+out
+  out; in:out; 
+in:out
+  in; out; in:out; 
+
+
+
+
+bt:ls
+bt
+  bt; bt:rs; bt:bf; bt:af; bt:rs:bf; bt:rs:af; 
+bt:rs:bf:af; 
+rs
+  rs; bf; bt:rs; bt:bf; rs:bf; bf:ls; bt:rs:bf; bt:bf:ls; 
+rs:bf:ls; 
+bf
+  bt; bf; bt:bf; bt:ls; bt:af; bf:ls; bt:bf:ls; bt:bf:af; 
+bt:ls:af; bf:ls:af; bt:bf:ls:af; 
+ls
+  bt; ls; bt:rs; bt:bf; bt:ls; bt:af; bf:ls; ls:af; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:ls:af; bf:ls:af; bt:rs:bf:ls; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+af
+  bt; rs; bf; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; rs:af; 
+ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:af; rs:ls:af; bf:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs
+  rs; bf; bt:rs; bt:bf; rs:bf; bt:rs:bf; 
+bt:bf
+  bt; bf; bt:bf; bt:af; bt:bf:af; 
+bt:ls
+  bt; bt:rs; bt:bf; bt:ls; bt:af; bt:rs:bf; bt:rs:ls; 
+bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:af
+  bt; rs; bf; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; rs:af; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:bf
+  bf; bt:bf; rs:bf; bf:ls; bt:rs:bf; bt:bf:ls; rs:bf:ls; 
+bt:rs:bf:ls; 
+rs:ls
+  
+rs:af
+  rs; bf; bt:rs; bt:bf; rs:bf; rs:af; bt:rs:bf; bt:rs:ls; 
+bt:rs:af; bt:bf:af; rs:bf:af; rs:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:rs:bf:ls:af; 
+bf:ls
+  bt; ls; bt:bf; bt:ls; bt:af; bf:ls; ls:af; bt:bf:ls; 
+bt:bf:af; bt:ls:af; bf:ls:af; bt:bf:ls:af; 
+bf:af
+  
+ls:af
+  bt; rs; af; bt:rs; bt:bf; bt:ls; bt:af; rs:af; ls:af; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:ls:af; bf:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs:bf
+  bf; bt:bf; rs:bf; bt:rs:bf; 
+bt:rs:ls
+  rs; bt:rs; rs:bf; bt:rs:bf; bt:rs:ls; bt:rs:bf:ls; 
+bt:rs:af
+  rs; bf; bt:rs; bt:bf; rs:bf; rs:af; bt:rs:bf; bt:rs:ls; 
+bt:rs:af; bt:bf:af; rs:bf:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:rs:bf:ls:af; 
+bt:bf:ls
+  bt; bt:bf; bt:ls; bt:af; bt:bf:ls; bt:bf:af; bt:ls:af; 
+bt:bf:ls:af; 
+bt:bf:af
+  bt; bf; af; bt:bf; bt:af; bt:bf:af; 
+bt:ls:af
+  bt; rs; af; bt:rs; bt:bf; bt:ls; bt:af; rs:af; ls:af; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:ls:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:bf:ls
+  ls; bt:ls; bf:ls; bt:bf:ls; rs:bf:ls; bt:rs:bf:ls; 
+rs:bf:af
+  bf; bt:bf; rs:bf; bt:rs:bf; bt:bf:af; rs:bf:af; 
+bt:rs:bf:af; 
+rs:ls:af
+  rs; bt:rs; rs:af; bt:rs:bf; bt:rs:ls; bt:rs:af; rs:ls:af; 
+bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; bt:rs:bf:ls:af; 
+bf:ls:af
+  bt; af; bt:bf; bt:ls; bt:af; ls:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; bf:ls:af; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+bt:rs:bf:ls
+  
+bt:rs:bf:af
+  bf; bt:bf; rs:bf; bt:rs:bf; bt:bf:af; rs:bf:af; 
+bt:rs:bf:af; 
+bt:rs:ls:af
+  rs; bt:rs; rs:bf; rs:af; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+rs:bf:af; rs:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:rs:bf:ls:af; 
+bt:bf:ls:af
+  bt; af; bt:bf; bt:ls; bt:af; ls:af; bt:rs:af; bt:bf:ls; 
+bt:bf:af; bt:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:bf:ls:af
+  
+bt:rs:bf:ls:af
+  
+in
+  in; in:out; 
+out
+  in; out; in:out; 
+in:out
+  in; out; in:out; 
+
+
+
+
+bt:af
+bt
+  bt; bt:rs; bt:bf; bt:ls; bt:af; bt:rs:bf; bt:rs:af; 
+bt:bf:ls; bt:bf:af; bt:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:bf:ls:af; 
+rs
+  bt; bf; bt:rs; bt:bf; bt:ls; rs:bf; bf:ls; bt:rs:bf; 
+bt:rs:ls; bt:bf:ls; rs:bf:ls; bt:rs:bf:ls; 
+bf
+  bt; bf; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; bf:ls; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:af; bf:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+ls
+  bt; bf; bt:rs; bt:bf; bt:ls; rs:bf; bf:ls; bt:rs:bf; 
+bt:rs:ls; bt:bf:ls; rs:bf:ls; bt:rs:bf:ls; 
+af
+  bt; bf; bt:bf; bt:af; rs:bf; bf:ls; bt:rs:bf; bt:rs:af; 
+bt:bf:ls; bt:bf:af; bt:ls:af; rs:bf:af; bf:ls:af; 
+bt:rs:bf:ls; bt:rs:bf:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs
+  bt; rs; bf; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; bf:ls; 
+bt:rs:bf; bt:rs:ls; bt:bf:ls; bt:bf:af; bt:ls:af; 
+rs:bf:ls; bt:rs:bf:ls; bt:bf:ls:af; 
+bt:bf
+  bt; bf; bt:rs; bt:bf; bt:ls; bt:af; bt:rs:bf; bt:rs:af; 
+bt:bf:ls; bt:bf:af; bt:ls:af; bt:rs:bf:af; bt:bf:ls:af; 
+bt:ls
+  bt; bf; ls; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; bf:ls; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; rs:bf:ls; 
+bt:rs:bf:ls; bt:rs:bf:af; 
+bt:af
+  bt; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; rs:af; 
+bf:ls; ls:af; bt:rs:bf; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:af; bf:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:bf
+  bt; rs; bf; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; rs:af; 
+bf:ls; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:ls; rs:bf:af; bf:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:ls
+  
+rs:af
+  bt; bf; ls; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; bf:ls; 
+ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:af; bf:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bf:ls
+  bt; bf; ls; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; bf:ls; 
+ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:ls; rs:bf:af; bf:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bf:af
+  
+ls:af
+  bt; rs; bf; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; bf:ls; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:ls; bf:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs:bf
+  bt; bf; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; bf:ls; 
+bt:rs:bf; bt:rs:ls; bt:bf:ls; bt:bf:af; bt:ls:af; 
+rs:bf:ls; bt:rs:bf:ls; bt:rs:bf:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+bt:rs:ls
+  rs; bf; ls; bt:rs; bt:bf; bt:ls; rs:bf; bf:ls; bt:rs:bf; 
+bt:rs:ls; bt:bf:ls; rs:bf:ls; bt:rs:bf:ls; 
+bt:rs:af
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; 
+bf:ls; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; 
+bt:bf:af; bt:ls:af; rs:bf:ls; rs:bf:af; bf:ls:af; 
+bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+bt:bf:ls
+  bt; bf; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; bf:ls; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+rs:bf:ls; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:rs:bf:ls:af; 
+bt:bf:af
+  bt; bf; af; bt:rs; bt:bf; bt:ls; bt:af; rs:af; ls:af; 
+bt:rs:bf; bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; 
+bt:rs:bf:af; bt:bf:ls:af; 
+bt:ls:af
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; 
+rs:af; bf:ls; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+bt:bf:ls; bt:bf:af; bt:ls:af; rs:bf:af; bf:ls:af; 
+bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+rs:bf:ls
+  bt; rs; ls; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; rs:af; 
+bf:ls; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; 
+bt:bf:af; bt:ls:af; rs:bf:ls; rs:bf:af; bf:ls:af; 
+bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+rs:bf:af
+  bt; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; rs:af; 
+bf:ls; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; 
+bt:bf:af; bt:ls:af; rs:bf:ls; rs:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:ls:af
+  bf; bt:rs; bt:bf; bt:ls; rs:bf; bf:ls; bt:rs:bf; 
+bt:rs:ls; bt:bf:ls; bt:bf:af; bf:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bf:ls:af
+  bt; rs; bf; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; rs:af; 
+bf:ls; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; 
+bt:bf:af; bt:ls:af; rs:bf:ls; rs:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs:bf:ls
+  
+bt:rs:bf:af
+  bt; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; rs:af; 
+bf:ls; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; 
+bt:bf:af; bt:ls:af; rs:bf:ls; rs:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs:ls:af
+  bt; rs; bf; ls; bt:rs; bt:bf; bt:ls; rs:bf; rs:af; bf:ls; 
+ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:ls; rs:bf:af; bf:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:bf:ls:af
+  bt; rs; bf; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; rs:af; 
+bf:ls; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:ls; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:bf:ls:af
+  
+bt:rs:bf:ls:af
+  
+in
+  in; in:out; 
+out
+  in; out; in:out; 
+in:out
+  in; out; in:out; 
+
+
+
+
+rs:bf
+bt
+  bt; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:af; bf:ls; 
+ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:af; rs:ls:af; bf:ls:af; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; 
+rs
+  rs; af; bt:rs; bt:af; rs:af; ls:af; bt:rs:ls; bt:rs:af; 
+bt:ls:af; rs:ls:af; bt:rs:ls:af; 
+bf
+  rs; bf; af; bt:rs; bt:bf; bt:af; rs:bf; rs:af; bf:ls; 
+bt:rs:bf; bt:rs:af; bt:bf:af; rs:bf:af; bf:ls:af; 
+bt:rs:bf:af; 
+ls
+  ls; bf:ls; ls:af; rs:bf:ls; bf:ls:af; 
+af
+  af; bt:af; ls:af; bt:bf:af; bt:ls:af; bf:ls:af; 
+bt:bf:ls:af; 
+bt:rs
+  bt; ls; af; bt:rs; bt:ls; bt:af; rs:af; ls:af; bt:rs:ls; 
+bt:rs:af; bt:ls:af; rs:ls:af; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf
+  bt; bf; af; bt:rs; bt:bf; bt:af; rs:af; bf:ls; bt:rs:bf; 
+bt:rs:af; bt:bf:ls; bt:bf:af; rs:bf:af; bf:ls:af; 
+bt:rs:bf:af; bt:bf:ls:af; 
+bt:ls
+  bf; ls; bt:ls; bf:ls; ls:af; bt:rs:ls; bt:bf:ls; 
+bt:ls:af; rs:ls:af; bf:ls:af; bt:rs:ls:af; bt:bf:ls:af; 
+bt:af
+  bt; bf; ls; af; bt:bf; bt:ls; bt:af; rs:af; bf:ls; ls:af; 
+bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; bf:ls:af; 
+bt:rs:bf:af; bt:bf:ls:af; 
+rs:bf
+  rs; af; bt:rs; bt:af; rs:bf; rs:af; bt:rs:bf; bt:rs:af; 
+rs:bf:af; bt:rs:bf:af; 
+rs:ls
+  
+rs:af
+  af; bt:af; rs:af; ls:af; bt:rs:af; bt:ls:af; rs:ls:af; 
+bt:rs:ls:af; 
+bf:ls
+  rs; bf; rs:bf; bf:ls; rs:bf:ls; bf:ls:af; 
+bf:af
+  
+ls:af
+  ls; bf:ls; ls:af; bf:ls:af; 
+bt:rs:bf
+  bt; af; bt:rs; bt:af; rs:af; bt:rs:bf; bt:rs:af; 
+rs:bf:af; bt:rs:bf:af; 
+bt:rs:ls
+  ls; bt:ls; ls:af; bt:rs:ls; bt:ls:af; rs:ls:af; 
+bt:rs:ls:af; 
+bt:rs:af
+  bt; ls; af; bt:ls; bt:af; rs:af; ls:af; bt:rs:af; 
+bt:ls:af; rs:ls:af; bt:rs:ls:af; 
+bt:bf:ls
+  bf; bf:ls; bt:bf:ls; bf:ls:af; bt:bf:ls:af; 
+bt:bf:af
+  bf; af; bt:bf; bt:af; bf:ls; bt:rs:af; bt:bf:ls; 
+bt:bf:af; bf:ls:af; bt:rs:bf:af; bt:bf:ls:af; 
+bt:ls:af
+  bf; ls; bt:ls; bf:ls; ls:af; bt:bf:ls; bt:ls:af; 
+bf:ls:af; bt:rs:ls:af; bt:bf:ls:af; 
+rs:bf:ls
+  rs; rs:bf; 
+rs:bf:af
+  af; bt:af; rs:af; bt:rs:af; rs:bf:af; 
+rs:ls:af
+  ls; ls:af; rs:ls:af; 
+bf:ls:af
+  bf; bf:ls; bf:ls:af; 
+bt:rs:bf:ls
+  
+bt:rs:bf:af
+  bt; af; bt:af; rs:af; bt:rs:af; rs:bf:af; bt:rs:bf:af; 
+bt:rs:ls:af
+  ls; bt:ls; ls:af; bt:ls:af; rs:ls:af; bt:rs:ls:af; 
+bt:bf:ls:af
+  bf; bf:ls; bt:bf:ls; bf:ls:af; bt:bf:ls:af; 
+rs:bf:ls:af
+  
+bt:rs:bf:ls:af
+  
+in
+  in; out; in:out; 
+out
+  out; in:out; 
+in:out
+  in; out; in:out; 
+
+
+
+
+rs:ls
+bt
+  
+rs
+  
+bf
+  
+ls
+  
+af
+  
+bt:rs
+  
+bt:bf
+  
+bt:ls
+  
+bt:af
+  
+rs:bf
+  
+rs:ls
+  
+rs:af
+  
+bf:ls
+  
+bf:af
+  
+ls:af
+  
+bt:rs:bf
+  
+bt:rs:ls
+  
+bt:rs:af
+  
+bt:bf:ls
+  
+bt:bf:af
+  
+bt:ls:af
+  
+rs:bf:ls
+  
+rs:bf:af
+  
+rs:ls:af
+  
+bf:ls:af
+  
+bt:rs:bf:ls
+  
+bt:rs:bf:af
+  
+bt:rs:ls:af
+  
+bt:bf:ls:af
+  
+rs:bf:ls:af
+  
+bt:rs:bf:ls:af
+  
+in
+  
+out
+  
+in:out
+  
+
+
+
+
+rs:af
+bt
+  bt; bf; ls; af; bt:bf; bt:ls; bt:af; rs:bf; bf:ls; ls:af; 
+bt:bf:ls; bt:bf:af; bt:ls:af; rs:bf:ls; bf:ls:af; 
+bt:bf:ls:af; 
+rs
+  bt; ls; bt:rs; bt:bf; bt:ls; bt:af; bf:ls; ls:af; 
+bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; 
+rs:ls:af; bf:ls:af; bt:rs:ls:af; bt:bf:ls:af; 
+bf
+  bt; rs; bf; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; rs:af; 
+ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:af; rs:ls:af; bf:ls:af; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; 
+ls
+  rs; bf; bt:rs; bt:bf; rs:bf; bf:ls; bt:rs:bf; rs:bf:ls; 
+af
+  bt; bf; bt:bf; bt:ls; bt:af; bf:ls; bt:bf:ls; bt:bf:af; 
+bt:ls:af; bf:ls:af; bt:bf:ls:af; 
+bt:rs
+  bt; ls; af; bt:bf; bt:ls; bt:af; bf:ls; ls:af; bt:bf:ls; 
+bt:bf:af; bt:ls:af; rs:bf:ls; bf:ls:af; bt:bf:ls:af; 
+bt:bf
+  bt; bf; af; bt:bf; bt:ls; bt:af; ls:af; bt:rs:bf; 
+bt:bf:ls; bt:bf:af; bt:ls:af; rs:bf:af; bf:ls:af; 
+bt:rs:bf:af; bt:bf:ls:af; 
+bt:ls
+  bf; ls; bt:bf; rs:bf; bf:ls; bt:rs:bf; rs:bf:ls; 
+bt:af
+  bt; bf; ls; af; bt:bf; bt:ls; bt:af; rs:bf; bf:ls; ls:af; 
+bt:bf:ls; bt:bf:af; bt:ls:af; rs:bf:ls; bf:ls:af; 
+bt:bf:ls:af; 
+rs:bf
+  bt; rs; af; bt:rs; bt:bf; bt:ls; bt:af; rs:af; ls:af; 
+bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; 
+rs:ls:af; bf:ls:af; bt:rs:ls:af; bt:bf:ls:af; 
+rs:ls
+  
+rs:af
+  bt; ls; bt:bf; bt:ls; bt:af; bf:ls; ls:af; bt:bf:ls; 
+bt:bf:af; bt:ls:af; bf:ls:af; bt:bf:ls:af; 
+bf:ls
+  rs; bf; bt:rs; bt:bf; rs:bf; rs:af; bt:rs:bf; bt:rs:ls; 
+bt:rs:af; rs:bf:af; bt:rs:bf:af; bt:rs:ls:af; 
+bf:af
+  
+ls:af
+  bf; bt:bf; rs:bf; bf:ls; bt:rs:bf; rs:bf:ls; 
+bt:rs:bf
+  bt; af; bt:bf; bt:ls; bt:af; ls:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; bf:ls:af; bt:bf:ls:af; 
+bt:rs:ls
+  ls; bf:ls; rs:bf:ls; 
+bt:rs:af
+  bt; ls; af; bt:bf; bt:ls; bt:af; bf:ls; ls:af; bt:bf:ls; 
+bt:bf:af; bt:ls:af; rs:bf:ls; bf:ls:af; bt:bf:ls:af; 
+bt:bf:ls
+  bf; bt:bf; rs:bf; bt:rs:bf; rs:bf:af; bt:rs:bf:af; 
+bt:bf:af
+  bt; bf; af; bt:bf; bt:af; ls:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; bf:ls:af; bt:bf:ls:af; 
+bt:ls:af
+  bf; ls; bt:bf; rs:bf; bf:ls; bt:rs:bf; rs:bf:ls; 
+rs:bf:ls
+  rs; bt:rs; rs:af; bt:rs:ls; bt:rs:af; bt:rs:ls:af; 
+rs:bf:af
+  bt; af; bt:bf; bt:ls; bt:af; ls:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; bf:ls:af; bt:bf:ls:af; 
+rs:ls:af
+  ls; bf:ls; rs:bf:ls; 
+bf:ls:af
+  bf; bt:bf; rs:bf; bt:rs:bf; bt:bf:af; rs:bf:af; 
+bt:rs:bf:af; 
+bt:rs:bf:ls
+  
+bt:rs:bf:af
+  bt; af; bt:bf; bt:ls; bt:af; ls:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; bf:ls:af; bt:bf:ls:af; 
+bt:rs:ls:af
+  ls; bf:ls; rs:bf:ls; 
+bt:bf:ls:af
+  bf; bt:bf; rs:bf; bt:rs:bf; bt:bf:af; rs:bf:af; 
+bt:rs:bf:af; 
+rs:bf:ls:af
+  
+bt:rs:bf:ls:af
+  
+in
+  in; out; in:out; 
+out
+  in; out; in:out; 
+in:out
+  in; out; in:out; 
+
+
+
+
+bf:ls
+bt
+  bt; rs; bf; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; rs:af; 
+ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:af; rs:ls:af; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; 
+rs
+  rs; rs:bf; rs:af; rs:bf:ls; rs:bf:af; 
+bf
+  bf; ls; af; bt:bf; bt:ls; bt:af; rs:bf; bf:ls; ls:af; 
+bt:bf:ls; bt:bf:af; bt:ls:af; rs:bf:af; bf:ls:af; 
+bt:bf:ls:af; 
+ls
+  ls; af; bt:ls; bt:af; rs:af; ls:af; bt:rs:ls; bt:rs:af; 
+bt:ls:af; rs:ls:af; bt:rs:ls:af; 
+af
+  af; bt:af; rs:af; bt:rs:af; bt:bf:af; rs:bf:af; 
+bt:rs:bf:af; 
+bt:rs
+  rs; bf; bt:rs; rs:bf; rs:af; bt:rs:bf; bt:rs:ls; 
+bt:rs:af; rs:bf:af; rs:ls:af; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf
+  bt; bf; af; bt:bf; bt:ls; bt:af; rs:bf; ls:af; bt:rs:bf; 
+bt:bf:ls; bt:bf:af; bt:ls:af; rs:bf:af; bf:ls:af; 
+bt:rs:bf:af; bt:bf:ls:af; 
+bt:ls
+  bt; rs; af; bt:rs; bt:ls; bt:af; rs:af; ls:af; bt:rs:ls; 
+bt:rs:af; bt:ls:af; rs:ls:af; bt:rs:ls:af; 
+bt:af
+  bt; rs; bf; af; bt:rs; bt:bf; bt:af; rs:bf; rs:af; ls:af; 
+bt:rs:bf; bt:rs:af; bt:bf:af; bt:ls:af; rs:bf:af; 
+rs:ls:af; bt:rs:bf:af; 
+rs:bf
+  bf; ls; rs:bf; bf:ls; rs:bf:ls; rs:bf:af; 
+rs:ls
+  
+rs:af
+  rs; rs:bf; rs:af; rs:bf:af; 
+bf:ls
+  ls; af; bt:ls; bt:af; bf:ls; ls:af; bt:bf:ls; bt:ls:af; 
+bf:ls:af; bt:bf:ls:af; 
+bf:af
+  
+ls:af
+  af; bt:af; rs:af; ls:af; bt:rs:af; bt:ls:af; rs:ls:af; 
+bt:rs:ls:af; 
+bt:rs:bf
+  bf; rs:bf; bt:rs:bf; rs:bf:af; bt:rs:bf:af; 
+bt:rs:ls
+  rs; bt:rs; rs:af; bt:rs:ls; bt:rs:af; rs:ls:af; 
+bt:rs:ls:af; 
+bt:rs:af
+  rs; bf; bt:rs; rs:bf; rs:af; bt:rs:bf; bt:rs:af; 
+rs:bf:af; bt:rs:bf:af; 
+bt:bf:ls
+  bt; af; bt:ls; bt:af; ls:af; bt:bf:ls; bt:ls:af; 
+bf:ls:af; bt:bf:ls:af; 
+bt:bf:af
+  bf; af; rs:bf; bt:rs:bf; bt:bf:af; bt:ls:af; rs:bf:af; 
+bt:rs:bf:af; bt:bf:ls:af; 
+bt:ls:af
+  bt; rs; af; bt:rs; bt:af; rs:af; ls:af; bt:rs:af; 
+bt:ls:af; rs:ls:af; bt:rs:ls:af; 
+rs:bf:ls
+  ls; bf:ls; 
+rs:bf:af
+  bf; rs:bf; rs:bf:af; 
+rs:ls:af
+  rs; rs:af; rs:ls:af; 
+bf:ls:af
+  af; bt:af; ls:af; bt:ls:af; bf:ls:af; 
+bt:rs:bf:ls
+  
+bt:rs:bf:af
+  bf; rs:bf; bt:rs:bf; rs:bf:af; bt:rs:bf:af; 
+bt:rs:ls:af
+  rs; bt:rs; rs:af; bt:rs:af; rs:ls:af; bt:rs:ls:af; 
+bt:bf:ls:af
+  bt; af; bt:af; ls:af; bt:ls:af; bf:ls:af; bt:bf:ls:af; 
+rs:bf:ls:af
+  
+bt:rs:bf:ls:af
+  
+in
+  in; out; in:out; 
+out
+  out; in:out; 
+in:out
+  in; out; in:out; 
+
+
+
+
+bf:af
+bt
+  
+rs
+  
+bf
+  
+ls
+  
+af
+  
+bt:rs
+  
+bt:bf
+  
+bt:ls
+  
+bt:af
+  
+rs:bf
+  
+rs:ls
+  
+rs:af
+  
+bf:ls
+  
+bf:af
+  
+ls:af
+  
+bt:rs:bf
+  
+bt:rs:ls
+  
+bt:rs:af
+  
+bt:bf:ls
+  
+bt:bf:af
+  
+bt:ls:af
+  
+rs:bf:ls
+  
+rs:bf:af
+  
+rs:ls:af
+  
+bf:ls:af
+  
+bt:rs:bf:ls
+  
+bt:rs:bf:af
+  
+bt:rs:ls:af
+  
+bt:bf:ls:af
+  
+rs:bf:ls:af
+  
+bt:rs:bf:ls:af
+  
+in
+  
+out
+  
+in:out
+  
+
+
+
+
+ls:af
+bt
+  bt; rs; bf; af; bt:rs; bt:bf; bt:af; rs:bf; rs:af; 
+bf:ls; bt:rs:bf; bt:rs:af; bt:bf:af; rs:bf:ls; rs:bf:af; 
+bt:rs:bf:af; 
+rs
+  bf; ls; bt:bf; bt:ls; rs:bf; bf:ls; bt:bf:ls; rs:bf:ls; 
+bf
+  bt; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:af; bf:ls; 
+ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:af; rs:ls:af; bf:ls:af; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; 
+ls
+  bt; rs; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; rs:af; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:af; bt:ls:af; 
+rs:bf:af; rs:ls:af; bt:rs:bf:af; bt:rs:ls:af; 
+af
+  bt; bf; bt:rs; bt:bf; bt:af; rs:bf; bt:rs:bf; bt:rs:af; 
+bt:bf:af; rs:bf:af; bt:rs:bf:af; 
+bt:rs
+  rs; bf; bt:bf; rs:bf; bf:ls; bt:bf:ls; rs:bf:ls; 
+bt:bf
+  bt; bf; af; bt:rs; bt:bf; bt:af; rs:af; bf:ls; bt:rs:bf; 
+bt:rs:af; bt:bf:ls; bt:bf:af; rs:bf:af; bf:ls:af; 
+bt:rs:bf:af; bt:bf:ls:af; 
+bt:ls
+  bt; rs; af; bt:rs; bt:bf; bt:af; rs:bf; rs:af; bt:rs:bf; 
+bt:rs:af; bt:bf:af; rs:bf:ls; rs:bf:af; bt:rs:bf:af; 
+bt:af
+  bt; rs; bf; af; bt:rs; bt:bf; bt:af; rs:bf; rs:af; 
+bf:ls; bt:rs:bf; bt:rs:af; bt:bf:ls; bt:bf:af; rs:bf:ls; 
+rs:bf:af; bt:rs:bf:af; 
+rs:bf
+  bf; ls; bt:bf; bt:ls; bf:ls; ls:af; bt:rs:ls; bt:bf:ls; 
+bt:ls:af; rs:ls:af; bf:ls:af; bt:rs:ls:af; bt:bf:ls:af; 
+rs:ls
+  
+rs:af
+  bf; bt:bf; rs:bf; bf:ls; bt:bf:ls; rs:bf:ls; 
+bf:ls
+  bt; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:af; ls:af; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:af; bt:ls:af; 
+rs:bf:af; rs:ls:af; bt:rs:bf:af; bt:rs:ls:af; 
+bf:af
+  
+ls:af
+  bt; rs; bt:rs; bt:bf; bt:af; rs:bf; rs:af; bt:rs:bf; 
+bt:rs:af; bt:bf:af; rs:bf:af; bt:rs:bf:af; 
+bt:rs:bf
+  bf; bt:bf; bf:ls; bt:bf:ls; bf:ls:af; bt:bf:ls:af; 
+bt:rs:ls
+  rs; rs:bf; rs:bf:ls; 
+bt:rs:af
+  rs; bf; bt:bf; rs:bf; bf:ls; bt:bf:ls; rs:bf:ls; 
+bt:bf:ls
+  bt; af; bt:rs; bt:bf; bt:af; rs:af; bt:rs:bf; bt:rs:af; 
+bt:bf:af; rs:bf:af; bt:rs:bf:af; 
+bt:bf:af
+  bt; bf; af; bt:bf; bt:af; rs:af; bt:rs:af; bt:bf:af; 
+bt:rs:bf:af; 
+bt:ls:af
+  bt; rs; af; bt:rs; bt:bf; bt:af; rs:bf; rs:af; bt:rs:bf; 
+bt:rs:af; bt:bf:af; rs:bf:ls; rs:bf:af; bt:rs:bf:af; 
+rs:bf:ls
+  ls; bt:ls; ls:af; bt:rs:ls; bt:ls:af; rs:ls:af; 
+bt:rs:ls:af; 
+rs:bf:af
+  bf; bt:bf; bf:ls; bt:bf:ls; bf:ls:af; bt:bf:ls:af; 
+rs:ls:af
+  rs; rs:bf; rs:bf:ls; 
+bf:ls:af
+  bt; af; bt:rs; bt:bf; bt:af; rs:af; bt:rs:bf; bt:rs:af; 
+bt:bf:af; rs:bf:af; bt:rs:bf:af; 
+bt:rs:bf:ls
+  
+bt:rs:bf:af
+  bf; bt:bf; bf:ls; bt:bf:ls; bt:bf:af; bf:ls:af; 
+bt:bf:ls:af; 
+bt:rs:ls:af
+  rs; rs:bf; rs:bf:ls; 
+bt:bf:ls:af
+  bt; af; bt:rs; bt:bf; bt:af; rs:af; bt:rs:bf; bt:rs:af; 
+bt:bf:af; rs:bf:af; bt:rs:bf:af; 
+rs:bf:ls:af
+  
+bt:rs:bf:ls:af
+  
+in
+  in; out; in:out; 
+out
+  in; out; in:out; 
+in:out
+  in; out; in:out; 
+
+
+
+
+bt:rs:bf
+bt
+  bt; bt:rs; bt:bf; bt:ls; bt:af; bt:rs:bf; bt:rs:ls; 
+bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; 
+rs
+  rs; bt:rs; bt:af; rs:bf; rs:af; bt:rs:bf; bt:rs:ls; 
+bt:rs:af; bt:ls:af; rs:bf:af; rs:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:rs:bf:ls:af; 
+bf
+  bf; bt:rs; bt:bf; rs:bf; bf:ls; bt:rs:bf; bt:rs:af; 
+bt:bf:ls; bt:bf:af; rs:bf:ls; rs:bf:af; bf:ls:af; 
+bt:rs:bf:af; 
+ls
+  ls; bt:ls; bf:ls; ls:af; bt:bf:ls; bt:ls:af; rs:bf:ls; 
+bf:ls:af; bt:bf:ls:af; 
+af
+  af; bt:af; rs:af; ls:af; bt:rs:af; bt:bf:af; bt:ls:af; 
+rs:bf:af; rs:ls:af; bf:ls:af; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs
+  bt; bt:rs; bt:bf; bt:ls; bt:af; rs:af; bt:rs:bf; 
+bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; 
+rs:ls:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:bf
+  bt; bf; bt:rs; bt:bf; bt:af; bf:ls; bt:rs:bf; bt:rs:af; 
+bt:bf:ls; bt:bf:af; rs:bf:af; bf:ls:af; bt:rs:bf:af; 
+bt:bf:ls:af; 
+bt:ls
+  bf; ls; bt:bf; bt:ls; bf:ls; ls:af; bt:rs:ls; bt:bf:ls; 
+bt:bf:af; bt:ls:af; rs:ls:af; bf:ls:af; bt:rs:bf:ls; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:af
+  bt; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:af; ls:af; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:ls:af; bf:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:bf
+  rs; bt:rs; rs:bf; rs:af; bt:rs:bf; bt:rs:af; bt:bf:af; 
+rs:bf:af; bt:rs:bf:af; 
+rs:ls
+  
+rs:af
+  af; bt:rs; bt:af; rs:af; ls:af; bt:rs:bf; bt:rs:ls; 
+bt:rs:af; bt:ls:af; rs:bf:af; rs:ls:af; bf:ls:af; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bf:ls
+  bf; bt:bf; rs:bf; bf:ls; bt:rs:bf; bt:bf:ls; rs:bf:ls; 
+bf:ls:af; bt:rs:bf:ls; 
+bf:af
+  
+ls:af
+  ls; bt:ls; bf:ls; ls:af; bt:rs:ls; bt:bf:ls; bt:ls:af; 
+rs:ls:af; bf:ls:af; bt:rs:bf:ls; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+bt:rs:bf
+  bt; bt:rs; bt:bf; bt:af; rs:af; bt:rs:bf; bt:rs:af; 
+bt:bf:af; rs:bf:af; bt:rs:bf:af; 
+bt:rs:ls
+  ls; bt:ls; bf:ls; ls:af; bt:rs:ls; bt:bf:ls; bt:ls:af; 
+rs:ls:af; bf:ls:af; bt:rs:bf:ls; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+bt:rs:af
+  bt; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:af; ls:af; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:ls:af; bf:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:bf:ls
+  bf; bt:bf; bf:ls; bt:bf:ls; bt:bf:af; bf:ls:af; 
+bt:bf:ls:af; 
+bt:bf:af
+  bt; bf; af; bt:rs; bt:bf; bt:af; rs:af; bt:rs:af; 
+bt:bf:ls; bt:bf:af; bt:rs:bf:af; bt:bf:ls:af; 
+bt:ls:af
+  bf; ls; bt:bf; bt:ls; bf:ls; ls:af; bt:rs:ls; bt:bf:ls; 
+bt:bf:af; bt:ls:af; rs:ls:af; bf:ls:af; bt:rs:bf:ls; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:bf:ls
+  rs; rs:bf; bt:rs:bf; rs:bf:ls; bt:rs:bf:ls; 
+rs:bf:af
+  af; bt:rs; bt:af; rs:af; bt:rs:bf; bt:rs:af; rs:bf:af; 
+bt:rs:bf:af; 
+rs:ls:af
+  ls; bt:ls; ls:af; bt:rs:ls; bt:ls:af; rs:ls:af; bf:ls:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bf:ls:af
+  bf; bt:bf; bf:ls; bt:bf:ls; bf:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+bt:rs:bf:ls
+  
+bt:rs:bf:af
+  bt; af; bt:rs; bt:bf; bt:af; rs:af; ls:af; bt:rs:bf; 
+bt:rs:af; bt:bf:af; rs:bf:af; bt:rs:bf:af; 
+bt:rs:ls:af
+  ls; bt:ls; bf:ls; ls:af; bt:rs:ls; bt:bf:ls; bt:ls:af; 
+rs:ls:af; bf:ls:af; bt:rs:bf:ls; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+bt:bf:ls:af
+  bf; bt:bf; bf:ls; bt:bf:ls; bt:bf:af; bf:ls:af; 
+bt:rs:bf:ls; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:bf:ls:af
+  
+bt:rs:bf:ls:af
+  
+in
+  in; in:out; 
+out
+  out; in:out; 
+in:out
+  in; out; in:out; 
+
+
+
+
+bt:rs:ls
+bt
+  bt; bt:rs; bt:bf; bt:ls; bt:af; bt:rs:bf; bt:rs:ls; 
+bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs
+  rs; bt:rs; bt:bf; rs:bf; rs:af; bt:rs:bf; bt:rs:ls; 
+bt:rs:af; bt:bf:ls; bt:bf:af; rs:bf:ls; rs:bf:af; 
+rs:ls:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:rs:bf:ls:af; 
+bf
+  bf; bt:bf; rs:bf; bf:ls; bt:rs:bf; bt:bf:ls; bt:bf:af; 
+rs:bf:ls; rs:bf:af; bf:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:bf:ls:af; 
+ls
+  ls; bt:bf; bt:ls; bf:ls; ls:af; bt:rs:bf; bt:rs:ls; 
+bt:bf:ls; bt:bf:af; bt:ls:af; rs:bf:ls; rs:ls:af; 
+bf:ls:af; bt:rs:bf:ls; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+af
+  bt; af; bt:rs; bt:bf; bt:ls; bt:af; rs:af; ls:af; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:af; rs:ls:af; bf:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs
+  bt:rs; bt:bf; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; 
+bt:bf:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:bf
+  bt:bf; bt:bf:af; 
+bt:ls
+  bt:bf; bt:ls; bt:rs:bf; bt:rs:ls; bt:bf:ls; bt:bf:af; 
+bt:ls:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:af
+  bt; af; bt:rs; bt:bf; bt:ls; bt:af; bt:rs:bf; bt:rs:ls; 
+bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:bf
+  bt:bf; rs:bf; bt:rs:bf; bt:bf:af; rs:bf:ls; rs:bf:af; 
+bt:rs:bf:ls; bt:rs:bf:af; 
+rs:ls
+  
+rs:af
+  bt:rs; bt:bf; rs:af; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+bt:bf:ls; bt:bf:af; rs:bf:af; rs:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bf:ls
+  bt:bf; bf:ls; bt:bf:ls; bt:bf:af; rs:bf:ls; bf:ls:af; 
+bt:rs:bf:ls; bt:bf:ls:af; 
+bf:af
+  
+ls:af
+  bt:bf; bt:ls; ls:af; bt:rs:bf; bt:rs:ls; bt:bf:ls; 
+bt:bf:af; bt:ls:af; rs:ls:af; bf:ls:af; bt:rs:bf:ls; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs:bf
+  bt:bf; bt:rs:bf; bt:bf:af; bt:rs:bf:af; 
+bt:rs:ls
+  bt:rs:ls; bt:rs:bf:ls; 
+bt:rs:af
+  bt:rs; bt:bf; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; 
+bt:bf:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:bf:ls
+  bt:bf; bt:bf:ls; bt:bf:af; bt:bf:ls:af; 
+bt:bf:af
+  bt:bf; bt:bf:af; 
+bt:ls:af
+  bt:bf; bt:ls; bt:rs:bf; bt:rs:ls; bt:bf:ls; bt:bf:af; 
+bt:ls:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:bf:ls
+  rs:bf:ls; 
+rs:bf:af
+  bt:bf; bt:rs:bf; bt:bf:af; rs:bf:af; bt:rs:bf:af; 
+rs:ls:af
+  bt:rs:ls; rs:ls:af; bt:rs:bf:ls; bt:rs:ls:af; 
+bt:rs:bf:ls:af; 
+bf:ls:af
+  bt:bf; bt:bf:ls; bt:bf:af; bf:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls
+  
+bt:rs:bf:af
+  bt:bf; bt:rs:bf; bt:bf:af; bt:rs:bf:af; bt:rs:bf:ls:af; 
+bt:rs:ls:af
+  bt:rs:ls; bt:rs:bf:ls; bt:rs:ls:af; bt:rs:bf:ls:af; 
+bt:bf:ls:af
+  bt:bf; bt:bf:ls; bt:bf:af; bt:bf:ls:af; 
+rs:bf:ls:af
+  
+bt:rs:bf:ls:af
+  
+in
+  in; in:out; 
+out
+  in; out; in:out; 
+in:out
+  in; in:out; 
+
+
+
+
+bt:rs:af
+bt
+  bt; bt:rs; bt:bf; bt:ls; bt:af; bt:rs:bf; bt:rs:ls; 
+bt:bf:ls; bt:bf:af; bt:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:bf:ls:af; 
+rs
+  bt; bt:rs; bt:bf; bt:ls; bt:af; bt:rs:bf; bt:rs:ls; 
+bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; rs:ls:af; 
+bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+bf
+  bt; bf; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; bt:rs:bf; 
+bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; 
+rs:bf:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+ls
+  bf; bt:rs; bt:bf; bt:ls; rs:bf; bf:ls; bt:rs:bf; 
+bt:bf:ls; rs:bf:ls; bt:rs:bf:ls; 
+af
+  bt; bf; bt:rs; bt:bf; bt:ls; bt:af; bf:ls; bt:rs:bf; 
+bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; 
+bf:ls:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs
+  bt; bt:rs; bt:bf; bt:ls; bt:af; bt:rs:bf; bt:rs:ls; 
+bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:bf
+  bt; bf; bt:bf; bt:ls; bt:af; bt:rs:bf; bt:bf:ls; 
+bt:bf:af; bt:ls:af; bt:rs:bf:af; bt:bf:ls:af; 
+bt:ls
+  bf; ls; bt:bf; bt:ls; rs:bf; bf:ls; bt:rs:bf; bt:rs:ls; 
+bt:bf:ls; rs:bf:ls; bt:rs:bf:ls; 
+bt:af
+  bt; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; bf:ls; ls:af; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; bf:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:bf
+  bt; rs; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; rs:af; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:af; rs:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:ls
+  
+rs:af
+  bt; ls; bt:rs; bt:bf; bt:ls; bt:af; bf:ls; ls:af; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; bf:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bf:ls
+  bf; bt:rs; bt:bf; rs:bf; bf:ls; bt:rs:bf; bt:rs:af; 
+bt:bf:ls; bt:bf:af; rs:bf:ls; rs:bf:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bf:af
+  
+ls:af
+  bf; bt:bf; bt:ls; rs:bf; bf:ls; bt:rs:bf; bt:rs:ls; 
+bt:bf:ls; bt:bf:af; rs:bf:ls; bf:ls:af; bt:rs:bf:ls; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs:bf
+  bt; bt:rs; bt:bf; bt:ls; bt:af; bt:rs:bf; bt:rs:ls; 
+bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs:ls
+  ls; bt:ls; bf:ls; bt:rs:ls; bt:bf:ls; rs:bf:ls; 
+bt:rs:bf:ls; 
+bt:rs:af
+  bt; ls; af; bt:rs; bt:bf; bt:ls; bt:af; bf:ls; ls:af; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; bf:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:bf:ls
+  bf; bt:bf; rs:bf; bf:ls; bt:rs:bf; bt:bf:ls; bt:bf:af; 
+rs:bf:ls; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:bf:ls:af; 
+bt:bf:af
+  bt; bf; af; bt:bf; bt:af; ls:af; bt:rs:bf; bt:bf:ls; 
+bt:bf:af; bt:ls:af; bt:rs:bf:af; bt:bf:ls:af; 
+bt:ls:af
+  bf; ls; bt:bf; bt:ls; rs:bf; bf:ls; ls:af; bt:rs:bf; 
+bt:rs:ls; bt:bf:ls; bt:bf:af; bt:ls:af; rs:bf:ls; 
+bf:ls:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:bf:ls
+  rs; bt:rs; rs:bf; rs:af; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+rs:bf:ls; rs:bf:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:rs:bf:ls:af; 
+rs:bf:af
+  bt; af; bt:rs; bt:bf; bt:ls; bt:af; rs:af; ls:af; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:ls:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:ls:af
+  ls; bt:ls; bf:ls; ls:af; bt:rs:ls; bt:bf:ls; bt:ls:af; 
+rs:bf:ls; bf:ls:af; bt:rs:bf:ls; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bf:ls:af
+  bf; bt:bf; rs:bf; bf:ls; bt:rs:bf; bt:bf:ls; bt:bf:af; 
+rs:bf:ls; bt:rs:bf:ls; bt:rs:bf:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+bt:rs:bf:ls
+  
+bt:rs:bf:af
+  bt; af; bt:rs; bt:bf; bt:ls; bt:af; rs:af; ls:af; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs:ls:af
+  ls; bt:ls; bf:ls; ls:af; bt:rs:ls; bt:bf:ls; bt:ls:af; 
+rs:bf:ls; rs:ls:af; bf:ls:af; bt:rs:bf:ls; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:bf:ls:af
+  bf; bt:bf; rs:bf; bf:ls; bt:rs:bf; bt:bf:ls; bt:bf:af; 
+rs:bf:ls; bt:rs:bf:ls; bt:rs:bf:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+rs:bf:ls:af
+  
+bt:rs:bf:ls:af
+  
+in
+  in; in:out; 
+out
+  in; out; in:out; 
+in:out
+  in; out; in:out; 
+
+
+
+
+bt:bf:ls
+bt
+  bt; bt:rs; bt:bf; bt:ls; bt:af; bt:rs:bf; bt:rs:ls; 
+bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; 
+rs
+  rs; bt:rs; rs:bf; rs:af; bt:rs:bf; bt:rs:af; rs:bf:ls; 
+rs:bf:af; bt:rs:bf:af; 
+bf
+  bf; bt:bf; bt:ls; rs:bf; bf:ls; bt:rs:bf; bt:bf:ls; 
+bt:bf:af; bt:ls:af; rs:bf:ls; rs:bf:af; bf:ls:af; 
+bt:bf:ls:af; 
+ls
+  ls; bt:ls; bt:af; bf:ls; ls:af; bt:rs:ls; bt:rs:af; 
+bt:bf:ls; bt:ls:af; rs:ls:af; bf:ls:af; bt:rs:bf:ls; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+af
+  af; bt:af; rs:af; ls:af; bt:rs:af; bt:bf:af; bt:ls:af; 
+rs:bf:af; rs:ls:af; bf:ls:af; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs
+  rs; bf; bt:rs; bt:bf; rs:bf; rs:af; bt:rs:bf; bt:rs:ls; 
+bt:rs:af; rs:bf:af; rs:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:rs:bf:ls:af; 
+bt:bf
+  bt; bf; bt:bf; bt:ls; bt:af; rs:bf; bt:rs:bf; bt:bf:ls; 
+bt:bf:af; bt:ls:af; rs:bf:af; bf:ls:af; bt:rs:bf:af; 
+bt:bf:ls:af; 
+bt:ls
+  bt; bt:rs; bt:bf; bt:ls; bt:af; ls:af; bt:rs:bf; 
+bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; 
+rs:ls:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:af
+  bt; rs; af; bt:rs; bt:bf; bt:ls; bt:af; rs:af; ls:af; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:af; rs:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:bf
+  bf; bt:bf; rs:bf; bf:ls; bt:rs:bf; bt:bf:ls; rs:bf:ls; 
+rs:bf:af; bt:rs:bf:ls; 
+rs:ls
+  
+rs:af
+  rs; bt:rs; rs:bf; rs:af; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+rs:bf:af; rs:ls:af; bt:rs:bf:af; bt:rs:ls:af; 
+bt:rs:bf:ls:af; 
+bf:ls
+  ls; bt:bf; bt:ls; bf:ls; ls:af; bt:bf:ls; bt:ls:af; 
+bf:ls:af; bt:bf:ls:af; 
+bf:af
+  
+ls:af
+  af; bt:ls; bt:af; rs:af; ls:af; bt:rs:ls; bt:rs:af; 
+bt:bf:ls; bt:ls:af; rs:ls:af; bf:ls:af; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs:bf
+  bf; bt:bf; rs:bf; bt:rs:bf; bt:bf:af; rs:bf:af; 
+bt:rs:bf:af; 
+bt:rs:ls
+  rs; bt:rs; rs:bf; rs:af; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+rs:ls:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:rs:bf:ls:af; 
+bt:rs:af
+  rs; bf; bt:rs; bt:bf; rs:bf; rs:af; bt:rs:bf; bt:rs:ls; 
+bt:rs:af; bt:bf:af; rs:bf:af; rs:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:rs:bf:ls:af; 
+bt:bf:ls
+  bt; bt:bf; bt:ls; bt:af; ls:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; bf:ls:af; bt:bf:ls:af; 
+bt:bf:af
+  bt; bf; af; bt:bf; bt:ls; bt:af; bt:rs:bf; bt:bf:ls; 
+bt:bf:af; bt:ls:af; bt:rs:bf:af; bt:bf:ls:af; 
+bt:ls:af
+  bt; rs; af; bt:rs; bt:bf; bt:ls; bt:af; rs:af; ls:af; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:ls:af; bf:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:bf:ls
+  ls; bt:ls; bf:ls; bt:bf:ls; rs:bf:ls; bt:rs:bf:ls; 
+rs:bf:af
+  bf; bt:bf; rs:bf; bt:rs:bf; rs:bf:af; bt:rs:bf:ls; 
+bt:rs:bf:af; 
+rs:ls:af
+  rs; bt:rs; rs:af; bt:rs:bf; bt:rs:ls; bt:rs:af; rs:ls:af; 
+bt:rs:bf:af; bt:rs:ls:af; bt:rs:bf:ls:af; 
+bf:ls:af
+  af; bt:ls; bt:af; ls:af; bt:bf:ls; bt:ls:af; bf:ls:af; 
+bt:bf:ls:af; 
+bt:rs:bf:ls
+  
+bt:rs:bf:af
+  bf; bt:bf; rs:bf; bt:rs:bf; bt:bf:af; rs:bf:af; 
+bt:rs:bf:af; bt:rs:bf:ls:af; 
+bt:rs:ls:af
+  rs; bt:rs; rs:bf; rs:af; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+rs:bf:af; rs:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:rs:bf:ls:af; 
+bt:bf:ls:af
+  bt; af; bt:bf; bt:ls; bt:af; ls:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; bf:ls:af; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+rs:bf:ls:af
+  
+bt:rs:bf:ls:af
+  
+in
+  in; in:out; 
+out
+  out; in:out; 
+in:out
+  in; out; in:out; 
+
+
+
+
+bt:bf:af
+bt
+  bt; bt:rs; bt:bf; bt:ls; bt:af; bt:rs:bf; bt:rs:ls; 
+bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs
+  bt:rs; rs:bf; bt:rs:bf; bt:rs:ls; rs:bf:ls; bt:rs:bf:ls; 
+bt:rs:bf:af; 
+bf
+  bf; bt:bf; rs:bf; bf:ls; bt:rs:bf; bt:bf:ls; bt:bf:af; 
+rs:bf:ls; rs:bf:af; bf:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+ls
+  bt:ls; bf:ls; bt:rs:ls; bt:bf:ls; bt:rs:bf:ls; 
+bt:bf:ls:af; 
+af
+  bt:af; bt:bf:af; bt:ls:af; rs:bf:af; bf:ls:af; 
+bt:rs:bf:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs
+  bt; rs; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; rs:af; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:bf
+  bt; bf; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; bf:ls; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:ls:af; 
+bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+bt:ls
+  bt; ls; bt:rs; bt:bf; bt:ls; bt:af; bf:ls; ls:af; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:ls; bf:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:af
+  bt; af; bt:rs; bt:bf; bt:ls; bt:af; ls:af; bt:rs:bf; 
+bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; 
+rs:bf:af; bf:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:bf
+  rs; bf; bt:rs; bt:bf; rs:bf; rs:af; bf:ls; bt:rs:bf; 
+bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; rs:bf:ls; 
+rs:bf:af; bf:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:ls
+  
+rs:af
+  bt:rs; bt:af; rs:bf; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+bt:bf:af; rs:bf:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bf:ls
+  bf; ls; bt:bf; bt:ls; rs:bf; bf:ls; ls:af; bt:rs:bf; 
+bt:rs:ls; bt:bf:ls; bt:bf:af; bt:ls:af; rs:bf:ls; 
+bf:ls:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bf:af
+  
+ls:af
+  bt:ls; bt:af; bf:ls; bt:rs:ls; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:af; bf:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs:bf
+  bt; bf; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; bt:rs:bf; 
+bt:rs:ls; bt:rs:af; bt:bf:ls; bt:ls:af; rs:bf:ls; 
+bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; bt:rs:bf:ls:af; 
+bt:rs:ls
+  rs; ls; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; rs:af; bf:ls; 
+ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:ls; rs:bf:af; bf:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs:af
+  bt; rs; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; rs:af; ls:af; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:ls; rs:bf:af; bf:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:bf:ls
+  bt; bf; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; bf:ls; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:ls:af; 
+rs:bf:ls; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:bf:af
+  bt; bf; af; bt:rs; bt:bf; bt:ls; bt:af; rs:af; bf:ls; 
+ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:ls:af
+  bt; bt:rs; bt:bf; bt:ls; bt:af; bf:ls; ls:af; bt:rs:bf; 
+bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; 
+rs:bf:af; bf:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:bf:ls
+  ls; bt:rs; bt:bf; bt:ls; rs:bf; rs:af; bf:ls; ls:af; 
+bt:rs:bf; bt:rs:ls; bt:bf:ls; bt:bf:af; rs:bf:ls; 
+bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+rs:bf:af
+  bf; af; bt:rs; bt:bf; bt:af; rs:bf; rs:af; bf:ls; ls:af; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:ls:af; 
+rs:bf:ls; rs:ls:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:rs:bf:ls:af; 
+rs:ls:af
+  bt:rs:bf; bt:bf:ls; bt:bf:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bf:ls:af
+  bf; af; bt:bf; bt:ls; bt:af; bf:ls; ls:af; bt:rs:bf; 
+bt:rs:ls; bt:bf:ls; bt:ls:af; rs:bf:ls; rs:ls:af; 
+bt:rs:bf:ls; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs:bf:ls
+  
+bt:rs:bf:af
+  bt; bf; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; rs:af; 
+ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:ls; rs:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs:ls:af
+  rs; ls; bt:rs; bt:bf; bt:ls; rs:bf; rs:af; bf:ls; ls:af; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:ls; rs:bf:af; rs:ls:af; bf:ls:af; 
+bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+bt:bf:ls:af
+  bt; bf; af; bt:rs; bt:bf; bt:ls; bt:af; rs:af; bf:ls; 
+ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:ls:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:bf:ls:af
+  
+bt:rs:bf:ls:af
+  
+in
+  in; in:out; 
+out
+  out; in:out; 
+in:out
+  in; out; in:out; 
+
+
+
+
+bt:ls:af
+bt
+  bt; bt:rs; bt:bf; bt:ls; bt:af; bt:rs:bf; bt:rs:af; 
+bt:bf:ls; bt:bf:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:bf:ls:af; 
+rs
+  bf; bt:rs; bt:bf; bt:ls; rs:bf; bf:ls; bt:rs:bf; 
+bt:bf:ls; rs:bf:ls; bt:rs:bf:ls; 
+bf
+  bt; bf; bt:rs; bt:bf; bt:ls; bt:af; bf:ls; bt:rs:bf; 
+bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; 
+bf:ls:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+ls
+  bt; bt:rs; bt:bf; bt:ls; bt:af; bt:rs:bf; bt:rs:ls; 
+bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; rs:ls:af; 
+bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+af
+  bt; bf; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; bt:rs:bf; 
+bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; 
+rs:bf:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs
+  rs; bf; bt:rs; bt:bf; rs:bf; bf:ls; bt:rs:bf; bt:rs:ls; 
+bt:bf:ls; rs:bf:ls; bt:rs:bf:ls; 
+bt:bf
+  bt; bf; bt:rs; bt:bf; bt:af; bt:rs:bf; bt:rs:af; 
+bt:bf:ls; bt:bf:af; bt:rs:bf:af; bt:bf:ls:af; 
+bt:ls
+  bt; bt:rs; bt:bf; bt:ls; bt:af; bt:rs:bf; bt:rs:ls; 
+bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:af
+  bt; rs; bf; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; rs:af; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:bf
+  bf; bt:bf; bt:ls; rs:bf; bf:ls; bt:rs:bf; bt:rs:ls; 
+bt:bf:ls; bt:bf:af; rs:bf:ls; bf:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:ls
+  
+rs:af
+  bf; bt:rs; bt:bf; rs:bf; bf:ls; bt:rs:bf; bt:rs:ls; 
+bt:rs:af; bt:bf:ls; bt:bf:af; rs:bf:ls; rs:bf:af; 
+bt:rs:bf:ls; bt:rs:bf:af; bt:rs:bf:ls:af; 
+bf:ls
+  bt; ls; bt:rs; bt:bf; bt:ls; bt:af; bf:ls; ls:af; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:ls:af; bf:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bf:af
+  
+ls:af
+  bt; rs; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; rs:af; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs:bf
+  bf; bt:bf; rs:bf; bf:ls; bt:rs:bf; bt:bf:ls; bt:bf:af; 
+rs:bf:ls; bt:rs:bf:ls; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs:ls
+  rs; bt:rs; rs:bf; bt:rs:bf; bt:rs:ls; rs:bf:ls; 
+bt:rs:bf:ls; 
+bt:rs:af
+  rs; bf; bt:rs; bt:bf; rs:bf; rs:af; bf:ls; bt:rs:bf; 
+bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; rs:bf:ls; 
+rs:bf:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:bf:ls
+  bt; bt:rs; bt:bf; bt:ls; bt:af; bt:rs:bf; bt:rs:ls; 
+bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:bf:af
+  bt; bf; af; bt:rs; bt:bf; bt:af; rs:af; bt:rs:bf; 
+bt:rs:af; bt:bf:ls; bt:bf:af; bt:rs:bf:af; bt:bf:ls:af; 
+bt:ls:af
+  bt; rs; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; rs:af; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:bf:ls
+  ls; bt:ls; bf:ls; ls:af; bt:rs:ls; bt:bf:ls; bt:ls:af; 
+rs:bf:ls; bf:ls:af; bt:rs:bf:ls; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:bf:af
+  bf; bt:bf; rs:bf; bf:ls; bt:rs:bf; bt:bf:ls; bt:bf:af; 
+rs:bf:ls; bt:rs:bf:ls; bt:rs:bf:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+rs:ls:af
+  rs; bt:rs; rs:bf; rs:af; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+rs:bf:ls; rs:bf:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:rs:bf:ls:af; 
+bf:ls:af
+  bt; af; bt:rs; bt:bf; bt:ls; bt:af; rs:af; ls:af; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:ls:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs:bf:ls
+  
+bt:rs:bf:af
+  bf; bt:bf; rs:bf; bf:ls; bt:rs:bf; bt:bf:ls; bt:bf:af; 
+rs:bf:ls; bt:rs:bf:ls; bt:rs:bf:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+bt:rs:ls:af
+  rs; bt:rs; rs:bf; rs:af; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+rs:bf:ls; rs:bf:af; rs:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:rs:bf:ls:af; 
+bt:bf:ls:af
+  bt; af; bt:rs; bt:bf; bt:ls; bt:af; rs:af; ls:af; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:ls:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:bf:ls:af
+  
+bt:rs:bf:ls:af
+  
+in
+  in; in:out; 
+out
+  in; out; in:out; 
+in:out
+  in; out; in:out; 
+
+
+
+
+rs:bf:ls
+bt
+  bt; af; bt:rs; bt:ls; bt:af; rs:af; ls:af; bt:rs:bf; 
+bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; 
+rs:bf:af; rs:ls:af; bf:ls:af; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; 
+rs
+  rs; bt:rs; rs:bf; rs:af; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+rs:bf:af; rs:ls:af; bt:rs:bf:af; bt:rs:ls:af; 
+bf
+  bf; bt:bf; rs:bf; bf:ls; bt:bf:ls; rs:bf:ls; rs:bf:af; 
+bf:ls:af; bt:rs:bf:af; bt:bf:ls:af; 
+ls
+  ls; bt:ls; bf:ls; ls:af; bt:rs:ls; bt:bf:ls; bt:ls:af; 
+rs:ls:af; bf:ls:af; bt:rs:ls:af; bt:bf:ls:af; 
+af
+  af; bt:af; rs:af; ls:af; bt:rs:af; bt:ls:af; rs:bf:af; 
+rs:ls:af; bf:ls:af; bt:rs:bf:af; bt:rs:ls:af; 
+bt:rs
+  bt:rs; rs:af; bt:rs:bf; bt:rs:ls; bt:rs:af; rs:bf:af; 
+rs:ls:af; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf
+  bt:bf; bt:rs:bf; bt:bf:ls; bt:bf:af; bf:ls:af; 
+bt:rs:bf:af; bt:bf:ls:af; 
+bt:ls
+  bt:ls; ls:af; bt:rs:ls; bt:ls:af; rs:ls:af; bf:ls:af; 
+bt:rs:ls:af; bt:bf:ls:af; 
+bt:af
+  af; bt:af; rs:af; ls:af; bt:rs:af; bt:ls:af; rs:bf:af; 
+rs:ls:af; bf:ls:af; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; 
+rs:bf
+  rs:bf; bt:rs:bf; rs:bf:ls; rs:bf:af; bt:rs:bf:af; 
+rs:ls
+  
+rs:af
+  rs:af; bt:rs:af; rs:bf:af; rs:ls:af; bt:rs:ls:af; 
+bf:ls
+  bf:ls; bt:bf:ls; rs:bf:ls; bf:ls:af; bt:bf:ls:af; 
+bf:af
+  
+ls:af
+  ls:af; bt:ls:af; rs:ls:af; bf:ls:af; bt:rs:ls:af; 
+bt:rs:bf
+  bt:rs:bf; rs:bf:af; bt:rs:bf:af; 
+bt:rs:ls
+  bt:rs:ls; rs:ls:af; bt:rs:ls:af; 
+bt:rs:af
+  rs:af; bt:rs:af; rs:bf:af; rs:ls:af; bt:rs:bf:af; 
+bt:rs:ls:af; 
+bt:bf:ls
+  bt:bf:ls; bf:ls:af; bt:bf:ls:af; 
+bt:bf:af
+  bt:bf:ls:af; 
+bt:ls:af
+  ls:af; bt:ls:af; rs:ls:af; bf:ls:af; bt:rs:ls:af; 
+rs:bf:ls
+  
+rs:bf:af
+  rs:bf:af; 
+rs:ls:af
+  rs:ls:af; 
+bf:ls:af
+  bf:ls:af; 
+bt:rs:bf:ls
+  
+bt:rs:bf:af
+  rs:bf:af; bt:rs:bf:af; 
+bt:rs:ls:af
+  rs:ls:af; bt:rs:ls:af; 
+bt:bf:ls:af
+  bf:ls:af; bt:bf:ls:af; 
+rs:bf:ls:af
+  
+bt:rs:bf:ls:af
+  
+in
+  in; out; in:out; 
+out
+  out; in:out; 
+in:out
+  out; in:out; 
+
+
+
+
+rs:bf:af
+bt
+  bt; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; bf:ls; ls:af; 
+bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; 
+bf:ls:af; bt:rs:ls:af; bt:bf:ls:af; 
+rs
+  bt:rs; bt:af; ls:af; bt:rs:ls; bt:rs:af; bt:bf:af; 
+bt:ls:af; rs:ls:af; bf:ls:af; bt:rs:ls:af; bt:bf:ls:af; 
+bf
+  rs; bf; af; bt:rs; bt:bf; bt:af; rs:bf; rs:af; bf:ls; 
+ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:af; bt:ls:af; 
+rs:bf:ls; rs:bf:af; rs:ls:af; bt:rs:bf:af; bt:rs:ls:af; 
+ls
+  bf:ls; rs:bf:ls; bf:ls:af; 
+af
+  bt:af; bt:bf:af; bt:ls:af; bf:ls:af; bt:bf:ls:af; 
+bt:rs
+  bt; ls; af; bt:rs; bt:bf; bt:ls; bt:af; bf:ls; ls:af; 
+bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; 
+rs:ls:af; bf:ls:af; bt:rs:ls:af; bt:bf:ls:af; 
+bt:bf
+  bt; bf; af; bt:rs; bt:ls; bt:af; rs:bf; rs:af; bf:ls; 
+ls:af; bt:rs:ls; bt:rs:af; bt:ls:af; rs:ls:af; bt:rs:ls:af; 
+bt:ls
+  bf; ls; bt:ls; bf:ls; ls:af; bt:bf:ls; bt:ls:af; 
+rs:bf:ls; rs:ls:af; bf:ls:af; bt:bf:ls:af; 
+bt:af
+  bt; bf; ls; af; bt:bf; bt:ls; bt:af; bf:ls; ls:af; 
+bt:bf:ls; bt:bf:af; bt:ls:af; bf:ls:af; bt:bf:ls:af; 
+rs:bf
+  rs; af; bt:rs; bt:af; rs:bf; rs:af; ls:af; bt:rs:bf; 
+bt:rs:ls; bt:rs:af; bt:ls:af; rs:bf:af; rs:ls:af; 
+bt:rs:bf:af; bt:rs:ls:af; 
+rs:ls
+  
+rs:af
+  bt:af; ls:af; bt:bf:af; bt:ls:af; rs:ls:af; bf:ls:af; 
+bt:rs:ls:af; bt:bf:ls:af; 
+bf:ls
+  rs; bf; bt:rs; rs:bf; rs:af; bf:ls; bt:rs:bf; bt:rs:af; 
+rs:bf:ls; rs:bf:af; bt:rs:bf:af; 
+bf:af
+  
+ls:af
+  bf:ls; rs:bf:ls; bf:ls:af; 
+bt:rs:bf
+  bt; af; bt:rs; bt:ls; bt:af; rs:af; ls:af; bt:rs:ls; 
+bt:rs:af; bt:ls:af; rs:ls:af; bt:rs:ls:af; 
+bt:rs:ls
+  ls; bt:ls; bf:ls; ls:af; bt:rs:ls; bt:bf:ls; bt:ls:af; 
+rs:bf:ls; rs:ls:af; bf:ls:af; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:af
+  bt; ls; af; bt:bf; bt:ls; bt:af; bf:ls; ls:af; bt:bf:ls; 
+bt:bf:af; bt:ls:af; rs:ls:af; bf:ls:af; bt:rs:ls:af; 
+bt:bf:ls:af; 
+bt:bf:ls
+  bf; rs:bf; bf:ls; rs:bf:ls; 
+bt:bf:af
+  bf; af; bf:ls; ls:af; 
+bt:ls:af
+  bf; ls; bt:ls; bf:ls; ls:af; bt:ls:af; rs:bf:ls; 
+bf:ls:af; bt:bf:ls:af; 
+rs:bf:ls
+  rs; bt:rs; rs:bf; rs:af; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+rs:bf:af; rs:ls:af; bt:rs:bf:af; bt:rs:ls:af; 
+rs:bf:af
+  af; bt:af; rs:af; ls:af; bt:rs:af; bt:ls:af; rs:ls:af; 
+bt:rs:ls:af; 
+rs:ls:af
+  ls; bf:ls; ls:af; bf:ls:af; 
+bf:ls:af
+  bf; rs:bf; bf:ls; rs:bf:ls; 
+bt:rs:bf:ls
+  
+bt:rs:bf:af
+  bt; af; bt:ls; bt:af; rs:af; ls:af; bt:rs:af; bt:ls:af; 
+rs:ls:af; bt:rs:ls:af; 
+bt:rs:ls:af
+  ls; bt:ls; bf:ls; ls:af; bt:bf:ls; bt:ls:af; rs:bf:ls; 
+rs:ls:af; bf:ls:af; bt:rs:ls:af; bt:bf:ls:af; 
+bt:bf:ls:af
+  bf; rs:bf; bf:ls; rs:bf:ls; 
+rs:bf:ls:af
+  
+bt:rs:bf:ls:af
+  
+in
+  in; out; in:out; 
+out
+  out; in:out; 
+in:out
+  in; out; in:out; 
+ 
+
+rs:ls:af
+
+bt
+  bf; rs:bf; bf:ls; bt:rs:bf; bt:bf:ls; bt:bf:af; 
+rs:bf:ls; bf:ls:af; bt:rs:bf:af; bt:bf:ls:af; 
+rs
+  ls; bt:bf; bt:ls; bf:ls; ls:af; bt:rs:ls; bt:bf:ls; 
+bt:bf:af; bt:ls:af; rs:bf:ls; bf:ls:af; bt:rs:ls:af; 
+bt:bf:ls:af; 
+bf
+  bt; af; bt:rs; bt:bf; bt:ls; bt:af; rs:af; ls:af; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:af; rs:ls:af; bf:ls:af; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; 
+ls
+  rs; bt:rs; bt:bf; rs:bf; rs:af; bt:rs:bf; bt:rs:ls; 
+bt:rs:af; bt:bf:af; rs:bf:ls; rs:bf:af; bt:rs:bf:af; 
+bt:rs:ls:af; 
+af
+  bf; bt:bf; rs:bf; bf:ls; bt:rs:bf; bt:bf:ls; bt:bf:af; 
+rs:bf:ls; rs:bf:af; bf:ls:af; bt:rs:bf:af; bt:bf:ls:af; 
+bt:rs
+  bf:ls; bt:bf:ls; bt:bf:af; rs:bf:ls; bf:ls:af; 
+bt:bf:ls:af; 
+bt:bf
+  rs:bf:af; bf:ls:af; bt:rs:bf:af; bt:bf:ls:af; 
+bt:ls
+  rs:bf; bt:rs:bf; rs:bf:ls; rs:bf:af; bt:rs:bf:af; 
+bt:af
+  bf; bt:bf; rs:bf; bf:ls; bt:rs:bf; bt:bf:ls; rs:bf:ls; 
+rs:bf:af; bf:ls:af; bt:rs:bf:af; bt:bf:ls:af; 
+rs:bf
+  bt:bf; bt:ls; ls:af; bt:rs:ls; bt:bf:ls; bt:bf:af; 
+bt:ls:af; bf:ls:af; bt:rs:ls:af; bt:bf:ls:af; 
+rs:ls
+  
+rs:af
+  bt:bf; bf:ls; bt:bf:ls; bt:bf:af; rs:bf:ls; bf:ls:af; 
+bt:bf:ls:af; 
+bf:ls
+  bt:rs; bt:bf; rs:af; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+bt:bf:af; rs:bf:af; bt:rs:bf:af; bt:rs:ls:af; 
+bf:af
+  
+ls:af
+  bt:bf; rs:bf; bt:rs:bf; bt:bf:af; rs:bf:ls; rs:bf:af; 
+bt:rs:bf:af; 
+bt:rs:bf
+  bt:bf; bt:bf:ls; bt:bf:af; bf:ls:af; bt:bf:ls:af; 
+bt:rs:ls
+  rs:bf:ls; 
+bt:rs:af
+  bt:bf; bf:ls; bt:bf:ls; bt:bf:af; rs:bf:ls; bf:ls:af; 
+bt:bf:ls:af; 
+bt:bf:ls
+  bt:bf; bt:rs:bf; rs:bf:af; bt:rs:bf:af; 
+bt:bf:af
+  bt:bf:af; 
+bt:ls:af
+  bt:bf; rs:bf; bt:rs:bf; rs:bf:ls; rs:bf:af; 
+bt:rs:bf:af; 
+rs:bf:ls
+  bt:rs:ls; bt:rs:ls:af; 
+rs:bf:af
+  bt:bf; bt:bf:ls; bt:bf:af; bf:ls:af; bt:bf:ls:af; 
+rs:ls:af
+  rs:bf:ls; 
+bf:ls:af
+  bt:bf; bt:rs:bf; bt:bf:af; rs:bf:af; bt:rs:bf:af; 
+bt:rs:bf:ls
+  
+bt:rs:bf:af
+  bt:bf; bt:bf:ls; bt:bf:af; bf:ls:af; bt:bf:ls:af; 
+bt:rs:ls:af
+  rs:bf:ls; 
+bt:bf:ls:af
+  bt:bf; bt:rs:bf; rs:bf:af; bt:rs:bf:af; 
+rs:bf:ls:af
+  
+bt:rs:bf:ls:af
+  
+in
+  in; out; in:out; 
+out
+  in; out; in:out; 
+in:out
+  in; out; in:out; 
+
+
+
+
+bf:ls:af
+bt
+  bt; rs; bf; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; rs:af; 
+ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:af; bt:ls:af; 
+rs:bf:af; bt:rs:bf:af; bt:rs:ls:af; 
+rs
+  rs:bf; rs:bf:ls; rs:bf:af; 
+bf
+  bf; ls; af; bt:bf; bt:ls; bt:af; rs:bf; rs:af; bf:ls; 
+ls:af; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; 
+rs:ls:af; bf:ls:af; bt:rs:ls:af; bt:bf:ls:af; 
+ls
+  bt:ls; bt:af; rs:af; bt:rs:ls; bt:rs:af; bt:bf:af; 
+bt:ls:af; rs:ls:af; bt:rs:bf:af; bt:rs:ls:af; 
+af
+  bt:af; bt:rs:af; bt:bf:af; rs:bf:af; bt:rs:bf:af; 
+bt:rs
+  rs; bf; bt:rs; rs:bf; rs:af; bt:rs:bf; bt:rs:af; 
+rs:bf:ls; rs:bf:af; bt:rs:bf:af; 
+bt:bf
+  bt; bf; af; bt:rs; bt:ls; bt:af; rs:bf; rs:af; ls:af; 
+bt:rs:ls; bt:rs:af; bt:ls:af; rs:ls:af; bt:rs:ls:af; 
+bt:ls
+  bt; rs; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; rs:af; 
+ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:af; bt:ls:af; 
+rs:bf:ls; rs:bf:af; rs:ls:af; bt:rs:bf:af; bt:rs:ls:af; 
+bt:af
+  bt; rs; bf; af; bt:rs; bt:bf; bt:af; rs:bf; rs:af; 
+bt:rs:bf; bt:rs:af; bt:bf:af; rs:bf:af; bt:rs:bf:af; 
+rs:bf
+  bf; ls; bt:bf; bt:ls; rs:bf; bf:ls; ls:af; bt:bf:ls; 
+bt:ls:af; rs:bf:ls; bf:ls:af; bt:bf:ls:af; 
+rs:ls
+  
+rs:af
+  rs:bf; rs:bf:ls; rs:bf:af; 
+bf:ls
+  ls; af; bt:ls; bt:af; rs:af; bf:ls; ls:af; bt:rs:ls; 
+bt:rs:af; bt:bf:ls; bt:ls:af; rs:ls:af; bf:ls:af; 
+bt:rs:ls:af; bt:bf:ls:af; 
+bf:af
+  
+ls:af
+  bt:af; rs:af; bt:rs:af; bt:bf:af; rs:bf:af; rs:ls:af; 
+bt:rs:bf:af; bt:rs:ls:af; 
+bt:rs:bf
+  bf; rs:bf; bf:ls; rs:bf:ls; 
+bt:rs:ls
+  rs; bt:rs; rs:bf; rs:af; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+rs:bf:ls; rs:bf:af; rs:ls:af; bt:rs:bf:af; bt:rs:ls:af; 
+bt:rs:af
+  rs; bf; bt:rs; rs:bf; rs:af; bt:rs:bf; bt:rs:af; 
+rs:bf:ls; rs:bf:af; bt:rs:bf:af; 
+bt:bf:ls
+  bt; af; bt:rs; bt:ls; bt:af; rs:af; ls:af; bt:rs:ls; 
+bt:rs:af; bt:ls:af; rs:ls:af; bt:rs:ls:af; 
+bt:bf:af
+  bf; af; rs:af; 
+bt:ls:af
+  bt; rs; af; bt:rs; bt:bf; bt:af; rs:bf; rs:af; bt:rs:bf; 
+bt:rs:af; bt:bf:af; bt:ls:af; rs:bf:af; rs:ls:af; 
+bt:rs:bf:af; bt:rs:ls:af; 
+rs:bf:ls
+  ls; bt:ls; bf:ls; ls:af; bt:rs:ls; bt:bf:ls; bt:ls:af; 
+bf:ls:af; bt:rs:ls:af; bt:bf:ls:af; 
+rs:bf:af
+  bf; rs:bf; bf:ls; rs:bf:ls; 
+rs:ls:af
+  rs:bf; rs:af; rs:bf:af; 
+bf:ls:af
+  af; bt:af; rs:af; ls:af; bt:rs:af; bt:ls:af; rs:ls:af; 
+bt:rs:ls:af; 
+bt:rs:bf:ls
+  
+bt:rs:bf:af
+  bf; rs:bf; bf:ls; rs:bf:ls; 
+bt:rs:ls:af
+  rs; bt:rs; rs:bf; rs:af; bt:rs:bf; bt:rs:af; rs:bf:ls; 
+rs:bf:af; rs:ls:af; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af
+  bt; af; bt:rs; bt:af; rs:af; ls:af; bt:rs:af; bt:ls:af; 
+rs:ls:af; bt:rs:ls:af; 
+rs:bf:ls:af
+  
+bt:rs:bf:ls:af
+  
+in
+  in; out; in:out; 
+out
+  out; in:out; 
+in:out
+  in; out; in:out; 
+
+
+
+
+bt:rs:bf:ls
+bt
+  bt; bt:rs; bt:bf; bt:ls; bt:af; bt:rs:bf; bt:rs:ls; 
+bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs
+  rs; bt:rs; rs:bf; rs:af; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+rs:bf:ls; rs:bf:af; rs:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:rs:bf:ls:af; 
+bf
+  bf; bt:bf; rs:bf; bf:ls; bt:rs:bf; bt:bf:ls; bt:bf:af; 
+rs:bf:ls; rs:bf:af; bf:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:bf:ls:af; 
+ls
+  ls; bt:ls; bf:ls; ls:af; bt:rs:ls; bt:bf:ls; bt:ls:af; 
+rs:bf:ls; rs:ls:af; bf:ls:af; bt:rs:bf:ls; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+af
+  af; bt:af; rs:af; ls:af; bt:rs:af; bt:bf:af; bt:ls:af; 
+rs:bf:af; rs:ls:af; bf:ls:af; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs
+  bt:rs; bt:bf; rs:af; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+bt:bf:af; rs:bf:af; rs:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:bf
+  bt:bf; bt:rs:bf; bt:bf:ls; bt:bf:af; rs:bf:af; 
+bf:ls:af; bt:rs:bf:af; bt:bf:ls:af; 
+bt:ls
+  bt:bf; bt:ls; ls:af; bt:rs:ls; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:ls:af; bf:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:af
+  bt; af; bt:rs; bt:bf; bt:ls; bt:af; rs:af; ls:af; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:af; rs:ls:af; bf:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:bf
+  bt:bf; rs:bf; bt:rs:bf; rs:bf:ls; rs:bf:af; 
+bt:rs:bf:ls; bt:rs:bf:af; 
+rs:ls
+  
+rs:af
+  bt:rs; rs:af; bt:rs:bf; bt:rs:ls; bt:rs:af; rs:bf:af; 
+rs:ls:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:rs:bf:ls:af; 
+bf:ls
+  bt:bf; bf:ls; bt:bf:ls; rs:bf:ls; bf:ls:af; bt:rs:bf:ls; 
+bt:bf:ls:af; 
+bf:af
+  
+ls:af
+  bt:ls; ls:af; bt:rs:ls; bt:bf:ls; bt:ls:af; rs:ls:af; 
+bf:ls:af; bt:rs:bf:ls; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+bt:rs:bf
+  bt:bf; bt:rs:bf; bt:bf:af; rs:bf:af; bt:rs:bf:af; 
+bt:rs:ls
+  bt:rs:ls; bt:rs:bf:ls; bt:rs:ls:af; bt:rs:bf:ls:af; 
+bt:rs:af
+  bt:rs; bt:bf; rs:af; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+bt:bf:af; rs:bf:af; rs:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:rs:bf:ls:af; 
+bt:bf:ls
+  bt:bf; bt:bf:ls; bt:bf:af; bf:ls:af; bt:bf:ls:af; 
+bt:bf:af
+  bt:bf; bt:bf:ls; bt:bf:af; bt:rs:bf:af; bt:bf:ls:af; 
+bt:ls:af
+  bt:bf; bt:ls; ls:af; bt:rs:ls; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:ls:af; bf:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:bf:ls
+  rs:bf:ls; bt:rs:bf:ls; 
+rs:bf:af
+  bt:rs:bf; rs:bf:af; bt:rs:bf:af; bt:rs:bf:ls:af; 
+rs:ls:af
+  bt:rs:ls; rs:ls:af; bt:rs:ls:af; bt:rs:bf:ls:af; 
+bf:ls:af
+  bt:bf:ls; bf:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs:bf:ls
+  
+bt:rs:bf:af
+  bt:bf; bt:rs:bf; bt:bf:af; rs:bf:af; bt:rs:bf:af; 
+bt:rs:ls:af
+  bt:rs:ls; rs:ls:af; bt:rs:bf:ls; bt:rs:ls:af; 
+bt:rs:bf:ls:af; 
+bt:bf:ls:af
+  bt:bf; bt:bf:ls; bt:bf:af; bf:ls:af; bt:bf:ls:af; 
+rs:bf:ls:af
+  
+bt:rs:bf:ls:af
+  
+in
+  in; in:out; 
+out
+  out; in:out; 
+in:out
+  in; out; in:out; 
+
+
+
+
+bt:rs:bf:af
+bt
+  bt; bt:rs; bt:bf; bt:ls; bt:af; bt:rs:bf; bt:rs:ls; 
+bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs
+  bt:rs; bt:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:af; 
+bt:ls:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bf
+  bf; bt:rs; bt:bf; rs:bf; bf:ls; bt:rs:bf; bt:rs:ls; 
+bt:rs:af; bt:bf:ls; bt:bf:af; rs:bf:ls; rs:bf:af; 
+bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+ls
+  bf:ls; bt:bf:ls; rs:bf:ls; bf:ls:af; bt:rs:bf:ls; 
+bt:bf:ls:af; 
+af
+  bt:af; bt:rs:af; bt:bf:af; bt:ls:af; bf:ls:af; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs
+  bt; bt:rs; bt:bf; bt:ls; bt:af; bt:rs:bf; bt:rs:ls; 
+bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:bf
+  bt; bf; bt:rs; bt:bf; bt:ls; bt:af; bf:ls; bt:rs:bf; 
+bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; 
+bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+bt:ls
+  ls; bt:bf; bt:ls; bf:ls; ls:af; bt:rs:bf; bt:rs:ls; 
+bt:bf:ls; bt:ls:af; rs:bf:ls; bf:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:af
+  bt; af; bt:rs; bt:bf; bt:ls; bt:af; ls:af; bt:rs:bf; 
+bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; 
+bf:ls:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:bf
+  rs; bt:rs; rs:bf; rs:af; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+rs:bf:ls; rs:bf:af; rs:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:rs:bf:ls:af; 
+rs:ls
+  
+rs:af
+  bt:rs; bt:af; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+bt:bf:af; bt:ls:af; rs:ls:af; bf:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bf:ls
+  bf; bt:bf; rs:bf; bf:ls; bt:rs:bf; bt:bf:ls; bt:bf:af; 
+rs:bf:ls; rs:bf:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bf:af
+  
+ls:af
+  bt:ls; bf:ls; bt:rs:ls; bt:bf:ls; bt:ls:af; rs:bf:ls; 
+bf:ls:af; bt:rs:bf:ls; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs:bf
+  bt; bt:rs; bt:bf; bt:ls; bt:af; bt:rs:bf; bt:rs:ls; 
+bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs:ls
+  ls; bt:ls; bf:ls; ls:af; bt:rs:ls; bt:bf:ls; bt:ls:af; 
+rs:bf:ls; rs:ls:af; bf:ls:af; bt:rs:bf:ls; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs:af
+  bt; af; bt:rs; bt:bf; bt:ls; bt:af; ls:af; bt:rs:bf; 
+bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; 
+rs:ls:af; bf:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:bf:ls
+  bf; bt:bf; rs:bf; bf:ls; bt:rs:bf; bt:bf:ls; bt:bf:af; 
+rs:bf:ls; bt:rs:bf:ls; bt:rs:bf:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+bt:bf:af
+  bt; bf; af; bt:rs; bt:bf; bt:ls; bt:af; rs:af; bf:ls; 
+ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:ls:af
+  ls; bt:bf; bt:ls; bf:ls; ls:af; bt:rs:bf; bt:rs:ls; 
+bt:bf:ls; bt:bf:af; bt:ls:af; rs:bf:ls; bf:ls:af; 
+bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+rs:bf:ls
+  rs; bt:rs; rs:bf; rs:af; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+rs:bf:ls; rs:bf:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:rs:bf:ls:af; 
+rs:bf:af
+  af; bt:rs; bt:af; rs:af; ls:af; bt:rs:bf; bt:rs:ls; 
+bt:rs:af; bt:ls:af; rs:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:rs:bf:ls:af; 
+rs:ls:af
+  ls; bf:ls; ls:af; bt:bf:ls; bt:ls:af; rs:bf:ls; bf:ls:af; 
+bt:rs:bf:ls; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bf:ls:af
+  bf; bt:bf; rs:bf; bf:ls; bt:rs:bf; bt:bf:ls; rs:bf:ls; 
+bt:rs:bf:ls; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs:bf:ls
+  
+bt:rs:bf:af
+  bt; af; bt:rs; bt:bf; bt:ls; bt:af; rs:af; ls:af; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:ls:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs:ls:af
+  ls; bt:ls; bf:ls; ls:af; bt:rs:ls; bt:bf:ls; bt:ls:af; 
+rs:bf:ls; rs:ls:af; bf:ls:af; bt:rs:bf:ls; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:bf:ls:af
+  bf; bt:bf; rs:bf; bf:ls; bt:rs:bf; bt:bf:ls; bt:bf:af; 
+rs:bf:ls; bt:rs:bf:ls; bt:rs:bf:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+rs:bf:ls:af
+  
+bt:rs:bf:ls:af
+  
+in
+  in; in:out; 
+out
+  out; in:out; 
+in:out
+  in; out; in:out; 
+
+
+
+
+bt:rs:ls:af
+bt
+  bt; bt:rs; bt:bf; bt:ls; bt:af; bt:rs:bf; bt:rs:ls; 
+bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs
+  bt:rs; bt:bf; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; 
+bt:bf:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bf
+  bt:rs; bt:bf; bt:ls; bt:af; bt:rs:bf; bt:rs:ls; 
+bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+ls
+  bt:bf; bt:ls; bt:rs:bf; bt:rs:ls; bt:bf:ls; bt:bf:af; 
+bt:ls:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+af
+  bt; bt:rs; bt:bf; bt:ls; bt:af; bt:rs:bf; bt:rs:ls; 
+bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs
+  bt:rs; bt:bf; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; 
+bt:bf:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:bf
+  bt:bf; bt:rs:bf; bt:bf:ls; bt:bf:af; bt:rs:bf:af; 
+bt:bf:ls:af; 
+bt:ls
+  bt:bf; bt:ls; bt:rs:bf; bt:rs:ls; bt:bf:ls; bt:bf:af; 
+bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+bt:af
+  bt; bt:rs; bt:bf; bt:ls; bt:af; bt:rs:bf; bt:rs:ls; 
+bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:bf
+  bt:bf; bt:ls; bt:rs:bf; bt:rs:ls; bt:bf:ls; bt:bf:af; 
+bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+rs:ls
+  
+rs:af
+  bt:rs; bt:bf; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; 
+bt:bf:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bf:ls
+  bt:rs; bt:bf; bt:rs:bf; bt:bf:ls; bt:bf:af; 
+bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+bf:af
+  
+ls:af
+  bt:bf; bt:ls; bt:rs:bf; bt:rs:ls; bt:bf:ls; bt:bf:af; 
+bt:ls:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs:bf
+  bt:bf; bt:rs:bf; bt:bf:ls; bt:bf:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs:ls
+  bt:rs:ls; bt:rs:bf:ls; 
+bt:rs:af
+  bt:rs; bt:bf; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; 
+bt:bf:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:bf:ls
+  bt:bf; bt:rs:bf; bt:bf:ls; bt:bf:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:bf:af
+  bt:bf; bt:rs:bf; bt:bf:ls; bt:bf:af; bt:rs:bf:af; 
+bt:bf:ls:af; 
+bt:ls:af
+  bt:bf; bt:ls; bt:rs:bf; bt:rs:ls; bt:bf:ls; bt:bf:af; 
+bt:ls:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:bf:ls
+  bt:rs:bf:ls; bt:rs:ls:af; bt:rs:bf:ls:af; 
+rs:bf:af
+  bt:bf; bt:rs:bf; bt:bf:ls; bt:bf:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:ls:af
+  bt:rs:ls; bt:rs:bf:ls; bt:rs:ls:af; bt:rs:bf:ls:af; 
+bf:ls:af
+  bt:bf; bt:rs:bf; bt:bf:ls; bt:bf:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs:bf:ls
+  
+bt:rs:bf:af
+  bt:bf; bt:rs:bf; bt:bf:ls; bt:bf:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs:ls:af
+  bt:rs:ls; bt:rs:bf:ls; bt:rs:ls:af; bt:rs:bf:ls:af; 
+bt:bf:ls:af
+  bt:bf; bt:rs:bf; bt:bf:ls; bt:bf:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:bf:ls:af
+  
+bt:rs:bf:ls:af
+  
+in
+  in; in:out; 
+out
+  in; in:out; 
+in:out
+  in; in:out; 
+
+
+
+
+bt:bf:ls:af
+bt
+  bt; bt:rs; bt:bf; bt:ls; bt:af; bt:rs:bf; bt:rs:ls; 
+bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs
+  bt:rs; rs:bf; bt:rs:bf; rs:bf:ls; rs:bf:af; bt:rs:bf:ls; 
+bt:rs:bf:af; 
+bf
+  bf; bt:bf; bt:ls; rs:bf; bf:ls; bt:rs:bf; bt:rs:ls; 
+bt:bf:ls; bt:bf:af; bt:ls:af; bf:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+ls
+  bt:ls; bt:af; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:ls:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+af
+  bt:af; bt:rs:af; bt:bf:af; bt:ls:af; rs:bf:af; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs
+  rs; bt:rs; bt:bf; rs:bf; rs:af; bt:rs:bf; bt:rs:ls; 
+bt:rs:af; bt:bf:ls; bt:bf:af; rs:bf:ls; rs:bf:af; 
+bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; bt:rs:bf:ls:af; 
+bt:bf
+  bt; bf; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; bt:rs:bf; 
+bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; 
+bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+bt:ls
+  bt; bt:rs; bt:bf; bt:ls; bt:af; bt:rs:bf; bt:rs:ls; 
+bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:af
+  bt; af; bt:rs; bt:bf; bt:ls; bt:af; rs:af; bt:rs:bf; 
+bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; 
+rs:bf:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:bf
+  bf; bt:bf; rs:bf; bf:ls; bt:rs:bf; bt:bf:ls; bt:bf:af; 
+rs:bf:ls; bf:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:ls
+  
+rs:af
+  bt:rs; rs:bf; bt:rs:bf; rs:bf:ls; rs:bf:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:bf:ls:af; 
+bf:ls
+  ls; bt:bf; bt:ls; bf:ls; ls:af; bt:rs:ls; bt:bf:ls; 
+bt:ls:af; rs:ls:af; bf:ls:af; bt:rs:bf:ls; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bf:af
+  
+ls:af
+  bt:ls; bt:af; rs:af; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+bt:bf:ls; bt:bf:af; bt:ls:af; rs:bf:af; rs:ls:af; 
+bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+bt:rs:bf
+  bf; bt:bf; rs:bf; bf:ls; bt:rs:bf; bt:bf:ls; bt:bf:af; 
+rs:bf:ls; bt:rs:bf:ls; bt:rs:bf:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+bt:rs:ls
+  rs; bt:rs; rs:bf; rs:af; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+rs:bf:ls; rs:bf:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:rs:bf:ls:af; 
+bt:rs:af
+  rs; bt:rs; bt:bf; rs:bf; rs:af; bt:rs:bf; bt:rs:ls; 
+bt:rs:af; bt:bf:ls; bt:bf:af; rs:bf:ls; rs:bf:af; 
+bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+bt:bf:ls
+  bt; bt:rs; bt:bf; bt:ls; bt:af; bt:rs:bf; bt:rs:ls; 
+bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:bf:af
+  bt; bf; af; bt:bf; bt:ls; bt:af; rs:bf; rs:af; bt:rs:bf; 
+bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; 
+bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+bt:ls:af
+  bt; af; bt:rs; bt:bf; bt:ls; bt:af; rs:af; ls:af; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:af; rs:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:bf:ls
+  ls; bt:ls; bf:ls; ls:af; bt:rs:ls; bt:bf:ls; bt:ls:af; 
+rs:bf:ls; bf:ls:af; bt:rs:bf:ls; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:bf:af
+  bf; bt:bf; rs:bf; bf:ls; bt:rs:bf; bt:bf:ls; rs:bf:ls; 
+bt:rs:bf:ls; bt:rs:bf:af; bt:rs:bf:ls:af; 
+rs:ls:af
+  rs; rs:bf; rs:af; bt:rs:bf; bt:rs:af; rs:bf:af; 
+bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; bt:rs:bf:ls:af; 
+bf:ls:af
+  af; bt:ls; bt:af; rs:af; ls:af; bt:rs:ls; bt:rs:af; 
+bt:bf:ls; bt:ls:af; rs:ls:af; bt:rs:bf:ls; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs:bf:ls
+  
+bt:rs:bf:af
+  bf; bt:bf; rs:bf; bf:ls; bt:rs:bf; bt:bf:ls; bt:bf:af; 
+rs:bf:ls; bt:rs:bf:ls; bt:rs:bf:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+bt:rs:ls:af
+  rs; bt:rs; rs:bf; rs:af; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+rs:bf:ls; rs:bf:af; rs:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:rs:bf:ls:af; 
+bt:bf:ls:af
+  bt; af; bt:rs; bt:bf; bt:ls; bt:af; rs:af; ls:af; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:ls:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:bf:ls:af
+  
+bt:rs:bf:ls:af
+  
+in
+  in; in:out; 
+out
+  out; in:out; 
+in:out
+  in; out; in:out; 
+
+
+
+
+rs:bf:ls:af
+bt
+  
+rs
+  
+bf
+  
+ls
+  
+af
+  
+bt:rs
+  
+bt:bf
+  
+bt:ls
+  
+bt:af
+  
+rs:bf
+  
+rs:ls
+  
+rs:af
+  
+bf:ls
+  
+bf:af
+  
+ls:af
+  
+bt:rs:bf
+  
+bt:rs:ls
+  
+bt:rs:af
+  
+bt:bf:ls
+  
+bt:bf:af
+  
+bt:ls:af
+  
+rs:bf:ls
+  
+rs:bf:af
+  
+rs:ls:af
+  
+bf:ls:af
+  
+bt:rs:bf:ls
+  
+bt:rs:bf:af
+  
+bt:rs:ls:af
+  
+bt:bf:ls:af
+  
+rs:bf:ls:af
+  
+bt:rs:bf:ls:af
+  
+in
+  
+out
+  
+in:out
+  
+
+
+
+
+bt:rs:bf:ls:af
+bt
+  bt; bt:rs; bt:bf; bt:ls; bt:af; bt:rs:bf; bt:rs:ls; 
+bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs
+  bt:rs; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:rs:bf:ls:af; 
+bf
+  bt:bf; bt:rs:bf; bt:bf:ls; bt:bf:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+ls
+  bt:ls; bt:rs:ls; bt:bf:ls; bt:ls:af; bt:rs:bf:ls; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+af
+  bt:af; bt:rs:af; bt:bf:af; bt:ls:af; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs
+  bt:rs; bt:bf; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; 
+bt:bf:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:bf
+  bt:bf; bt:rs:bf; bt:bf:ls; bt:bf:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:ls
+  bt:bf; bt:ls; bt:rs:bf; bt:rs:ls; bt:bf:ls; bt:bf:af; 
+bt:ls:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:af
+  bt; bt:rs; bt:bf; bt:ls; bt:af; bt:rs:bf; bt:rs:ls; 
+bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:bf
+  bt:bf; bt:rs:bf; bt:bf:ls; bt:bf:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:ls
+  
+rs:af
+  bt:rs; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:rs:bf:ls:af; 
+bf:ls
+  bt:bf; bt:rs:bf; bt:bf:ls; bt:bf:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bf:af
+  
+ls:af
+  bt:ls; bt:rs:ls; bt:bf:ls; bt:ls:af; bt:rs:bf:ls; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs:bf
+  bt:bf; bt:rs:bf; bt:bf:ls; bt:bf:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs:ls
+  bt:rs:ls; bt:rs:bf:ls; bt:rs:ls:af; bt:rs:bf:ls:af; 
+bt:rs:af
+  bt:rs; bt:bf; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; 
+bt:bf:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:bf:ls
+  bt:bf; bt:rs:bf; bt:bf:ls; bt:bf:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:bf:af
+  bt:bf; bt:rs:bf; bt:bf:ls; bt:bf:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:ls:af
+  bt:bf; bt:ls; bt:rs:bf; bt:rs:ls; bt:bf:ls; bt:bf:af; 
+bt:ls:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:bf:ls
+  bt:rs:bf:ls; bt:rs:bf:ls:af; 
+rs:bf:af
+  bt:rs:bf; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:bf:ls:af; 
+rs:ls:af
+  bt:rs:bf:ls; bt:rs:bf:ls:af; 
+bf:ls:af
+  bt:bf:ls; bt:rs:bf:ls; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs:bf:ls
+  
+bt:rs:bf:af
+  bt:bf; bt:rs:bf; bt:bf:ls; bt:bf:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs:ls:af
+  bt:rs:ls; bt:rs:bf:ls; bt:rs:ls:af; bt:rs:bf:ls:af; 
+bt:bf:ls:af
+  bt:bf; bt:rs:bf; bt:bf:ls; bt:bf:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:bf:ls:af
+  
+bt:rs:bf:ls:af
+  
+in
+  in; in:out; 
+out
+  in:out; 
+in:out
+  in; in:out; 
+
+
+
+
+in
+bt
+  bt; 
+rs
+  
+bf
+  bt; bf; bt:bf; 
+ls
+  bt; ls; 
+af
+  
+bt:rs
+  bt; rs; bf; bt:rs; bt:bf; rs:bf; bt:rs:bf; 
+bt:bf
+  bt; bf; bt:bf; 
+bt:ls
+  bt; bf; ls; bt:bf; bt:ls; bf:ls; bt:bf:ls; 
+bt:af
+  bt; ls; af; bt:rs; bt:ls; bt:af; rs:af; bt:rs:ls; 
+bt:rs:af; bt:ls:af; 
+rs:bf
+  bt; rs; bf; bt:rs; bt:bf; rs:bf; bt:rs:bf; 
+rs:ls
+  
+rs:af
+  
+bf:ls
+  bt; bf; ls; bt:bf; bt:ls; bf:ls; bt:bf:ls; 
+bf:af
+  
+ls:af
+  
+bt:rs:bf
+  bt; rs; bf; bt:rs; bt:bf; rs:bf; bt:rs:bf; 
+bt:rs:ls
+  bt; rs; ls; bt:rs; bt:bf; bt:ls; rs:bf; bt:rs:bf; 
+bt:rs:ls; bt:bf:ls; bt:rs:bf:ls; 
+bt:rs:af
+  bt; rs; bf; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; rs:af; 
+ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:rs:bf:ls:af; 
+bt:bf:ls
+  bt; bf; ls; bt:bf; bt:ls; bf:ls; bt:bf:ls; 
+bt:bf:af
+  bt; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:af; 
+bt:rs:bf; bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; 
+bt:rs:bf:af; bt:bf:ls:af; 
+bt:ls:af
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:af; 
+bf:ls; ls:af; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; bf:ls:af; bt:rs:ls:af; bt:bf:ls:af; 
+rs:bf:ls
+  bt; rs; bf; ls; bt:bf; bf:ls; bt:bf:ls; rs:bf:ls; 
+rs:bf:af
+  bt; rs; bf; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; rs:af; 
+bt:rs:bf; bt:rs:af; rs:bf:af; bt:rs:bf:af; 
+rs:ls:af
+  
+bf:ls:af
+  bt; bf; ls; af; bt:bf; bt:ls; bt:af; bf:ls; ls:af; 
+bt:bf:ls; bt:ls:af; bf:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls
+  bt; rs; bf; ls; bt:rs; bt:bf; bt:ls; rs:bf; bf:ls; 
+bt:rs:bf; bt:rs:ls; bt:bf:ls; rs:bf:ls; bt:rs:bf:ls; 
+bt:rs:bf:af
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; 
+rs:af; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; 
+bt:bf:af; bt:ls:af; rs:bf:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs:ls:af
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; 
+rs:af; bf:ls; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+bt:bf:ls; bt:bf:af; bt:ls:af; rs:bf:af; rs:ls:af; 
+bf:ls:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:bf:ls:af
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:af; 
+bf:ls; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; 
+bt:bf:af; bt:ls:af; bf:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:bf:ls:af
+  
+bt:rs:bf:ls:af
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; 
+rs:af; bf:ls; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+bt:bf:ls; bt:bf:af; bt:ls:af; rs:bf:ls; rs:bf:af; 
+rs:ls:af; bf:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+in
+  in; 
+out
+  in; out; in:out; 
+in:out
+  in; out; in:out; 
+
+
+
+
+out
+bt
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; 
+rs:af; bf:ls; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+bt:bf:ls; bt:bf:af; bt:ls:af; rs:bf:ls; rs:bf:af; 
+rs:ls:af; bf:ls:af; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; 
+rs
+  bt; bf; ls; bt:rs; rs:af; bf:ls; ls:af; bt:rs:af; 
+bt:ls:af; 
+bf
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; 
+rs:af; bf:ls; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+bt:bf:ls; bt:bf:af; bt:ls:af; rs:bf:af; rs:ls:af; 
+bf:ls:af; bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; 
+ls
+  ls; bt:rs; bt:rs:ls; bt:rs:af; bt:ls:af; bt:rs:ls:af; 
+af
+  
+bt:rs
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; 
+rs:af; bf:ls; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+bt:bf:ls; bt:bf:af; bt:ls:af; rs:bf:ls; rs:bf:af; 
+rs:ls:af; bf:ls:af; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; 
+bt:bf
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; 
+rs:af; bf:ls; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+bt:bf:ls; bt:bf:af; bt:ls:af; rs:bf:ls; rs:bf:af; 
+rs:ls:af; bf:ls:af; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; 
+bt:ls
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; 
+rs:af; bf:ls; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+bt:bf:ls; bt:bf:af; bt:ls:af; rs:bf:ls; rs:bf:af; 
+rs:ls:af; bf:ls:af; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; 
+bt:af
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; 
+rs:af; bf:ls; ls:af; bt:rs:bf; bt:rs:af; bt:bf:ls; 
+bt:bf:af; bt:ls:af; rs:bf:ls; rs:bf:af; bf:ls:af; 
+bt:rs:bf:af; bt:bf:ls:af; 
+rs:bf
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; 
+rs:af; bf:ls; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+bt:bf:ls; bt:ls:af; rs:bf:af; bf:ls:af; bt:rs:ls:af; 
+bt:bf:ls:af; 
+rs:ls
+  
+rs:af
+  bf; af; bt:af; 
+bf:ls
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; 
+rs:af; bf:ls; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+bt:ls:af; rs:bf:ls; rs:bf:af; rs:ls:af; bf:ls:af; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; 
+bf:af
+  
+ls:af
+  bt:rs; rs:bf; bt:rs:af; 
+bt:rs:bf
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; 
+rs:af; bf:ls; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+bt:bf:ls; bt:bf:af; bt:ls:af; rs:bf:ls; rs:bf:af; 
+rs:ls:af; bf:ls:af; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; 
+bt:rs:ls
+  bt; rs; bf; ls; af; bt:rs; bt:ls; bt:af; rs:bf; rs:af; 
+bf:ls; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; 
+bt:ls:af; rs:bf:ls; rs:bf:af; rs:ls:af; bf:ls:af; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:af
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; 
+rs:af; bf:ls; ls:af; bt:rs:bf; bt:rs:af; bt:bf:ls; 
+bt:bf:af; bt:ls:af; rs:bf:ls; rs:bf:af; rs:ls:af; 
+bf:ls:af; bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; 
+bt:bf:ls
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; 
+rs:af; bf:ls; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+bt:bf:ls; bt:bf:af; bt:ls:af; rs:bf:ls; rs:bf:af; 
+rs:ls:af; bf:ls:af; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; 
+bt:bf:af
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; 
+rs:af; bf:ls; ls:af; bt:rs:bf; bt:rs:af; bt:bf:ls; 
+bt:bf:af; bt:ls:af; rs:bf:af; rs:ls:af; bf:ls:af; 
+bt:rs:bf:af; bt:bf:ls:af; 
+bt:ls:af
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; 
+rs:af; bf:ls; ls:af; bt:rs:bf; bt:rs:af; bt:bf:ls; 
+bt:bf:af; bt:ls:af; rs:bf:ls; rs:bf:af; rs:ls:af; 
+bf:ls:af; bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; 
+rs:bf:ls
+  bt; rs; bf; ls; af; bt:rs; bt:ls; bt:af; rs:bf; rs:af; 
+bf:ls; ls:af; bt:rs:ls; bt:rs:af; bt:ls:af; rs:bf:ls; 
+rs:ls:af; bf:ls:af; bt:rs:ls:af; 
+rs:bf:af
+  bt; rs; bf; ls; af; bt:bf; bt:ls; bt:af; rs:bf; rs:af; 
+bf:ls; ls:af; bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; 
+rs:bf:af; rs:ls:af; bf:ls:af; bt:bf:ls:af; 
+rs:ls:af
+  
+bf:ls:af
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:af; rs:bf; rs:af; 
+bf:ls; ls:af; bt:rs:bf; bt:rs:af; bt:bf:af; rs:bf:af; 
+bf:ls:af; bt:rs:bf:af; 
+bt:rs:bf:ls
+  bt; rs; bf; ls; af; bt:rs; bt:ls; bt:af; rs:bf; rs:af; 
+bf:ls; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; 
+bt:ls:af; rs:bf:ls; rs:bf:af; rs:ls:af; bf:ls:af; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:bf:af
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; 
+rs:af; bf:ls; ls:af; bt:rs:bf; bt:rs:af; bt:bf:ls; 
+bt:bf:af; bt:ls:af; rs:bf:ls; rs:bf:af; rs:ls:af; 
+bf:ls:af; bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:ls:af
+  bt; rs; bf; ls; af; bt:rs; bt:ls; bt:af; rs:bf; rs:af; 
+bf:ls; ls:af; bt:rs:bf; bt:rs:af; bt:bf:ls; bt:ls:af; 
+rs:bf:ls; rs:bf:af; rs:ls:af; bf:ls:af; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; 
+bt:bf:ls:af
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; 
+rs:af; bf:ls; ls:af; bt:rs:bf; bt:rs:af; bt:bf:ls; 
+bt:bf:af; bt:ls:af; rs:bf:ls; rs:bf:af; rs:ls:af; 
+bf:ls:af; bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; 
+rs:bf:ls:af
+  
+bt:rs:bf:ls:af
+  bt; rs; bf; ls; af; bt:rs; bt:ls; bt:af; rs:bf; rs:af; 
+bf:ls; ls:af; bt:rs:bf; bt:rs:af; bt:bf:ls; bt:ls:af; 
+rs:bf:ls; rs:bf:af; rs:ls:af; bf:ls:af; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; 
+in
+  in; out; in:out; 
+out
+  in; out; in:out; 
+in:out
+  in; out; in:out; 
+
+
+
+
+in:out
+bt
+  bt; bt:rs; bt:bf; bt:ls; bt:af; bt:rs:bf; bt:rs:ls; 
+bt:rs:af; bt:bf:ls; bt:bf:af; bt:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs
+  rs; bf; bt:bf; bt:rs:bf; bt:rs:af; bt:bf:ls; 
+bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; 
+bf
+  bt; bf; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; bf:ls; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:ls; rs:bf:af; bf:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+ls
+  ls; bt:rs; bt:bf; bt:ls; bf:ls; bt:rs:bf; bt:rs:ls; 
+bt:bf:ls; bt:rs:bf:ls; 
+af
+  
+bt:rs
+  bt; rs; bf; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; rs:af; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:ls; rs:bf:af; rs:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:bf
+  bt; bf; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; bf:ls; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:ls; rs:bf:af; bf:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:ls
+  bt; bf; ls; bt:rs; bt:bf; bt:ls; bt:af; bf:ls; ls:af; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:ls; rs:ls:af; bf:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:af
+  bt; rs; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:af; ls:af; 
+bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:ls:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:bf
+  bt; rs; bf; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; rs:af; 
+bf:ls; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:ls; rs:bf:af; bf:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:ls
+  
+rs:af
+  bt; bf; af; bt:bf; bt:af; rs:af; bt:rs:bf; bt:rs:af; 
+bt:bf:ls; bt:rs:bf:af; bt:rs:bf:ls:af; 
+bf:ls
+  bt; bf; ls; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; bf:ls; 
+ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:ls; rs:bf:af; bf:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bf:af
+  
+ls:af
+  bt:rs; bt:bf; bt:af; ls:af; bt:bf:ls; bt:rs:ls:af; 
+bt:bf:ls:af; 
+bt:rs:bf
+  bt; rs; bf; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; rs:af; 
+bf:ls; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:ls; rs:bf:af; rs:ls:af; bf:ls:af; 
+bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+bt:rs:ls
+  bt; rs; bf; ls; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; rs:af; 
+bf:ls; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; 
+bt:bf:af; bt:ls:af; rs:bf:ls; rs:bf:af; rs:ls:af; 
+bf:ls:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs:af
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; 
+rs:af; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; 
+bt:bf:af; bt:ls:af; rs:bf:af; rs:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:bf:ls
+  bt; bf; ls; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; bf:ls; 
+ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:ls; rs:bf:af; rs:ls:af; bf:ls:af; 
+bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+bt:bf:af
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; 
+rs:af; bf:ls; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+bt:bf:ls; bt:bf:af; bt:ls:af; rs:bf:ls; rs:ls:af; 
+bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; 
+bt:rs:bf:ls:af; 
+bt:ls:af
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:af; 
+bf:ls; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; 
+bt:bf:af; bt:ls:af; rs:ls:af; bf:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:bf:ls
+  bt; rs; bf; ls; bt:rs; bt:bf; bt:ls; rs:bf; rs:af; bf:ls; 
+ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:ls:af; 
+rs:bf:ls; rs:bf:af; rs:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:bf:af
+  bt; rs; bf; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; rs:af; 
+ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; bt:bf:af; 
+bt:ls:af; rs:bf:af; rs:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:ls:af
+  
+bf:ls:af
+  bt; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; rs:af; 
+bf:ls; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; 
+bt:bf:af; bt:ls:af; rs:ls:af; bf:ls:af; bt:rs:bf:ls; 
+bt:rs:bf:af; bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs:bf:ls
+  bt; rs; bf; ls; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; rs:af; 
+bf:ls; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; bt:bf:ls; 
+bt:bf:af; bt:ls:af; rs:bf:ls; rs:bf:af; rs:ls:af; 
+bf:ls:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs:bf:af
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; 
+rs:af; bf:ls; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+bt:bf:ls; bt:bf:af; bt:ls:af; rs:bf:ls; rs:bf:af; 
+rs:ls:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:rs:ls:af
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; 
+rs:af; bf:ls; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+bt:bf:ls; bt:bf:af; bt:ls:af; rs:bf:ls; rs:bf:af; 
+rs:ls:af; bf:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+bt:bf:ls:af
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; 
+rs:af; bf:ls; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+bt:bf:ls; bt:bf:af; bt:ls:af; rs:bf:ls; rs:ls:af; 
+bf:ls:af; bt:rs:bf:ls; bt:rs:bf:af; bt:rs:ls:af; 
+bt:bf:ls:af; bt:rs:bf:ls:af; 
+rs:bf:ls:af
+  
+bt:rs:bf:ls:af
+  bt; rs; bf; ls; af; bt:rs; bt:bf; bt:ls; bt:af; rs:bf; 
+rs:af; bf:ls; ls:af; bt:rs:bf; bt:rs:ls; bt:rs:af; 
+bt:bf:ls; bt:bf:af; bt:ls:af; rs:bf:ls; rs:bf:af; 
+rs:ls:af; bf:ls:af; bt:rs:bf:ls; bt:rs:bf:af; 
+bt:rs:ls:af; bt:bf:ls:af; bt:rs:bf:ls:af; 
+in
+  in; in:out; 
+out
+  in; out; in:out; 
+in:out
+  in; out; in:out; 
+
