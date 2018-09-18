@@ -57,9 +57,9 @@ class ComputationalGeometryUtilities:
         ring=ogr.Geometry(ogr.wkbLinearRing)
         for point in pointsList:
             if isinstance(point,tuple):
-                ring.AddPoint_2D(point[0],800-point[1]) # reverse y to adapt GUI-TRC coordinate systems
+                ring.AddPoint_2D(point[0],point[1]) # reverse y to adapt GUI-TRC coordinate systems
             else:
-                ring.AddPoint_2D(point.GetX(),800-point.GetY()) # reverse y to adapt GUI-TRC coordinate systems
+                ring.AddPoint_2D(point.GetX(),point.GetY()) # reverse y to adapt GUI-TRC coordinate systems
 
         ring.AddPoint_2D(ring.GetPoints()[0][0],ring.GetPoints()[0][1])
 
