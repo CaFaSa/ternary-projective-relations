@@ -23,13 +23,13 @@ if __name__ == '__main__':
     Test.run_test_15()
     '''
     CGU=ComputationalGeometryUtilities() 
-    pd = PolygonDrawer("Polygon Drawer")
+    pd = PolygonDrawer("Polygon Drawer insert R1")
     points = pd.run()
     poly1=CGU.createPolygon(points)
-    pd = PolygonDrawer("Polygon Drawer")
+    pd = PolygonDrawer("Polygon Drawer insert R2")
     points = pd.run()
     poly2=CGU.createPolygon(points)
-    pd = PolygonDrawer("Polygon Drawer")
+    pd = PolygonDrawer("Polygon Drawer insert R3")
     points = pd.run()
     poly3=CGU.createPolygon(points)
 
