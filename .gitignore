@@ -1,3 +1,4 @@
 backup/
 .idea/
 __pycache__/
+*.pyc
