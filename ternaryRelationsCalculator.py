@@ -57,9 +57,9 @@ class ComputationalGeometryUtilities:
         ring=ogr.Geometry(ogr.wkbLinearRing)
         for point in pointsList:
             if isinstance(point,tuple):
-                ring.AddPoint_2D(point[0],800-point[1]) # reverse y to adapt GUI-TRC coordinate systems
+                ring.AddPoint_2D(point[0],point[1]) # reverse y to adapt GUI-TRC coordinate systems
             else:
-                ring.AddPoint_2D(point.GetX(),800-point.GetY()) # reverse y to adapt GUI-TRC coordinate systems
+                ring.AddPoint_2D(point.GetX(),point.GetY()) # reverse y to adapt GUI-TRC coordinate systems
 
         ring.AddPoint_2D(ring.GetPoints()[0][0],ring.GetPoints()[0][1])
 
@@ -80,7 +80,7 @@ class ComputationalGeometryUtilities:
                     ring.AddPoint_2D(round(random.uniform(60,90),2),round(random.uniform(70,120),2))
         else:
             for i in range(0,numberOfPoints):
-                ring.AddPoint_2D(round(random.uniform(0,90),2),round(random.uniform(0,120),2))       
+                ring.AddPoint_2D(round(random.uniform(0,90),2),round(random.uniform(0,170),2))       
   
         ring.AddPoint_2D(ring.GetPoints()[0][0],ring.GetPoints()[0][1])
         poly=ogr.Geometry(type=ogr.wkbPolygon)
@@ -191,16 +191,17 @@ class TernaryRelationCalculator:
     tangentIntersectionPoint=None
     intersectionList=None
     areas=None
+    originalAreas=None
     twoPolygonsConvexHull=None
     polygonsAreIntersecting=False
-    def __init__(self,boundary_minXY,boundary_maxXY,thirdPolygon,secondPolygon,firstPolygon=None):
+    
+    def __init__(self,boundary_minXY,boundary_maxXY,firstPolygon,secondPolygon,thirdPolygon):
         self.boundary_max_XY=boundary_maxXY
         self.boundary_min_XY=boundary_minXY
         self.boundaryLines,self.boundaryPolygon=self.externalBoundary()
         self.thirdPolygon=thirdPolygon.ConvexHull()
         self.secondPolygon=secondPolygon.ConvexHull()
-        if not firstPolygon is None:
-            self.firstPolygon=firstPolygon.ConvexHull()
+        self.firstPolygon=firstPolygon
 
         thirdPolygonPointList=self.thirdPolygon.GetGeometryRef(0).GetPoints()[:-1]
         secondPolygonPointList=self.secondPolygon.GetGeometryRef(0).GetPoints()[:-1]
@@ -217,8 +218,7 @@ class TernaryRelationCalculator:
             self.intersectionList=self.findIntersectionsWithBoundary(self.firstTangent)
             self.intersectionList.extend(self.findIntersectionsWithBoundary(self.secondTangent))
             self.twoPolygonsConvexHull= (thirdPolygon.Union(secondPolygon)).ConvexHull()
-            self.areas=self.buildFourAreas(self.intersectionList,self.tangentIntersectionPoint)
-
+            self.areas, self.originalAreas=self.buildFourAreas(self.intersectionList,self.tangentIntersectionPoint)
 
 
     def tangentBoundaryIntersection(self,tangent,boundaryLine):
@@ -254,18 +254,25 @@ class TernaryRelationCalculator:
         self.PU.plot_rings(self.CGU.linestringToPolygon(self.boundaryLines[1]),color=self.PU.get_random_color())
         self.PU.plot_rings(self.CGU.linestringToPolygon(self.boundaryLines[2]),color=self.PU.get_random_color())
         self.PU.plot_rings(self.CGU.linestringToPolygon(self.boundaryLines[3]),color=self.PU.get_random_color())
-        self.PU.plot_rings(self.twoPolygonsConvexHull, color = 'black')
-        #self.PU.plot_rings(self.secondPolygon, color = self.PU.get_random_color())
-        #self.PU.plot_rings(self.thirdPolygon, color = self.PU.get_random_color())
+#        self.PU.plot_rings(self.twoPolygonsConvexHull, color = 'black')
+        self.PU.plot_rings(self.secondPolygon, color = 'red')
+        self.PU.plot_rings(self.thirdPolygon, color = 'blue')
 
         if not self.firstPolygon is None:
             self.PU.plot_rings(self.firstPolygon, color = self.PU.get_random_color())
         plt.show()
 
 
+
+
     def classify(self):
         relations=set()
-        areaMeaning=["bf","ls","af","rs"]
+        areaMeaning=[]
+        if self.originalAreas[0].Intersects(self.secondPolygon):
+            areaMeaning=["bf","ls","af","rs"]
+        elif self.originalAreas[0].Intersects(self.thirdPolygon):
+            areaMeaning=["af","rs","bf","ls"]
+
         if self.polygonsAreIntersecting:
             if self.firstPolygon.Intersects(self.twoPolygonsConvexHull):
                 if not self.twoPolygonsConvexHull.Contains(self.firstPolygon):
@@ -282,7 +289,9 @@ class TernaryRelationCalculator:
                     tempRelation=areaMeaning[self.areas.index(area)]
                     relations.add(tempRelation)
 
+
         fig = plt.figure()
+        fig.suptitle("RED= 2° Polygon ---- BLUE= 3° Polygon")
         ax1 = fig.add_axes((0.1,0.1,0.8,0.8))
         ax1.set_title(relations)
         print(relations)
@@ -325,12 +334,12 @@ class TernaryRelationCalculator:
             if(len(polygonList)==4):
                 break
 
-
         areaList=[]
+        originalAreaList=polygonList
         for polygon in polygonList:
             areaList.append(polygon.Difference(self.twoPolygonsConvexHull))
         #return polygonList
-        return areaList
+        return areaList, originalAreaList
 
 
     def externalBoundary(self):
@@ -370,7 +379,7 @@ def main():
     secondPolygon=CGU.randomPolyGenerator(12,None)
     thirdPolygon=CGU.randomPolyGenerator(15,secondPolygon)
     firstPolygon=CGU.randomPolyGenerator(4,None,totallyRandom=True)
-    TRC=TernaryRelationCalculator(-100,200,thirdPolygon,secondPolygon,firstPolygon)
+    TRC=TernaryRelationCalculator(-100,200,firstPolygon,secondPolygon,thirdPolygon)
     TRC.classify()
     TRC.view()
 
