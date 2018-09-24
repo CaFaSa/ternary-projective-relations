@@ -17,6 +17,7 @@ class Drawer(object):
         self.poly_done = False
         self.current = (0,0)
         self.polygons = []
+        self.inverted_polygons = []
         self.current_poly_points = []
         self.current_polygon = None
         self.current_poly_counter = 0
@@ -82,6 +83,15 @@ class Drawer(object):
         
         
         self.poly_done = True
+
+    def get_inverted_y_to_fit_TRC(self):
+        for polygon in self.polygons:
+            current = []
+            for point_tuple in polygon:
+                current.append((point_tuple[0], 800 - point_tuple[1]))
+            self.inverted_polygons.append(current)
+        return self.inverted_polygons
+        
         
 
 if __name__ == '__main__':
