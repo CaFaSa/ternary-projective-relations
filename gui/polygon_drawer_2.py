@@ -34,18 +34,19 @@ class Drawer(object):
         elif event == cv2.EVENT_RBUTTONDOWN:
             self.current_poly_points.append(self.current_poly_points[0])
             self.poly_done = True
-            print("pol count: ", self.current_poly_counter)
-            print(POLYGONS_WANTED)
-            if self.current_poly_counter == POLYGONS_WANTED - 1:
+            
+            if self.current_poly_counter == POLYGONS_WANTED -1:
                 self.done = True
+                self.polygons.append(self.current_poly_points)
             else:
+                self.polygons.append(self.current_poly_points)
                 self.poly_done = False
                 self.current = (0,0)
                 self.current_poly_points = []
                 self.current_polygon = None
                 self.current_poly_counter = self.current_poly_counter + 1
 
-            self.polygons.append(self.current_poly_points)
+            
 
 
     def run(self):
@@ -63,6 +64,13 @@ class Drawer(object):
     def draw_polygon(self):
         while(not self.poly_done):
             canvas = np.zeros(CANVAS_SIZE, np.uint8)
+            print(self.polygons)
+
+            if len(self.polygons) > 0:
+                for p in self.polygons:
+                    if(len(p) > 0):
+                        cv2.fillPoly(canvas, np.array([p]), POLYGON_COLOR)
+                        cv2.imshow(self.window_name, canvas)
 
             if(len(self.current_poly_points) > 0):
                 cv2.polylines(canvas, np.array([self.current_poly_points]), False, FINAL_LINE_COLOR, 1)
@@ -72,10 +80,7 @@ class Drawer(object):
             if cv2.waitKey(50) == 27:
                 pass
         # User finished entering the polygon points. Let's draw and clean or exit
-        canvas = np.zeros(CANVAS_SIZE, np.uint8)
-        if(len(self.current_poly_points) > 0):
-            cv2.fillPoly(canvas, np.array([self.current_poly_points]), POLYGON_COLOR)
-        cv2.imshow(self.window_name, canvas)
+        
         
         self.poly_done = True
         
