@@ -30,9 +30,10 @@ if __name__ == '__main__':
     pd = Drawer("Poligon Drawer 2.0")
     pd.run()
 
-    poly1=CGU.createPolygon(pd.polygons[0])
-    poly2=CGU.createPolygon(pd.polygons[1])
-    poly3=CGU.createPolygon(pd.polygons[2])
+    polygons = pd.get_inverted_y_to_fit_TRC()
+    poly1=CGU.createPolygon(polygons[0])
+    poly2=CGU.createPolygon(polygons[1])
+    poly3=CGU.createPolygon(polygons[2])
 
     TRC = TernaryRelationCalculator(0, 800,poly1,poly2,poly3)
     TRC.classify()
