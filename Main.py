@@ -3,6 +3,7 @@ from ternaryRelationsCalculator import *
 from Model.Relations import *
 from Model.Relations import _SingleProjectiveRelation, _Operations
 from gui.polygon_drawer import PolygonDrawer
+from gui.polygon_drawer_2 import Drawer
 
 if __name__ == '__main__':
     '''
@@ -22,16 +23,16 @@ if __name__ == '__main__':
     Test.run_test_14()
     Test.run_test_15()
     '''
+
+
     CGU=ComputationalGeometryUtilities() 
-    pd = PolygonDrawer("Polygon Drawer insert R1")
-    points = pd.run()
-    poly1=CGU.createPolygon(points)
-    pd = PolygonDrawer("Polygon Drawer insert R2")
-    points = pd.run()
-    poly2=CGU.createPolygon(points)
-    pd = PolygonDrawer("Polygon Drawer insert R3")
-    points = pd.run()
-    poly3=CGU.createPolygon(points)
+
+    pd = Drawer("Poligon Drawer 2.0")
+    pd.run()
+
+    poly1=CGU.createPolygon(pd.polygons[0])
+    poly2=CGU.createPolygon(pd.polygons[1])
+    poly3=CGU.createPolygon(pd.polygons[2])
 
     TRC = TernaryRelationCalculator(0, 800,poly1,poly2,poly3)
     TRC.classify()
