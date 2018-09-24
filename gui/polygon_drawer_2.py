@@ -64,7 +64,6 @@ class Drawer(object):
     def draw_polygon(self):
         while(not self.poly_done):
             canvas = np.zeros(CANVAS_SIZE, np.uint8)
-            print(self.polygons)
 
             if len(self.polygons) > 0:
                 for p in self.polygons:
