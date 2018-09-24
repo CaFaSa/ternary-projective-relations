@@ -24,7 +24,6 @@ if __name__ == '__main__':
     Test.run_test_15()
     '''
 
-
     CGU=ComputationalGeometryUtilities() 
 
     pd = Drawer("Poligon Drawer 2.0")
