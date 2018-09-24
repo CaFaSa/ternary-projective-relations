@@ -19,6 +19,7 @@ class PolygonDrawer(object):
         self.done = False # Flag signalling we're done
         self.current = (0, 0) # Current position, so we can draw the line-in-progress
         self.points = [] # List of points defining our polygon
+        self.reverted_points = []
 
         self.vertex_points = [] #list of points for shapes.py
         self.polygon = None
@@ -37,11 +38,13 @@ class PolygonDrawer(object):
             # Left click means adding a point at current position to the list of points
             print("Adding point #%d with position(%d,%d)" % (len(self.points), x, y))
             self.points.append((x, y))
+            self.reverted_points.append((x,800-y))
             self.vertex_points.append(Vertex(x,800-y))
         elif event == cv2.EVENT_RBUTTONDOWN:
             # Right click means we're done
             print("Completing polygon with %d points." % len(self.points))
             self.points.append(self.points[0])
+            self.reverted_points.append(self.reverted_points[0])
             self.done = True
             self.polygon = Polygon(self.vertex_points)
             #cv2.destroyWindow(self.window_name)
@@ -83,7 +86,7 @@ class PolygonDrawer(object):
         #cv2.waitKey()
 
         cv2.destroyAllWindows()
-        return self.points
+        return self.reverted_points
 
 # ============================================================================
 
