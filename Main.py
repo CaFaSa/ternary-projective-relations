@@ -26,7 +26,7 @@ if __name__ == '__main__':
 
     CGU=ComputationalGeometryUtilities() 
 
-    pd = Drawer("Poligon Drawer 2.0")
+    pd = Drawer("Polygon Drawer 2.0")
     pd.run()
 
     polygons = pd.get_inverted_y_to_fit_TRC()
