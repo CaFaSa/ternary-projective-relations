@@ -379,7 +379,7 @@ class Table5_composition:
         try:
             columnList = ['bt', 'rs', 'bf', 'ls', 'af']
             subRowsList = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
-            print(subRowKey)
+            #print(subRowKey)
             return self.__table[str(rowKey)][subRowsList.index(subRowKey)][columnList.index(columnKey)]
         except:
             print(sys.exc_info())
