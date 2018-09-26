@@ -53,17 +53,20 @@ def composition(r,q):
 
 
 def moltiplica(listaElementiDaMoltiplicare):
-    risultato=set()
+    risultato=None
     '''
     Prende gli elementi e li moltiplica fra loro. 
     Al primo giro, essendo
     '''
     for k in range(0,len(listaElementiDaMoltiplicare)):
         for singolaRelazioneDelSet in listaElementiDaMoltiplicare[k]:
-            if len(risultato) == 0:
-                risultato = risultato.union(ProjectiveRelation(singolaRelazioneDelSet).get_relations())
+            if not risultato:
+                #risultato = risultato.union(ProjectiveRelation(singolaRelazioneDelSet).get_relations())
+                risultato = ProjectiveRelation(singolaRelazioneDelSet)
+
             else:
-                risultato = risultato.union(_Operations.product(ProjectiveRelation(risultato),ProjectiveRelation(singolaRelazioneDelSet)).get_relations())
+                #risultato = risultato.union(_Operations.product(ProjectiveRelation(risultato),ProjectiveRelation(singolaRelazioneDelSet)).get_relations())
+                risultato.product(ProjectiveRelation(singolaRelazioneDelSet))
                 print(risultato)
     return risultato
 
