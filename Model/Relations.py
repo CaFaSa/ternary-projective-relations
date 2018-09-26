@@ -3,6 +3,7 @@ import itertools
 import pickle
 import os
 from collections import defaultdict
+import sys
 
 # Relation's constants
 BT = {"bt"}
@@ -371,8 +372,6 @@ class Table5_composition:
     def get_value(self, rowKey, subRowKey, columnKey):
         try:
             self.__table = self.readTable()
-            columnRelations = "bt:bf"
-            rowRelation = "rs:bf:ls:af"
         except:
             print("Unable to load table.\n")
             exit()
@@ -380,11 +379,18 @@ class Table5_composition:
         try:
             columnList = ['bt', 'rs', 'bf', 'ls', 'af']
             subRowsList = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
-
+            print(subRowKey)
             return self.__table[str(rowKey)][subRowsList.index(subRowKey)][columnList.index(columnKey)]
         except:
+            print(sys.exc_info())
             return None
             exit()
+
+    def get_subrows(self, rowKey):
+        self.__table = self.readTable()
+        columnList = ['bt', 'rs', 'bf', 'ls', 'af']
+        subRowsList = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+        return self.__table[str("bt")][:][:]
 
     def get_ProjectiveRelation_object(self, rowKey, subRowKey, columnKey):
         value = self.get_value(rowKey, subRowKey, columnKey)
