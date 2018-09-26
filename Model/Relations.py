@@ -364,7 +364,7 @@ class Table5_composition:
     __table = None
 
     def readTable(self):
-        fileName = os.path.join(os.path.dirname(__file__),"data","tableWithDeltasExpanded.pickle")
+        fileName = os.path.join(os.path.dirname(os.path.dirname(__file__)),"data","tableWithDeltasExpanded.pickle")
         with open(fileName, 'rb') as f:
             return pickle.load(f)
 
