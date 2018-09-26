@@ -273,8 +273,7 @@ class TernaryRelationCalculator:
         self.PU.plot_rings(self.secondPolygon, color = 'red')
         self.PU.plot_rings(self.thirdPolygon, color = 'blue')
 
-        if not self.firstPolygon is None:
-            self.PU.plot_rings(self.firstPolygon, color = self.PU.get_random_color())
+        self.PU.plot_rings(self.firstPolygon, color = 'green')
         #plt.gca().invert_xaxis()
         #plt.gca().invert_yaxis()
         plt.show()
@@ -302,7 +301,7 @@ class TernaryRelationCalculator:
    
 
         fig = plt.figure()
-        fig.suptitle("RED= 2° Polygon ---- BLUE= 3° Polygon")
+        fig.suptitle("GREEN= 1° Polygon ---- RED= 2° Polygon ---- BLUE= 3° Polygon")
         ax1 = fig.add_axes((0.1,0.1,0.8,0.8))
         ax1.set_title(relations)
         print(relations)
