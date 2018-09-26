@@ -1,12 +1,13 @@
 import numpy as np
 import cv2
 
-CANVAS_SIZE = (800, 800)
+CANVAS_SIZE = (800, 800, 3)
 
-FINAL_LINE_COLOR= (255, 0, 255)
+FINAL_LINE_COLOR= (0, 255, 0)
 WORKING_LINE_COLOR = (127, 127, 127)
 POLYGON_COLOR = FINAL_LINE_COLOR
 POLYGONS_WANTED = 3
+POLY_COLOR = [(0,255,0),(0,0,255),(255,0,0)]
 
 # ==============================
 
@@ -67,14 +68,16 @@ class Drawer(object):
             canvas = np.zeros(CANVAS_SIZE, np.uint8)
 
             if len(self.polygons) > 0:
+                i = 0
                 for p in self.polygons:
                     if(len(p) > 0):
-                        cv2.fillPoly(canvas, np.array([p]), POLYGON_COLOR)
+                        cv2.fillPoly(canvas, np.array([p]), POLY_COLOR[i])
                         cv2.imshow(self.window_name, canvas)
+                        i = i + 1
 
             if(len(self.current_poly_points) > 0):
-                cv2.polylines(canvas, np.array([self.current_poly_points]), False, FINAL_LINE_COLOR, 1)
-                cv2.line(canvas, self.current_poly_points[-1], self.current, WORKING_LINE_COLOR)
+                cv2.polylines(canvas, np.array([self.current_poly_points]), False, POLY_COLOR[self.current_poly_counter], 1)
+                cv2.line(canvas, self.current_poly_points[-1], self.current, POLY_COLOR[self.current_poly_counter])
 
             cv2.imshow(self.window_name, canvas)
             if cv2.waitKey(50) == 27:
