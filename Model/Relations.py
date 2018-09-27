@@ -370,19 +370,22 @@ class Table5_composition:
             return pickle.load(f)
 
     def get_value(self, rowKey, subRowKey, columnKey):
+
+        
         try:
             self.__table = self.readTable()
         except:
             print("Unable to load table.\n")
             exit()
-
+        
         try:
             columnList = ['bt', 'rs', 'bf', 'ls', 'af']
             subRowsList = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
             #print(subRowKey)
             return self.__table[str(rowKey)][subRowsList.index(subRowKey)][columnList.index(columnKey)]
         except:
-            print(sys.exc_info())
+            print("GetVALUE",rowKey,subRowKey,columnKey)
+            print("Errore nella Table5_composition", sys.exc_info())
             return None
             exit()
 
@@ -390,7 +393,7 @@ class Table5_composition:
         self.__table = self.readTable()
         columnList = ['bt', 'rs', 'bf', 'ls', 'af']
         subRowsList = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
-        return self.__table[str("bt")][:][:]
+        return self.__table[str(rowKey)][:][:]
 
     def get_ProjectiveRelation_object(self, rowKey, subRowKey, columnKey):
         value = self.get_value(rowKey, subRowKey, columnKey)

@@ -28,54 +28,30 @@ def composition(r,q):
             factors= []
             for rel in r.__repr__().split(":"):
                 factors.append(T.get_value(str(q),subRowsList[i],str(rel)))
-            result = result.union(concatenatedProduct(factors).get_relations())
+            product= concatenatedProduct(factors)
+            if not product is None:
+                result = result.union(product.get_relations())
 
     return result
 
 
 def concatenatedProduct(factors):
     result=None
-    for k in range(0,len(factors)):
-        for factor in factors[k]:
+    for factor in factors:
+        for singleElement in factor:
             if not result:
-                #risultato = risultato.union(ProjectiveRelation(singolaRelazioneDelSet).get_relations())
-                result = ProjectiveRelation(factor)
+                result = ProjectiveRelation(singleElement)
             else:
-                result = result.product(ProjectiveRelation(factor))
+                result = result.product(ProjectiveRelation(singleElement))
 
     return result
 
 
 if __name__ == '__main__':
     
-    r = ProjectiveRelation("rs:bf")
-    q = ProjectiveRelation("bt")
+    r = ProjectiveRelation("rs:af")
+    q = ProjectiveRelation("bt:rs:ls")
     result=composition(r,q)
     print("Compose result of", r,"°", q, "is:\n",result)
-
-'''
-    result = None
-    if r.__eq__("in:ou"):
-        pass
-    else:
-        s = T.get_subrows(q)
-        indexes = []
-        u = []
-        primo = True
-        current = ProjectiveRelation()
-    
-        for i in range(len(T.get_subrows(q))):
-            for rel in r.__repr__().split(":"):  
-                nuova = T.get_value(str(q), subRowsList[i], str(rel))
-                print(str(nuova).replace("{", "").replace("}",""))
-                r2 = ProjectiveRelation(str(nuova).replace("{", "").replace("}","").replace("'",""))
-                if primo:
-                    current = r2
-                else:
-                    current = _Operations.product(current, r2)          
-                
-            u.append(current)
-        print("u: ", u)
-'''          
-                    
+                 
             
