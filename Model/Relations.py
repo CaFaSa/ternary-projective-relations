@@ -3,6 +3,7 @@ import itertools
 import pickle
 import os
 from collections import defaultdict
+import sys
 
 # Relation's constants
 BT = {"bt"}
@@ -292,6 +293,36 @@ class _Operations:
     __rotation_table['ou'] = set.union(OU)
 
     @staticmethod
+    def composition(r:ProjectiveRelation, q:ProjectiveRelation):
+        T = Table5_composition()
+        columnList = ['bt', 'rs', 'bf', 'ls', 'af']
+        subRowsList = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+        result = set()
+
+        '''
+        Per ogni sottoriga s, salvo in una lista le celle corrispondenti alle relazioni r1,...,rk
+        Faccio il prodotto fra di loro, unisco al risultato
+        Poi procedo alla sottoriga successiva
+        PROBLEMA: se q è la riga(ed È la riga)...ed r la colonna(ed r È la colonna)
+        richiamando la composition ricorsivamente, dove cavolo li vado a prendere IN e OU sulle COLONNE,
+        visto che non ci sono?
+        '''
+        if "in:ou" in str(r.get_relations()):
+            result = result.union(_Operations.product(_Operations.composition(ProjectiveRelation("in"), ProjectiveRelation(q)),
+                                                      _Operations.composition(ProjectiveRelation("ou"),
+                                                                  ProjectiveRelation(q))).get_relations())
+        else:
+            for i in range(len(T.get_subrows(q))):
+                factors = []
+                for rel in r.__repr__().split(":"):
+                    factors.append(T.get_value(str(q), subRowsList[i], str(rel)))
+                product = concatenatedProduct(factors)
+                if not product is None:
+                    result = result.union(product.get_relations())
+
+        return result
+
+    @staticmethod
     def converse(relation: _SingleProjectiveRelation):
         relations = relation.get_relations()
         ret_relation = _SingleProjectiveRelation()
@@ -358,21 +389,31 @@ class _Operations:
     def _setRotationTable(row, projectiveRelation: ProjectiveRelation):
         _Operations.__rotation_table[row] = projectiveRelation
 
+#TODO: move from global scope
+def concatenatedProduct(factors):
+    result=None
+    for factor in factors:
+        for singleElement in factor:
+            if not result:
+                result = ProjectiveRelation(singleElement)
+            else:
+                result = result.product(ProjectiveRelation(singleElement))
 
+    return result
 
 class Table5_composition:
     __table = None
 
     def readTable(self):
-        fileName = os.path.join(os.path.dirname(__file__),"data","tableWithDeltasExpanded.pickle")
+        fileName = os.path.join(os.path.dirname(os.path.dirname(__file__)),"data","tableWithDeltasExpanded.pickle")
         with open(fileName, 'rb') as f:
             return pickle.load(f)
 
     def get_value(self, rowKey, subRowKey, columnKey):
+
+
         try:
             self.__table = self.readTable()
-            columnRelations = "bt:bf"
-            rowRelation = "rs:bf:ls:af"
         except:
             print("Unable to load table.\n")
             exit()
@@ -380,11 +421,19 @@ class Table5_composition:
         try:
             columnList = ['bt', 'rs', 'bf', 'ls', 'af']
             subRowsList = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
-
+            #print(subRowKey)
             return self.__table[str(rowKey)][subRowsList.index(subRowKey)][columnList.index(columnKey)]
         except:
+            print("GetVALUE",rowKey,subRowKey,columnKey)
+            print("Errore nella Table5_composition", sys.exc_info())
             return None
             exit()
+
+    def get_subrows(self, rowKey):
+        self.__table = self.readTable()
+        columnList = ['bt', 'rs', 'bf', 'ls', 'af']
+        subRowsList = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+        return self.__table[str(rowKey)][:][:]
 
     def get_ProjectiveRelation_object(self, rowKey, subRowKey, columnKey):
         value = self.get_value(rowKey, subRowKey, columnKey)

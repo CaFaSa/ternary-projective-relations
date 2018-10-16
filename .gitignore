@@ -1,6 +1,9 @@
 backup/
 .idea/
 __pycache__/
+.vscode/
 **/__pycache__/
 *.pyc
 **/*.pyc
+.vscode/*
+.vscode/**
