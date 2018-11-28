@@ -195,6 +195,16 @@ class ProjectiveRelation:
 
         return position + 1
 
+    # INTERSEPTION (ls:bf, ls) e (ls:bf, rs) = ls:bf
+    def intersection(self, other_projective_relation):
+        rel = ProjectiveRelation(str(self.__relations.intersection(other_projective_relation.__relations)).replace("{","").replace("}","").replace(" ", ""))
+        return rel
+
+    def union(self, other_projective_relation):
+        rel = ProjectiveRelation(str(self.__relations.union(other_projective_relation.__relations)).replace("{","").replace("}","").replace(" ", ""))
+        return rel
+
+
     def augment(self, other):
         return _Operations.augment(self, other)
 
@@ -217,6 +227,14 @@ class ProjectiveRelation:
         for r in self.__relations:
             conv_object.add_rel(r.converse())
         return conv_object
+
+    def composition(self, other_rel):
+        comp = set()
+        for rel1 in self.__relations:
+            for rel2 in other_rel.__relations:
+                op_res = _Operations.composition(rel1,rel2)
+                comp = comp.union(op_res)
+        return ProjectiveRelation(str(comp).replace("{","").replace("}","").replace(" ", "").replace("'", ""))
 
     def add_rel(self, *basic_relations):
         for r in basic_relations:

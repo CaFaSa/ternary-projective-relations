@@ -232,3 +232,13 @@ def run_test_15():
 
     if expected != a.rotate():
         raise ValueError("TEST 15 FAILED")
+
+
+a=ProjectiveRelation("ls:bf,ls")
+b=ProjectiveRelation("ls:bf, rs")
+c= a.union(b)
+d=a.intersection(b)
+e=a.composition(b)
+print(c)
+print(d)
+print(e)
