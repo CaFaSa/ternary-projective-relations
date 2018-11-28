@@ -37,8 +37,11 @@ class ConstraintNetwork:
         self.triplets[R1, R2, R3] = rel
 
     def OperatorTable(self,i):
-        array_op=[lambda x: x, lambda x: ProjectiveRelation.converse(x), lambda x: rot(conv(x)),lambda x: rot(x), \
-                  lambda x: conv(rot(conv(x))), lambda x: conv(rot(x))]
+        array_op=[lambda x: x, lambda x: ProjectiveRelation.converse(x), \
+                  lambda x: ProjectiveRelation.rotate(ProjectiveRelation.converse(x)), \
+                  lambda x: ProjectiveRelation.rotate(x), \
+                  lambda x: ProjectiveRelation.converse(ProjectiveRelation.rotate(ProjectiveRelation.converse(x))), \
+                  lambda x: ProjectiveRelation.converse(ProjectiveRelation.rotate(x))]
         return array_op[i]
 
     def getrel(self, R1, R2, R3):
@@ -132,17 +135,21 @@ class ConstraintNetwork:
                 # getrel must take into account permutations
                 # compositions to be calculated are RA,RB,RC + RB,RC,RD = RA,RC,RD
                 # and RA,RC,RB + RC,RB,RD = RA,RB,RD
-                newr1 = Constraints(C.getrel(RA,RB,RC), C.getrel(RB, RC, RD))
-                newr2 = Constraints(C.getrel(RA,RC,RB), C.getrel(RC, RB, RD))
-                oldr1 = C.getrel(t1)
-                oldr2 = C.getrel(t2)
+                r1=C.getrel(RA, RB, RC)
+                r2=C.getrel(RB, RC, RD)
+                newr1 = r1.composition(r2)
+                r3=C.getrel(RA, RC, RB)
+                r4=C.getrel(RC, RB, RD)
+                newr2 = r3.composition(r4)
+                oldr1 = C.getrel(RA, RC, RD)
+                oldr2 = C.getrel(RA, RB, RD)
                 inters1 = oldr1.intersection(newr1)
                 inters2 = oldr2.intersection(newr2)
                 if inters1 != oldr1:
-                    C.setrel(t1, inters1)
+                    C.setrel(RA, RC, RD, inters1)
                     queue.append(t1)
                 if inters2 != oldr2:
-                    C.setrel(t2, inters2)
+                    C.setrel(RA, RB, RD, inters2)
                     queue.append(t2)
 
     def __str__(self):
