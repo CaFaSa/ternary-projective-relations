@@ -234,11 +234,43 @@ def run_test_15():
         raise ValueError("TEST 15 FAILED")
 
 
-a=ProjectiveRelation("ls:bf,ls")
-b=ProjectiveRelation("ls:bf, rs")
-c= a.union(b)
-d=a.intersection(b)
-e=a.composition(b)
-print(c)
-print(d)
-print(e)
+#intersection union and composition test...
+def run_test_16():
+    a=ProjectiveRelation("ls:bf,ls")
+    b=ProjectiveRelation("ls:bf, rs")
+    c= a.union(b)
+    d=a.intersection(b)
+    e=a.composition(b)
+    expected_c = ProjectiveRelation("rs, ls, bf:ls")
+    expected_d = ProjectiveRelation("bf:ls")
+    expected_e = ProjectiveRelation("ls, rs:bf, bt:ls:af, rs:bf:ls, rs:bf:af, bt:bf:ls:af")
+    if expected_c != c:
+        raise ValueError("TEST 16-c FAILED")
+    if expected_d != d:
+        raise ValueError("TEST 16-d FAILED")
+    if expected_e != e:
+        raise ValueError("TEST 16-e FAILED")
+
+
+if __name__ == '__main__':
+    try:
+        run_test_1()
+        run_test_2()
+        run_test_3()
+        run_test_4()
+        run_test_5()
+        run_test_6()
+        run_test_7()
+        run_test_8()
+        run_test_9()
+        run_test_10()
+        run_test_11()
+        run_test_12()
+        run_test_13()
+        run_test_14()
+        run_test_15()
+        run_test_16()
+        print("SUCCESS!")
+    except Exception as e:
+        print("Test failed:", e)
+

@@ -197,13 +197,16 @@ class ProjectiveRelation:
 
     # INTERSEPTION (ls:bf, ls) e (ls:bf, rs) = ls:bf
     def intersection(self, other_projective_relation):
-        rel = ProjectiveRelation(str(self.__relations.intersection(other_projective_relation.__relations)).replace("{","").replace("}","").replace(" ", ""))
+        if type(other_projective_relation != type(self)):
+            other_projective_relation = ProjectiveRelation(other_projective_relation)
+        rel = ProjectiveRelation(self.__relations.intersection(other_projective_relation.__relations))
         return rel
 
     def union(self, other_projective_relation):
-        rel = ProjectiveRelation(str(self.__relations.union(other_projective_relation.__relations)).replace("{","").replace("}","").replace(" ", ""))
+        if type(other_projective_relation != type(self)):
+            other_projective_relation = ProjectiveRelation(other_projective_relation)
+        rel = ProjectiveRelation(self.__relations.union(other_projective_relation.__relations))
         return rel
-
 
     def augment(self, other):
         return _Operations.augment(self, other)
@@ -238,9 +241,12 @@ class ProjectiveRelation:
 
     def add_rel(self, *basic_relations):
         for r in basic_relations:
+            if str(r).__contains__("{"):
+                r=str(r)
             if isinstance(r, _SingleProjectiveRelation):  # check if it is yet a _SingleProjectiveRelation
                 self.__relations = set.union(self.__relations, basic_relations)
             elif isinstance(r, str):
+                r=r.replace("{","").replace("}","").replace(" ", "").replace("'", "")
                 if "," in r:
                     self.add_rel_from_CSR(r)
                 else: self._add_rel_from_str(r)
@@ -261,7 +267,6 @@ class ProjectiveRelation:
         return self
 
     def _add_rel_from_str(self, rel):
-
         rel = str(rel)
         rel = rel.lower()
         adding_rel = _SingleProjectiveRelation()
