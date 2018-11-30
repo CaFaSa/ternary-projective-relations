@@ -15,6 +15,7 @@ AF = {"af"}
 IN = {"in"}
 OU = {"ou"}
 
+
 SINGLETILESET = set.union(BT, RS, BF, LS, AF, IN, OU)
 
 # Global variables below can not be evaluated atm because delta function is not loaded yet by Python interpreter.
@@ -158,6 +159,7 @@ class ProjectiveRelation:
 
     def __init__(self, *basic_relations):
         self.add_rel(*basic_relations)
+        
 
     def __repr__(self):
         rel = sorted(self.__relations, key=lambda rel: ProjectiveRelation.order_position(str(rel)))
@@ -315,25 +317,19 @@ class _Operations:
     __rotation_table['in'] = set.union(IN)
     __rotation_table['ou'] = set.union(OU)
 
+
+
     @staticmethod
     def composition(r:ProjectiveRelation, q:ProjectiveRelation):
         T = Table5_composition()
+        inOutColumns_Table4 = Table4_in_ou_columns()
         columnList = ['bt', 'rs', 'bf', 'ls', 'af']
         subRowsList = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
         result = set()
 
-        '''
-        Per ogni sottoriga s, salvo in una lista le celle corrispondenti alle relazioni r1,...,rk
-        Faccio il prodotto fra di loro, unisco al risultato
-        Poi procedo alla sottoriga successiva
-        PROBLEMA: se q è la riga(ed È la riga)...ed r la colonna(ed r È la colonna)
-        richiamando la composition ricorsivamente, dove cavolo li vado a prendere IN e OU sulle COLONNE,
-        visto che non ci sono?
-        '''
+        #Da Ricontrollare
         if "in:ou" in str(r.get_relations()):
-            result = result.union(_Operations.product(_Operations.composition(ProjectiveRelation("in"), ProjectiveRelation(q)),
-                                                      _Operations.composition(ProjectiveRelation("ou"),
-                                                                  ProjectiveRelation(q))).get_relations())
+            result = result.union(_Operations.product(inOutColumns_Table4.get_value(q.get_relations(),"in"),inOutColumns_Table4.get_value(q.get_relations(),"ou")).get_relations())
         else:
             for i in range(len(T.get_subrows(q))):
                 factors = []
@@ -424,6 +420,64 @@ def concatenatedProduct(factors):
 
     return result
 
+
+class Table4_in_ou_columns:
+    __table = None
+    __inColumn=[]
+    __ouColumn=[]
+    __rowList=["bt","rs","bf","ls","af","bt:rs","bt:bf","bt:ls","bt:af","rs:bf","rs:ls","rs:af","bf:ls","bf:af","ls:af","bt:rs:bf","bt:rs:ls","bt:rs:af","bt:bf:ls","bt:bf:af","bt:ls:af","rs:bf:ls","rs:bf:af","rs:ls:af","bf:ls:af","bt:rs:bf:ls","bt:rs:bf:af","bt:rs:ls:af","bt:bf:ls:af","rs:bf:ls:af","bt:rs:bf:ls:af","bt","bt","bt"]
+
+    def __init__(self):
+        self.inColumnInit()
+        self.ouColumnInit()
+
+    def get_value(self,rowKey, columnKey):
+        if columnKey == "in":
+            return self.__inColumn[self.__rowList.index(rowKey)]    
+        else:
+            return self.__ouColumn[self.__rowList.index(rowKey)]
+
+
+    def ouColumnInit(self):
+        #ProjectiveRelation("rs:ls").augment(ProjectiveRelation().add_rel_from_CSR("bt,bf").delta())
+        self.__ouColumn.append(DD)
+        self.__ouColumn.append(DD)
+        self.__ouColumn.append(DD)
+        self.__ouColumn.append(DD) 
+        #self.__inColumn.append(ProjectiveRelation("IMP")) RIGA DA DECOMMENTARE APPENA VIENE INSERITA IMP
+        self.__ouColumn.append(DC) #ATTENZIONE: INSERITA SOLO ALLO SCOPO DI TEST. APPENA VIENE INSERITA IMP, DECOMMENTARE LA RIGA SOPRASTANTE E CANCELLARE QUESTA
+        for i in range(0,26):
+            self.__ouColumn.append(DD)
+        self.__ouColumn.append(DC)
+        self.__ouColumn.append(DC)
+        self.__ouColumn.append(DC)
+
+
+    def inColumnInit(self):
+        #ProjectiveRelation("rs:ls").augment(ProjectiveRelation().add_rel_from_CSR("bt,bf").delta())
+        self.__inColumn.append(ProjectiveRelation("bt"))
+        self.__inColumn.append(ProjectiveRelation().add_rel_from_CSR("bt,rs,bf").delta())
+        self.__inColumn.append(ProjectiveRelation().add_rel_from_CSR("bt,bf").delta())
+        self.__inColumn.append(ProjectiveRelation().add_rel_from_CSR("bt,bf,ls").delta())
+        #self.__inColumn.append(ProjectiveRelation("IMP")) RIGA DA DECOMMENTARE APPENA VIENE INSERITA IMP
+        self.__inColumn.append(DC)  #ATTENZIONE: INSERITA SOLO ALLO SCOPO DI TEST. APPENA VIENE INSERITA IMP, DECOMMENTARE LA RIGA SOPRASTANTE E CANCELLARE QUESTA
+        self.__inColumn.append(ProjectiveRelation().add_rel_from_CSR("bt,rs,bf,af").delta())
+        self.__inColumn.append(DD)
+        self.__inColumn.append(ProjectiveRelation().add_rel_from_CSR("bt,bf,ls,af").delta())
+        self.__inColumn.append(DD)
+        self.__inColumn.append(ProjectiveRelation().add_rel_from_CSR("bt,rs,bf").delta())
+        self.__inColumn.append(DD)
+        self.__inColumn.append(DD)
+        self.__inColumn.append(ProjectiveRelation().add_rel_from_CSR("bt,bf,ls").delta())
+
+        for i in range(0,18):
+            self.__inColumn.append(DD)
+        self.__inColumn.append(ProjectiveRelation("in"))
+        self.__inColumn.append(DC)
+        self.__inColumn.append(DC)
+
+
+
 class Table5_composition:
     __table = None
 
@@ -469,3 +523,4 @@ class Table5_composition:
 
 # now it is possible to initialize global variables
 _set_global_values()
+

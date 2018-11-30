@@ -252,6 +252,13 @@ def run_test_16():
         raise ValueError("TEST 16-e FAILED")
 
 
+#TODO: To complete composition in-ou rule test
+def run_test_17():
+    a=ProjectiveRelation("ls:bf,ls")
+    b=ProjectiveRelation("in:ou")
+    e=a.composition(b)
+
+
 if __name__ == '__main__':
     try:
         run_test_1()
@@ -270,6 +277,7 @@ if __name__ == '__main__':
         run_test_14()
         run_test_15()
         run_test_16()
+        run_test_17()
         print("SUCCESS!")
     except Exception as e:
         print("Test failed:", e)
