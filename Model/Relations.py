@@ -243,6 +243,8 @@ class ProjectiveRelation:
 
     def add_rel(self, *basic_relations):
         for r in basic_relations:
+            if r=="" or r=="IMP" or r=="imp":
+                continue
             if str(r).__contains__("{"):
                 r=str(r)
             if isinstance(r, _SingleProjectiveRelation):  # check if it is yet a _SingleProjectiveRelation

@@ -259,25 +259,36 @@ def run_test_17():
     e=a.composition(b)
 
 
+#imp and empty string insertion test
+def run_test_18():
+    a = ProjectiveRelation("imp, ls, IMP, "", bf,rs")
+    expected = "rs, bf, ls"
+
+    if expected != str(a):
+        raise ValueError("TEST 17- FAILED")
+
+
 if __name__ == '__main__':
     try:
-        run_test_1()
-        run_test_2()
-        run_test_3()
-        run_test_4()
-        run_test_5()
-        run_test_6()
-        run_test_7()
-        run_test_8()
-        run_test_9()
-        run_test_10()
-        run_test_11()
-        run_test_12()
-        run_test_13()
-        run_test_14()
-        run_test_15()
-        run_test_16()
-        run_test_17()
+        # run_test_1()
+        # run_test_2()
+        # run_test_3()
+        # run_test_4()
+        # run_test_5()
+        # run_test_6()
+        # run_test_7()
+        # run_test_8()
+        # run_test_9()
+        # run_test_10()
+        # run_test_11()
+        # run_test_12()
+        # run_test_13()
+        # run_test_14()
+        # run_test_15()
+        # run_test_16()
+        # run_test_17()
+        run_test_18()
+
         print("SUCCESS!")
     except Exception as e:
         print("Test failed:", e)
