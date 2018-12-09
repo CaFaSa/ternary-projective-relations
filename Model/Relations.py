@@ -414,11 +414,15 @@ class _Operations:
 def concatenatedProduct(factors):
     result=None
     for factor in factors:
-        for singleElement in factor:
-            if not result:
-                result = ProjectiveRelation(singleElement)
-            else:
-                result = result.product(ProjectiveRelation(singleElement))
+        try:
+            for singleElement in factor:
+                if not result:
+                    result = ProjectiveRelation(singleElement)
+                else:
+                    result = result.product(ProjectiveRelation(singleElement))
+        except:
+            #print("[WARNING]: Relation.py is trying to iterate through a non iterable object... \nlast chance is trying to recover from failure skipping the iteration.\nTHE RESULT MAY BE INCORRECT")
+            result=None
 
     return result
 
@@ -446,8 +450,8 @@ class Table4_in_ou_columns:
         self.__ouColumn.append(DD)
         self.__ouColumn.append(DD)
         self.__ouColumn.append(DD) 
-        #self.__inColumn.append(ProjectiveRelation("IMP")) RIGA DA DECOMMENTARE APPENA VIENE INSERITA IMP
-        self.__ouColumn.append(DC) #ATTENZIONE: INSERITA SOLO ALLO SCOPO DI TEST. APPENA VIENE INSERITA IMP, DECOMMENTARE LA RIGA SOPRASTANTE E CANCELLARE QUESTA
+        self.__inColumn.append(ProjectiveRelation("IMP")) #RIGA DA DECOMMENTARE APPENA VIENE INSERITA IMP
+        #self.__ouColumn.append(DC) #ATTENZIONE: INSERITA SOLO ALLO SCOPO DI TEST. APPENA VIENE INSERITA IMP, DECOMMENTARE LA RIGA SOPRASTANTE E CANCELLARE QUESTA
         for i in range(0,26):
             self.__ouColumn.append(DD)
         self.__ouColumn.append(DC)
@@ -461,8 +465,8 @@ class Table4_in_ou_columns:
         self.__inColumn.append(ProjectiveRelation().add_rel_from_CSR("bt,rs,bf").delta())
         self.__inColumn.append(ProjectiveRelation().add_rel_from_CSR("bt,bf").delta())
         self.__inColumn.append(ProjectiveRelation().add_rel_from_CSR("bt,bf,ls").delta())
-        #self.__inColumn.append(ProjectiveRelation("IMP")) RIGA DA DECOMMENTARE APPENA VIENE INSERITA IMP
-        self.__inColumn.append(DC)  #ATTENZIONE: INSERITA SOLO ALLO SCOPO DI TEST. APPENA VIENE INSERITA IMP, DECOMMENTARE LA RIGA SOPRASTANTE E CANCELLARE QUESTA
+        self.__inColumn.append(ProjectiveRelation("IMP")) #RIGA DA DECOMMENTARE APPENA VIENE INSERITA IMP
+        #self.__inColumn.append(DC)  #ATTENZIONE: INSERITA SOLO ALLO SCOPO DI TEST. APPENA VIENE INSERITA IMP, DECOMMENTARE LA RIGA SOPRASTANTE E CANCELLARE QUESTA
         self.__inColumn.append(ProjectiveRelation().add_rel_from_CSR("bt,rs,bf,af").delta())
         self.__inColumn.append(DD)
         self.__inColumn.append(ProjectiveRelation().add_rel_from_CSR("bt,bf,ls,af").delta())
