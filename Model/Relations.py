@@ -235,8 +235,10 @@ class ProjectiveRelation:
 
     def composition(self, other_rel):
         comp = set()
-        for rel1 in self.__relations:
-            for rel2 in other_rel.__relations:
+        relationsList=list(self.__relations)
+        otherRelationsList=list(other_rel.__relations)
+        for rel1 in relationsList:
+            for rel2 in otherRelationsList:
                 op_res = _Operations.composition(rel1,rel2)
                 comp = comp.union(op_res)
         return ProjectiveRelation(str(comp).replace("{","").replace("}","").replace(" ", "").replace("'", ""))
@@ -431,7 +433,7 @@ class Table4_in_ou_columns:
     __table = None
     __inColumn=[]
     __ouColumn=[]
-    __rowList=["bt","rs","bf","ls","af","bt:rs","bt:bf","bt:ls","bt:af","rs:bf","rs:ls","rs:af","bf:ls","bf:af","ls:af","bt:rs:bf","bt:rs:ls","bt:rs:af","bt:bf:ls","bt:bf:af","bt:ls:af","rs:bf:ls","rs:bf:af","rs:ls:af","bf:ls:af","bt:rs:bf:ls","bt:rs:bf:af","bt:rs:ls:af","bt:bf:ls:af","rs:bf:ls:af","bt:rs:bf:ls:af","bt","bt","bt"]
+    __rowList=["bt","rs","bf","ls","af","bt:rs","bt:bf","bt:ls","bt:af","rs:bf","rs:ls","rs:af","bf:ls","bf:af","ls:af","bt:rs:bf","bt:rs:ls","bt:rs:af","bt:bf:ls","bt:bf:af","bt:ls:af","rs:bf:ls","rs:bf:af","rs:ls:af","bf:ls:af","bt:rs:bf:ls","bt:rs:bf:af","bt:rs:ls:af","bt:bf:ls:af","rs:bf:ls:af","bt:rs:bf:ls:af","in","ou","in:ou"]
 
     def __init__(self):
         self.inColumnInit()
@@ -505,12 +507,16 @@ class Table5_composition:
             columnList = ['bt', 'rs', 'bf', 'ls', 'af']
             subRowsList = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
             #print(subRowKey)
-            return self.__table[str(rowKey)][subRowsList.index(subRowKey)][columnList.index(columnKey)]
+            if columnKey=="in" or columnKey=="ou":
+                Table4=Table4_in_ou_columns()
+                return Table4.get_value(rowKey,columnKey)
+            else:
+                return self.__table[str(rowKey)][subRowsList.index(subRowKey)][columnList.index(columnKey)]
         except:
-            print("GetVALUE",rowKey,subRowKey,columnKey)
-            print("Errore nella Table5_composition", sys.exc_info())
-            return None
-            exit()
+                print("GetVALUE",rowKey,subRowKey,columnKey)
+                print("Errore nella Table5_composition", sys.exc_info())
+                return None
+                exit()
 
     def get_subrows(self, rowKey):
         self.__table = self.readTable()

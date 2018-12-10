@@ -93,6 +93,7 @@ class ConstraintNetwork:
     # the function returns a tuple (RA,RB,RC,RD) where RA is the region not in common in (R1,R2,R3),
     # RB and RC are the regions in common,
     # and RD is the region not in common in <triplet>
+        (RA, RB, RC, RD) = (None, None, None, None)
         (R1, R2, R3)=regions
         abcset=set()
         abcset.update(triplet)
