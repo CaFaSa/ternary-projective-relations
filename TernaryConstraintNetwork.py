@@ -2,6 +2,7 @@ import itertools
 from collections import defaultdict
 from Model.Relations import *
 from Model.Relations import _Operations
+import time
 
 '''
 def Constraints(re1, re2):
@@ -119,11 +120,13 @@ class ConstraintNetwork:
         r = C.getrel(R1, R2, R3)
         inters=r.intersection(rel)
         C.setrel(R1, R2, R3, inters)
+        
         while queue != []:
             # adjtrip finds triplets with two regions in common with (R1,R2,R3)
             (R1, R2, R3) = queue.pop(0)
             adjtrip = C.adjtrip(R1, R2, R3)
             for triplet in adjtrip:
+
                 #(R1,R2,R3) is the triplet to be added to the network
                 # <triplet> is one of the adjacent triplets to (R1,R2,R3)
                 # we need to find the regions that are in common with function regions_in_common:
@@ -159,16 +162,20 @@ class ConstraintNetwork:
             s = s + str(arc) + ': ' + str(C.triplets[arc]) + '\n'
         return s
 
-if __name__ == '__main__':
-    C = ConstraintNetwork()
 
+if __name__ == '__main__':
+    print("Starting timer...")
+    start = time.time()
+    C = ConstraintNetwork()
     print("start. Adding first relation to C...")
     C.addrel('A', 'B', 'C','bf')
     print("done. Now adding second relation to C...")
     C.addrel('B', 'C', 'D','af')
     print("done! Now trying to print out C")
-
     print(C)
+    end = time.time()
+    print("ELAPSED TIME: ", end - start)
+
 
 # further work: find a topological interpretation with intervals
 
