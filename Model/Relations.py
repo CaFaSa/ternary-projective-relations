@@ -17,6 +17,8 @@ OU = {"ou"}
 
 
 SINGLETILESET = set.union(BT, RS, BF, LS, AF, IN, OU)
+SINGLETILESET_NO_OVERLAP = set.union(BT, RS, BF, LS, AF)
+SINGLETILESET_OVERLAP = set.union(IN, OU)
 
 # Global variables below can not be evaluated atm because delta function is not loaded yet by Python interpreter.
 U = None  # delta(bt,rs,bf,ls,af,in,ou)           def10
@@ -142,8 +144,10 @@ class _SingleProjectiveRelation:
         if rel in SINGLETILESET:
             self.add_rel(eval(rel.upper()))
         else:
+
             raise ValueError(self.__class__,
                              "is trying to use _add_rel_from_str('" + rel + "') but '" + rel + "' is not in SINGLETILESET")
+
 
     def get_relations(self):
         return self.__relations
@@ -245,7 +249,7 @@ class ProjectiveRelation:
 
     def add_rel(self, *basic_relations):
         for r in basic_relations:
-            if r=="" or r=="IMP" or r=="imp":
+            if r=="" or r=="IMP" or r=="imp": #ignores imp relations
                 continue
             if str(r).__contains__("{"):
                 r=str(r)
@@ -255,7 +259,9 @@ class ProjectiveRelation:
                 r=r.replace("{","").replace("}","").replace(" ", "").replace("'", "")
                 if "," in r:
                     self.add_rel_from_CSR(r)
-                else: self._add_rel_from_str(r)
+                else:
+                    if str(r) != "set()":  #temp fix for passing empty set as a string (don't know who is doing such)
+                        self._add_rel_from_str(r)
             elif isinstance(r, ProjectiveRelation):
                 self.__relations = self.__relations.union(r.get_relations())
             else:  # maybe it is a set
@@ -263,6 +269,8 @@ class ProjectiveRelation:
                     tmp = _SingleProjectiveRelation()
                     tmp.add_rel_from_str(str(rel_name))
                     self.add_rel(tmp)
+
+        self.validate_relations()
         return self
 
     def add_rel_from_CSR(self, CSV: str):
@@ -299,6 +307,15 @@ class ProjectiveRelation:
             ret_rel.add_rel(rel.rotate())
 
         return ret_rel
+
+    def validate_relations(self):
+        to_be_deleted = set()
+        for r in self.__relations: #type: _SingleProjectiveRelation
+            relation_set = r.get_relations()
+            if relation_set.intersection(SINGLETILESET_NO_OVERLAP) and relation_set.intersection(SINGLETILESET_OVERLAP):
+                to_be_deleted.add(r)
+        if to_be_deleted:
+            self.__relations.remove(to_be_deleted.pop())
 
 
 class _Operations:

@@ -162,8 +162,11 @@ class ConstraintNetwork:
 if __name__ == '__main__':
     C = ConstraintNetwork()
 
+    print("start. Adding first relation to C...")
     C.addrel('A', 'B', 'C','bf')
+    print("done. Now adding second relation to C...")
     C.addrel('B', 'C', 'D','af')
+    print("done! Now trying to print out C")
 
     print(C)
 
