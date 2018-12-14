@@ -1,3 +1,5 @@
+import traceback
+
 from Model.Relations import *
 from Model.Relations import _SingleProjectiveRelation
 
@@ -252,6 +254,43 @@ def run_test_16():
         raise ValueError("TEST 16-e FAILED")
 
 
+#TODO: To complete composition in-ou rule test
+def run_test_17():
+    a=ProjectiveRelation("ls:bf,ls")
+    b=ProjectiveRelation("in:ou")
+    e=a.composition(b)
+
+
+#imp and empty string insertion test
+def run_test_18():
+    a = ProjectiveRelation("imp, ls, IMP, "", bf,rs")
+    expected = "rs, bf, ls"
+
+    if expected != str(a):
+        raise ValueError("TEST 17- FAILED")
+
+# auto validation test (wrong relation such as ls:ou will be deleted from the set
+def run_test_19():
+    a = ProjectiveRelation("ls:ou")
+    print(a)
+    expected_a = ""
+
+    b = ProjectiveRelation("rs:ls")
+    print(b)
+    expected_b = "rs:ls"
+
+    c = ProjectiveRelation("ls:rs:bf, ou, ou:ls, rs:bf:in, in:ou")
+    print(c)
+    expected_c = "ou, in:ou, rs:bf:ls"
+
+    if expected_a != str(a):
+        raise ValueError("TEST 18-a FAILED")
+    if expected_b != str(b):
+        raise ValueError("TEST 18-b FAILED")
+    if expected_c != str(c):
+        raise ValueError("TEST 18-c FAILED")
+
+
 if __name__ == '__main__':
     try:
         run_test_1()
@@ -270,7 +309,14 @@ if __name__ == '__main__':
         run_test_14()
         run_test_15()
         run_test_16()
+        run_test_17()
+        run_test_18()
+        run_test_19()
+
+
+
         print("SUCCESS!")
     except Exception as e:
         print("Test failed:", e)
+        traceback.print_exc()
 

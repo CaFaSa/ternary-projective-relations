@@ -15,7 +15,10 @@ AF = {"af"}
 IN = {"in"}
 OU = {"ou"}
 
+
 SINGLETILESET = set.union(BT, RS, BF, LS, AF, IN, OU)
+SINGLETILESET_NO_OVERLAP = set.union(BT, RS, BF, LS, AF)
+SINGLETILESET_OVERLAP = set.union(IN, OU)
 
 # Global variables below can not be evaluated atm because delta function is not loaded yet by Python interpreter.
 U = None  # delta(bt,rs,bf,ls,af,in,ou)           def10
@@ -141,8 +144,10 @@ class _SingleProjectiveRelation:
         if rel in SINGLETILESET:
             self.add_rel(eval(rel.upper()))
         else:
+
             raise ValueError(self.__class__,
                              "is trying to use _add_rel_from_str('" + rel + "') but '" + rel + "' is not in SINGLETILESET")
+
 
     def get_relations(self):
         return self.__relations
@@ -158,6 +163,7 @@ class ProjectiveRelation:
 
     def __init__(self, *basic_relations):
         self.add_rel(*basic_relations)
+        
 
     def __repr__(self):
         rel = sorted(self.__relations, key=lambda rel: ProjectiveRelation.order_position(str(rel)))
@@ -233,14 +239,18 @@ class ProjectiveRelation:
 
     def composition(self, other_rel):
         comp = set()
-        for rel1 in self.__relations:
-            for rel2 in other_rel.__relations:
+        relationsList=list(self.__relations)
+        otherRelationsList=list(other_rel.__relations)
+        for rel1 in relationsList:
+            for rel2 in otherRelationsList:
                 op_res = _Operations.composition(rel1,rel2)
                 comp = comp.union(op_res)
         return ProjectiveRelation(str(comp).replace("{","").replace("}","").replace(" ", "").replace("'", ""))
 
     def add_rel(self, *basic_relations):
         for r in basic_relations:
+            if r=="" or r=="IMP" or r=="imp": #ignores imp relations
+                continue
             if str(r).__contains__("{"):
                 r=str(r)
             if isinstance(r, _SingleProjectiveRelation):  # check if it is yet a _SingleProjectiveRelation
@@ -249,7 +259,9 @@ class ProjectiveRelation:
                 r=r.replace("{","").replace("}","").replace(" ", "").replace("'", "")
                 if "," in r:
                     self.add_rel_from_CSR(r)
-                else: self._add_rel_from_str(r)
+                else:
+                    if str(r) != "set()":  #temp fix for passing empty set as a string (don't know who is doing such)
+                        self._add_rel_from_str(r)
             elif isinstance(r, ProjectiveRelation):
                 self.__relations = self.__relations.union(r.get_relations())
             else:  # maybe it is a set
@@ -257,6 +269,8 @@ class ProjectiveRelation:
                     tmp = _SingleProjectiveRelation()
                     tmp.add_rel_from_str(str(rel_name))
                     self.add_rel(tmp)
+
+        self.validate_relations()
         return self
 
     def add_rel_from_CSR(self, CSV: str):
@@ -294,6 +308,15 @@ class ProjectiveRelation:
 
         return ret_rel
 
+    def validate_relations(self):
+        to_be_deleted = set()
+        for r in self.__relations: #type: _SingleProjectiveRelation
+            relation_set = r.get_relations()
+            if relation_set.intersection(SINGLETILESET_NO_OVERLAP) and relation_set.intersection(SINGLETILESET_OVERLAP):
+                to_be_deleted.add(r)
+        if to_be_deleted:
+            self.__relations.remove(to_be_deleted.pop())
+
 
 class _Operations:
     __converse_table = defaultdict(dict)
@@ -315,25 +338,19 @@ class _Operations:
     __rotation_table['in'] = set.union(IN)
     __rotation_table['ou'] = set.union(OU)
 
+
+
     @staticmethod
     def composition(r:ProjectiveRelation, q:ProjectiveRelation):
         T = Table5_composition()
+        inOutColumns_Table4 = Table4_in_ou_columns()
         columnList = ['bt', 'rs', 'bf', 'ls', 'af']
         subRowsList = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
         result = set()
 
-        '''
-        Per ogni sottoriga s, salvo in una lista le celle corrispondenti alle relazioni r1,...,rk
-        Faccio il prodotto fra di loro, unisco al risultato
-        Poi procedo alla sottoriga successiva
-        PROBLEMA: se q è la riga(ed È la riga)...ed r la colonna(ed r È la colonna)
-        richiamando la composition ricorsivamente, dove cavolo li vado a prendere IN e OU sulle COLONNE,
-        visto che non ci sono?
-        '''
+        #Da Ricontrollare
         if "in:ou" in str(r.get_relations()):
-            result = result.union(_Operations.product(_Operations.composition(ProjectiveRelation("in"), ProjectiveRelation(q)),
-                                                      _Operations.composition(ProjectiveRelation("ou"),
-                                                                  ProjectiveRelation(q))).get_relations())
+            result = result.union(_Operations.product(inOutColumns_Table4.get_value(q.get_relations(),"in"),inOutColumns_Table4.get_value(q.get_relations(),"ou")).get_relations())
         else:
             for i in range(len(T.get_subrows(q))):
                 factors = []
@@ -416,13 +433,75 @@ class _Operations:
 def concatenatedProduct(factors):
     result=None
     for factor in factors:
-        for singleElement in factor:
-            if not result:
-                result = ProjectiveRelation(singleElement)
-            else:
-                result = result.product(ProjectiveRelation(singleElement))
+        try:
+            for singleElement in factor:
+                if not result:
+                    result = ProjectiveRelation(singleElement)
+                else:
+                    result = result.product(ProjectiveRelation(singleElement))
+        except:
+            #print("[WARNING]: Relation.py is trying to iterate through a non iterable object... \nlast chance is trying to recover from failure skipping the iteration.\nTHE RESULT MAY BE INCORRECT")
+            result=None
 
     return result
+
+
+class Table4_in_ou_columns:
+    __table = None
+    __inColumn=[]
+    __ouColumn=[]
+    __rowList=["bt","rs","bf","ls","af","bt:rs","bt:bf","bt:ls","bt:af","rs:bf","rs:ls","rs:af","bf:ls","bf:af","ls:af","bt:rs:bf","bt:rs:ls","bt:rs:af","bt:bf:ls","bt:bf:af","bt:ls:af","rs:bf:ls","rs:bf:af","rs:ls:af","bf:ls:af","bt:rs:bf:ls","bt:rs:bf:af","bt:rs:ls:af","bt:bf:ls:af","rs:bf:ls:af","bt:rs:bf:ls:af","in","ou","in:ou"]
+
+    def __init__(self):
+        self.inColumnInit()
+        self.ouColumnInit()
+
+    def get_value(self,rowKey, columnKey):
+        if columnKey == "in":
+            return self.__inColumn[self.__rowList.index(rowKey)]    
+        else:
+            return self.__ouColumn[self.__rowList.index(rowKey)]
+
+
+    def ouColumnInit(self):
+        #ProjectiveRelation("rs:ls").augment(ProjectiveRelation().add_rel_from_CSR("bt,bf").delta())
+        self.__ouColumn.append(DD)
+        self.__ouColumn.append(DD)
+        self.__ouColumn.append(DD)
+        self.__ouColumn.append(DD) 
+        self.__inColumn.append(ProjectiveRelation("IMP")) #RIGA DA DECOMMENTARE APPENA VIENE INSERITA IMP
+        #self.__ouColumn.append(DC) #ATTENZIONE: INSERITA SOLO ALLO SCOPO DI TEST. APPENA VIENE INSERITA IMP, DECOMMENTARE LA RIGA SOPRASTANTE E CANCELLARE QUESTA
+        for i in range(0,26):
+            self.__ouColumn.append(DD)
+        self.__ouColumn.append(DC)
+        self.__ouColumn.append(DC)
+        self.__ouColumn.append(DC)
+
+
+    def inColumnInit(self):
+        #ProjectiveRelation("rs:ls").augment(ProjectiveRelation().add_rel_from_CSR("bt,bf").delta())
+        self.__inColumn.append(ProjectiveRelation("bt"))
+        self.__inColumn.append(ProjectiveRelation().add_rel_from_CSR("bt,rs,bf").delta())
+        self.__inColumn.append(ProjectiveRelation().add_rel_from_CSR("bt,bf").delta())
+        self.__inColumn.append(ProjectiveRelation().add_rel_from_CSR("bt,bf,ls").delta())
+        self.__inColumn.append(ProjectiveRelation("IMP")) #RIGA DA DECOMMENTARE APPENA VIENE INSERITA IMP
+        #self.__inColumn.append(DC)  #ATTENZIONE: INSERITA SOLO ALLO SCOPO DI TEST. APPENA VIENE INSERITA IMP, DECOMMENTARE LA RIGA SOPRASTANTE E CANCELLARE QUESTA
+        self.__inColumn.append(ProjectiveRelation().add_rel_from_CSR("bt,rs,bf,af").delta())
+        self.__inColumn.append(DD)
+        self.__inColumn.append(ProjectiveRelation().add_rel_from_CSR("bt,bf,ls,af").delta())
+        self.__inColumn.append(DD)
+        self.__inColumn.append(ProjectiveRelation().add_rel_from_CSR("bt,rs,bf").delta())
+        self.__inColumn.append(DD)
+        self.__inColumn.append(DD)
+        self.__inColumn.append(ProjectiveRelation().add_rel_from_CSR("bt,bf,ls").delta())
+
+        for i in range(0,18):
+            self.__inColumn.append(DD)
+        self.__inColumn.append(ProjectiveRelation("in"))
+        self.__inColumn.append(DC)
+        self.__inColumn.append(DC)
+
+
 
 class Table5_composition:
     __table = None
@@ -445,12 +524,16 @@ class Table5_composition:
             columnList = ['bt', 'rs', 'bf', 'ls', 'af']
             subRowsList = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
             #print(subRowKey)
-            return self.__table[str(rowKey)][subRowsList.index(subRowKey)][columnList.index(columnKey)]
+            if columnKey=="in" or columnKey=="ou":
+                Table4=Table4_in_ou_columns()
+                return Table4.get_value(rowKey,columnKey)
+            else:
+                return self.__table[str(rowKey)][subRowsList.index(subRowKey)][columnList.index(columnKey)]
         except:
-            print("GetVALUE",rowKey,subRowKey,columnKey)
-            print("Errore nella Table5_composition", sys.exc_info())
-            return None
-            exit()
+                print("GetVALUE",rowKey,subRowKey,columnKey)
+                print("Errore nella Table5_composition", sys.exc_info())
+                return None
+                exit()
 
     def get_subrows(self, rowKey):
         self.__table = self.readTable()
@@ -469,3 +552,4 @@ class Table5_composition:
 
 # now it is possible to initialize global variables
 _set_global_values()
+
