@@ -27,6 +27,9 @@ def rot(R):
 class ConstraintNetwork:
     def __init__(self, triplets={}):
         self.triplets = triplets
+        self.visited = {}
+        for key in self.triplets.keys():
+            self.visited[key]=False
 
     def setrel(self, R1, R2, R3, rel):
         #if the triplet is already in the dictionary in any of its permutations,
@@ -35,7 +38,13 @@ class ConstraintNetwork:
         for triplet in permutations:
             if triplet in self.triplets.keys():
                 del self.triplets[triplet]
+                del self.visited[triplet]
         self.triplets[R1, R2, R3] = rel
+        self.visited[R1, R2, R3] = False
+
+    def setvisitedfalse(self):
+        for key in self.triplets.keys():
+            self.visited[key]=False
 
     def OperatorTable(self,i):
         array_op=[lambda x: x, lambda x: ProjectiveRelation.converse(x), \
@@ -71,7 +80,10 @@ class ConstraintNetwork:
         It only works with tuples in the given order, that is, it doesn't check for permutations
         It returns a set of tuples
         '''
-        keys = self.triplets.keys()
+        print("calculating adjacent triplets to ", (R1,R2,R3))
+        keys = [key for key in self.triplets.keys() if self.visited[key]==False]
+        print("the candidate keys for which visited==False are: ")
+        print(keys)
         adjtrip = set()
         subset1 = set()
         subset2 = set()
@@ -117,18 +129,30 @@ class ConstraintNetwork:
         C = self
         queue = []
         queue.append((R1, R2, R3))
+        print("appended relation to queue...")
+        print("queue contains now ", queue)
         r = C.getrel(R1, R2, R3)
+        print("retrieved relation ",r)
         inters=r.intersection(rel)
+        print("made intersection, result is ", inters)
         C.setrel(R1, R2, R3, inters)
-        
+        C.visited[R1, R2, R3] = True
+        print("set relation")
+        print("now constraint network is :")
+        print(C)
+
         while queue != []:
             # adjtrip finds triplets with two regions in common with (R1,R2,R3)
             (R1, R2, R3) = queue.pop(0)
+            print("now extracted from queue relation ", (R1,R2,R3))
             adjtrip = C.adjtrip(R1, R2, R3)
-            for triplet in adjtrip:
+            print("now finding adjacent triplets. They are:")
+            print(adjtrip)
 
-                #(R1,R2,R3) is the triplet to be added to the network
+            for triplet in adjtrip:
+                #(R1,R2,R3) is the triplet extracted from the queue
                 # <triplet> is one of the adjacent triplets to (R1,R2,R3)
+                C.visited[triplet] = True
                 # we need to find the regions that are in common with function regions_in_common:
                 # where RA is the region not in common in (R1,R2,R3), RB and RC are the regions in common,
                 # and RD is the region not in common in <triplet>
@@ -151,10 +175,19 @@ class ConstraintNetwork:
                 inters2 = oldr2.intersection(newr2)
                 if inters1 != oldr1:
                     C.setrel(RA, RC, RD, inters1)
+                    C.visited[RA, RC, RD] = True
                     queue.append(t1)
                 if inters2 != oldr2:
                     C.setrel(RA, RB, RD, inters2)
+                    C.visited[RA, RB, RD] = True
                     queue.append(t2)
+                print("processing adjacent triplet ", triplet, " to ", (R1,R2,R3))
+                print("two new relations are added")
+                print("now constraint network is :")
+                print(C)
+
+        #when queue is empty the network is set back all to visited = False
+        C.setvisitedfalse()
 
     def __str__(self):
         s = ''
