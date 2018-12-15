@@ -103,26 +103,26 @@ class ConstraintNetwork:
 
     def regions_in_common(self,regions, triplet):
     # the two given triplets must have two elements in common
-    # the function returns a tuple (RA,RB,RC,RD) where RA is the region not in common in (R1,R2,R3),
+    # the function returns a tuple (RA,RB,RC,RD) where RD is the region not in common in (R1,R2,R3),
     # RB and RC are the regions in common,
-    # and RD is the region not in common in <triplet>
+    # and RA is the region not in common in <triplet>
         (RA, RB, RC, RD) = (None, None, None, None)
         (R1, R2, R3)=regions
         abcset=set()
         abcset.update(triplet)
         if R1 not in triplet:
-            (RA,RB,RC)=(R1,R2,R3)
+            (RB, RC, RD)=(R2, R3, R1)
             abcset.remove(R2)
             abcset.remove(R3)
         if R2 not in triplet:
-            (RA, RB, RC) = (R2, R1, R3)
+            (RB, RC, RD) = (R3, R1, R2)
             abcset.remove(R1)
             abcset.remove(R3)
         if R3 not in triplet:
-            (RA, RB, RC) = (R3, R1, R2)
+            (RB, RC, RD) = (R1, R2, R3)
             abcset.remove(R1)
             abcset.remove(R2)
-        RD = abcset.pop()
+        RA = abcset.pop()
         return (RA, RB, RC, RD)
 
     def addrel(self, R1, R2, R3, rel):
@@ -154,8 +154,8 @@ class ConstraintNetwork:
                 # <triplet> is one of the adjacent triplets to (R1,R2,R3)
                 C.visited[triplet] = True
                 # we need to find the regions that are in common with function regions_in_common:
-                # where RA is the region not in common in (R1,R2,R3), RB and RC are the regions in common,
-                # and RD is the region not in common in <triplet>
+                # where RD is the region not in common in (R1,R2,R3), RB and RC are the regions in common,
+                # and RA is the region not in common in <triplet>
                 (RA,RB,RC,RD)=self.regions_in_common((R1,R2,R3),triplet)
                 # the two new triplets to be added to the network are (RA,RC,RD) and (RA,RB,RD)
                 t1=(RA, RC, RD)
@@ -203,7 +203,7 @@ if __name__ == '__main__':
     print("start. Adding first relation to C...")
     C.addrel('A', 'B', 'C','bf')
     print("done. Now adding second relation to C...")
-    C.addrel('B', 'C', 'D','af')
+    C.addrel('B', 'C', 'D','rs')
     print("done! Now trying to print out C")
     print(C)
     end = time.time()
