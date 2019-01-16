@@ -55,6 +55,7 @@ class ConstraintNetwork:
         return array_op[i]
 
     def getrel(self, R1, R2, R3):
+        
         permutations = tuple(itertools.permutations((R1, R2, R3)))
         for i in range(len(permutations)):
             triplet=permutations[i]
@@ -169,6 +170,8 @@ class ConstraintNetwork:
                 r3=C.getrel(RA, RC, RB)
                 r4=C.getrel(RC, RB, RD)
                 newr2 = r3.composition(r4)
+                #print(r3)
+                #print(r4)
                 oldr1 = C.getrel(RA, RC, RD)
                 oldr2 = C.getrel(RA, RB, RD)
                 inters1 = oldr1.intersection(newr1)
@@ -197,11 +200,12 @@ class ConstraintNetwork:
 
 
 if __name__ == '__main__':
+
     print("Starting timer...")
     start = time.time()
     C = ConstraintNetwork()
     print("start. Adding first relation to C...")
-    C.addrel('A', 'B', 'C','bf')
+    C.addrel('A', 'B', 'C','bf:ls')
     print("done. Now adding second relation to C...")
     C.addrel('B', 'C', 'D','rs')
     print("done! Now trying to print out C")

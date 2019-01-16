@@ -4,6 +4,7 @@ import pickle
 import os
 from collections import defaultdict
 import sys
+import traceback
 
 # Relation's constants
 BT = {"bt"}
@@ -339,29 +340,6 @@ class _Operations:
     __rotation_table['ou'] = set.union(OU)
 
 
-
-    @staticmethod
-    def composition(r:ProjectiveRelation, q:ProjectiveRelation):
-        T = Table5_composition()
-        inOutColumns_Table4 = Table4_in_ou_columns()
-        columnList = ['bt', 'rs', 'bf', 'ls', 'af']
-        subRowsList = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
-        result = set()
-
-        #Da Ricontrollare
-        if "in:ou" in str(r.get_relations()):
-            result = result.union(_Operations.product(inOutColumns_Table4.get_value(q.get_relations(),"in"),inOutColumns_Table4.get_value(q.get_relations(),"ou")).get_relations())
-        else:
-            for i in range(len(T.get_subrows(q))):
-                factors = []
-                for rel in r.__repr__().split(":"):
-                    factors.append(T.get_value(str(q), subRowsList[i], str(rel)))
-                product = concatenatedProduct(factors)
-                if not product is None:
-                    result = result.union(product.get_relations())
-
-        return result
-
     @staticmethod
     def converse(relation: _SingleProjectiveRelation):
         relations = relation.get_relations()
@@ -429,21 +407,43 @@ class _Operations:
     def _setRotationTable(row, projectiveRelation: ProjectiveRelation):
         _Operations.__rotation_table[row] = projectiveRelation
 
+    @staticmethod
+    def composition(r:ProjectiveRelation, q:ProjectiveRelation):
+        T = Table5_composition()
+        inOutColumns_Table4 = Table4_in_ou_columns()
+        columnList = ['bt', 'rs', 'bf', 'ls', 'af']
+        subRowsList = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+        result = set()
+
+        if "in:ou" in str(r.get_relations()):
+            result = result.union(_Operations.product(inOutColumns_Table4.get_value(q.get_relations(),"in"),inOutColumns_Table4.get_value(q.get_relations(),"ou")).get_relations())
+        else:
+            for i in range(len(T.get_subrows(q))):
+                factors = []
+                for rel in r.__repr__().split(":"):
+                    factors.append((T.get_value(str(q), subRowsList[i], str(rel))))
+                product = concatenatedProduct(factors)
+                if not product is None:
+                    result = result.union(product.get_relations())
+
+        return result
+
+
 #TODO: move from global scope
 def concatenatedProduct(factors):
     result=None
-    for factor in factors:
-        try:
-            for singleElement in factor:
-                if not result:
-                    result = ProjectiveRelation(singleElement)
-                else:
-                    result = result.product(ProjectiveRelation(singleElement))
-        except:
-            #print("[WARNING]: Relation.py is trying to iterate through a non iterable object... \nlast chance is trying to recover from failure skipping the iteration.\nTHE RESULT MAY BE INCORRECT")
-            result=None
-
+    factors= list(factors)
+    if len(factors)==1:
+        result=ProjectiveRelation(factors[0])
+    else:
+        for i in range(0,len(factors)):
+            if not result:
+                result = ProjectiveRelation(factors[i])
+            else:
+                result = result.product(ProjectiveRelation(factors[i]))
     return result
+
+
 
 
 class Table4_in_ou_columns:
@@ -553,3 +553,20 @@ class Table5_composition:
 # now it is possible to initialize global variables
 _set_global_values()
 
+'''
+r=ProjectiveRelation("bf:ls")
+q=ProjectiveRelation(RS)
+print(r,"°", q, "=", _Operations.composition(r,q))
+r=ProjectiveRelation("bf")
+q=ProjectiveRelation(RS)
+print(r,"°", q, "=", _Operations.composition(r,q))
+r=ProjectiveRelation("rs")
+q=ProjectiveRelation("bt:ls")
+print(r,"°", q, "=", _Operations.composition(r,q))
+r=ProjectiveRelation("rs:ls")
+q=ProjectiveRelation("bt:rs:bf")
+print(r,"°", q, "=", _Operations.composition(r,q))
+r=ProjectiveRelation("rs")
+q=ProjectiveRelation("bt:rs:ls")
+print(r,"°", q, "=", _Operations.composition(r,q))
+'''
