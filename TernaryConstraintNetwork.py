@@ -81,10 +81,10 @@ class ConstraintNetwork:
         It only works with tuples in the given order, that is, it doesn't check for permutations
         It returns a set of tuples
         '''
-        print("calculating adjacent triplets to ", (R1,R2,R3))
+        #print("calculating adjacent triplets to ", (R1,R2,R3))
         keys = [key for key in self.triplets.keys() if self.visited[key]==False]
-        print("the candidate keys for which visited==False are: ")
-        print(keys)
+        #print("the candidate keys for which visited==False are: ")
+        #print(keys)
         adjtrip = set()
         subset1 = set()
         subset2 = set()
@@ -130,12 +130,12 @@ class ConstraintNetwork:
         C = self
         queue = []
         queue.append((R1, R2, R3))
-        print("appended relation to queue...")
-        print("queue contains now ", queue)
+        #print("appended relation to queue...")
+        #print("queue contains now ", queue)
         r = C.getrel(R1, R2, R3)
-        print("retrieved relation ",r)
+        #print("retrieved relation ",r)
         inters=r.intersection(rel)
-        print("made intersection, result is ", inters)
+        #print("made intersection, result is ", inters)
         C.setrel(R1, R2, R3, inters)
         C.visited[R1, R2, R3] = True
         # print("set relation")
@@ -145,10 +145,10 @@ class ConstraintNetwork:
         while queue != []:
             # adjtrip finds triplets with two regions in common with (R1,R2,R3)
             (R1, R2, R3) = queue.pop(0)
-            print("now extracted from queue relation ", (R1,R2,R3))
+            #print("now extracted from queue relation ", (R1,R2,R3))
             adjtrip = C.adjtrip(R1, R2, R3)
-            print("now finding adjacent triplets. They are:")
-            print(adjtrip)
+            #print("now finding adjacent triplets. They are:")
+            #print(adjtrip)
 
             for triplet in adjtrip:
                 #(R1,R2,R3) is the triplet extracted from the queue
@@ -229,5 +229,5 @@ C.setrel('l','r',inters)
 newarc=Constraints(C.getrel('s','l'),C.getrel('l','r'))
 inters=C.getrel('s','r').intersection(newarc)
 C.setrel('s','r',inters)
-print(C)
+#print(C)
 '''
