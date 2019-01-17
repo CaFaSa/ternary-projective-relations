@@ -4,7 +4,6 @@ import pickle
 import os
 from collections import defaultdict
 import sys
-import traceback
 
 # Relation's constants
 BT = {"bt"}
@@ -412,9 +411,8 @@ class _Operations:
 
     @staticmethod
     def composition(r:ProjectiveRelation, q:ProjectiveRelation):
-        T = Table5_composition()
-        inOutColumns_Table4 = Table4_in_ou_columns()
-        columnList = ['bt', 'rs', 'bf', 'ls', 'af']
+        T = TABLE5
+        inOutColumns_Table4 = TABLE4
         subRowsList = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
         result = set()
 
@@ -445,8 +443,6 @@ def concatenatedProduct(factors):
             else:
                 result = result.product(ProjectiveRelation(factors[i]))
     return result
-
-
 
 
 class Table4_in_ou_columns:
@@ -505,7 +501,6 @@ class Table4_in_ou_columns:
         self.__inColumn.append(DC)
 
 
-
 class Table5_composition:
     __table = None
 
@@ -515,10 +510,9 @@ class Table5_composition:
             return pickle.load(f)
 
     def get_value(self, rowKey, subRowKey, columnKey):
-
-
         try:
-            self.__table = self.readTable()
+            if self.__table == None:
+                self.__table = self.readTable()
         except:
             print("Unable to load table.\n")
             exit()
@@ -526,7 +520,6 @@ class Table5_composition:
         try:
             columnList = ['bt', 'rs', 'bf', 'ls', 'af']
             subRowsList = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
-            #print(subRowKey)
             if columnKey=="in" or columnKey=="ou":
                 Table4=Table4_in_ou_columns()
                 return Table4.get_value(rowKey,columnKey)
@@ -536,12 +529,10 @@ class Table5_composition:
                 print("GetVALUE",rowKey,subRowKey,columnKey)
                 print("Errore nella Table5_composition", sys.exc_info())
                 return None
-                exit()
 
     def get_subrows(self, rowKey):
-        self.__table = self.readTable()
-        columnList = ['bt', 'rs', 'bf', 'ls', 'af']
-        subRowsList = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+        if self.__table==None:
+            self.__table = self.readTable()
         return self.__table[str(rowKey)][:][:]
 
     def get_ProjectiveRelation_object(self, rowKey, subRowKey, columnKey):
@@ -553,8 +544,13 @@ class Table5_composition:
         return returning_rel
 
 
+
+
+
 # now it is possible to initialize global variables
 _set_global_values()
+TABLE4=Table4_in_ou_columns()
+TABLE5=Table5_composition()
 
 '''
 r=ProjectiveRelation("bf:ls")
