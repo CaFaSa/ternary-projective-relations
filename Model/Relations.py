@@ -289,11 +289,14 @@ class ProjectiveRelation:
         if rel.__len__() > 2:
             relations = rel.split(":")
             for r in relations:
-                if r.__len__() == 2:
-                    adding_rel.add_rel_from_str(r)
+                if r == "" or r == "IMP" or r == "imp":  # ignores imp relations
+                    continue
                 else:
-                    raise ValueError(self.__class__,
-                                     "is trying to use _add_rel_from_str('" + rel + "'). The splitted '" + r + " has not length 2")
+                    if r.__len__() == 2:
+                        adding_rel.add_rel_from_str(r)
+                    else:
+                        raise ValueError(self.__class__,
+                                         "is trying to use _add_rel_from_str('" + rel + "'). The splitted '" + r + " has not length 2")
         else:
             adding_rel.add_rel_from_str(rel)
 

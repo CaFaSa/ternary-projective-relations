@@ -138,9 +138,9 @@ class ConstraintNetwork:
         print("made intersection, result is ", inters)
         C.setrel(R1, R2, R3, inters)
         C.visited[R1, R2, R3] = True
-        print("set relation")
-        print("now constraint network is :")
-        print(C)
+        # print("set relation")
+        # print("now constraint network is :")
+        # print(C)
 
         while queue != []:
             # adjtrip finds triplets with two regions in common with (R1,R2,R3)
@@ -184,10 +184,10 @@ class ConstraintNetwork:
                     C.setrel(RA, RB, RD, inters2)
                     C.visited[RA, RB, RD] = True
                     queue.append(t2)
-                print("processing adjacent triplet ", triplet, " to ", (R1,R2,R3))
-                print("two new relations are added")
-                print("now constraint network is :")
-                print(C)
+                # print("processing adjacent triplet ", triplet, " to ", (R1,R2,R3))
+                # print("two new relations are added")
+                # print("now constraint network is :")
+                # print(C)
 
         #when queue is empty the network is set back all to visited = False
         C.setvisitedfalse()
@@ -205,12 +205,14 @@ if __name__ == '__main__':
     start = time.time()
     C = ConstraintNetwork()
     print("start. Adding first relation to C...")
-    C.addrel('A', 'B', 'C','bf:ls')
+    C.addrel('A', 'B', 'C','bf')
     print("done. Now adding second relation to C...")
     C.addrel('B', 'C', 'D','rs')
+    print("done! Now adding third relation to C...")
+    C.addrel('C', 'D', 'E', 'ls')
+    end = time.time()
     print("done! Now trying to print out C")
     print(C)
-    end = time.time()
     print("ELAPSED TIME: ", end - start)
 
 
