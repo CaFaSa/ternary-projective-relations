@@ -3,7 +3,7 @@ from collections import defaultdict
 from Model.Relations import *
 from Model.Relations import _Operations
 import time
-
+import threading
 '''
 def Constraints(re1, re2):
     comp = set()
@@ -24,6 +24,8 @@ def rot(R):
         rotR.add(r.rotate())
     return rotR
 '''
+lock = threading.Lock()
+
 class ConstraintNetwork:
     def __init__(self, triplets={}):
         self.triplets = triplets
@@ -74,6 +76,7 @@ class ConstraintNetwork:
             nodes.add(b)
             nodes.add(c)
         return nodes
+
 
     def adjtrip(self, R1, R2, R3):
         '''
@@ -126,6 +129,50 @@ class ConstraintNetwork:
         RA = abcset.pop()
         return (RA, RB, RC, RD)
 
+
+
+    def calculate(self,triplet,R1,R2,R3,queue,C):
+        #(R1,R2,R3) is the triplet extracted from the queue
+        # <triplet> is one of the adjacent triplets to (R1,R2,R3)
+        C.visited[triplet] = True
+        # we need to find the regions that are in common with function regions_in_common:
+        # where RD is the region not in common in (R1,R2,R3), RB and RC are the regions in common,
+        # and RA is the region not in common in <triplet>
+        (RA,RB,RC,RD)=self.regions_in_common((R1,R2,R3),triplet)
+        # the two new triplets to be added to the network are (RA,RC,RD) and (RA,RB,RD)
+        t1=(RA, RC, RD)
+        t2=(RA, RB, RD)
+        # getrel must take into account permutations
+        # compositions to be calculated are RA,RB,RC + RB,RC,RD = RA,RC,RD
+        # and RA,RC,RB + RC,RB,RD = RA,RB,RD
+        r1=C.getrel(RA, RB, RC)
+        r2=C.getrel(RB, RC, RD)
+        newr1 = r1.composition(r2)
+        r3=C.getrel(RA, RC, RB)
+        r4=C.getrel(RC, RB, RD)
+        newr2 = r3.composition(r4)
+        #print(r3)
+        #print(r4)
+        oldr1 = C.getrel(RA, RC, RD)
+        oldr2 = C.getrel(RA, RB, RD)
+        inters1 = oldr1.intersection(newr1)
+        inters2 = oldr2.intersection(newr2)
+        with lock:
+            if inters1 != oldr1:
+                C.setrel(RA, RC, RD, inters1)
+                C.visited[RA, RC, RD] = True
+                queue.append(t1)
+            if inters2 != oldr2:
+                C.setrel(RA, RB, RD, inters2)
+                C.visited[RA, RB, RD] = True
+                queue.append(t2)
+            # print("processing adjacent triplet ", triplet, " to ", (R1,R2,R3))
+            # print("two new relations are added")
+            # print("now constraint network is :")
+            # print(C)
+
+
+
     def addrel(self, R1, R2, R3, rel):
         C = self
         queue = []
@@ -141,7 +188,6 @@ class ConstraintNetwork:
         # print("set relation")
         # print("now constraint network is :")
         # print(C)
-
         while queue != []:
             # adjtrip finds triplets with two regions in common with (R1,R2,R3)
             (R1, R2, R3) = queue.pop(0)
@@ -149,48 +195,18 @@ class ConstraintNetwork:
             adjtrip = C.adjtrip(R1, R2, R3)
             #print("now finding adjacent triplets. They are:")
             #print(adjtrip)
-
+            threads= []
             for triplet in adjtrip:
-                #(R1,R2,R3) is the triplet extracted from the queue
-                # <triplet> is one of the adjacent triplets to (R1,R2,R3)
-                C.visited[triplet] = True
-                # we need to find the regions that are in common with function regions_in_common:
-                # where RD is the region not in common in (R1,R2,R3), RB and RC are the regions in common,
-                # and RA is the region not in common in <triplet>
-                (RA,RB,RC,RD)=self.regions_in_common((R1,R2,R3),triplet)
-                # the two new triplets to be added to the network are (RA,RC,RD) and (RA,RB,RD)
-                t1=(RA, RC, RD)
-                t2=(RA, RB, RD)
-                # getrel must take into account permutations
-                # compositions to be calculated are RA,RB,RC + RB,RC,RD = RA,RC,RD
-                # and RA,RC,RB + RC,RB,RD = RA,RB,RD
-                r1=C.getrel(RA, RB, RC)
-                r2=C.getrel(RB, RC, RD)
-                newr1 = r1.composition(r2)
-                r3=C.getrel(RA, RC, RB)
-                r4=C.getrel(RC, RB, RD)
-                newr2 = r3.composition(r4)
-                #print(r3)
-                #print(r4)
-                oldr1 = C.getrel(RA, RC, RD)
-                oldr2 = C.getrel(RA, RB, RD)
-                inters1 = oldr1.intersection(newr1)
-                inters2 = oldr2.intersection(newr2)
-                if inters1 != oldr1:
-                    C.setrel(RA, RC, RD, inters1)
-                    C.visited[RA, RC, RD] = True
-                    queue.append(t1)
-                if inters2 != oldr2:
-                    C.setrel(RA, RB, RD, inters2)
-                    C.visited[RA, RB, RD] = True
-                    queue.append(t2)
-                # print("processing adjacent triplet ", triplet, " to ", (R1,R2,R3))
-                # print("two new relations are added")
-                # print("now constraint network is :")
-                # print(C)
+                t = threading.Thread(target=self.calculate,args=(triplet,R1,R2,R3,queue,C,))
+                threads.append(t)
+                t.start()
+
+            for thread in threads:
+                thread.join()
 
         #when queue is empty the network is set back all to visited = False
         C.setvisitedfalse()
+
 
     def __str__(self):
         s = ''
@@ -205,7 +221,7 @@ if __name__ == '__main__':
     start = time.time()
     C = ConstraintNetwork()
     print("start. Adding first relation to C...")
-    C.addrel('A', 'B', 'C','bf:ls')
+    C.addrel('A', 'B', 'C','bf')
     print("done. Now adding second relation to C...")
     C.addrel('B', 'C', 'D','rs')
     print("done! Now adding third relation to C...")

@@ -94,12 +94,15 @@ def _set_global_values():
 class _SingleProjectiveRelation:
     __relations = set()
     __iterated = []
-
+    __repr= None
     def __init__(self, *single_tile_relations):
         for relation in single_tile_relations:
             self.add_rel(relation)
 
-    def __repr__(self):
+    def __repr__(self,update=False):
+        if update == False and (not self.__repr == None) :
+            return self.__repr
+
         sorted_relations = sorted(self.__relations, key=lambda x: order.index(x))
         relation_string = ""
         for r in sorted_relations:
@@ -131,6 +134,7 @@ class _SingleProjectiveRelation:
 
     def converse(self):
         self = _Operations.converse(self)
+        self.__repr=self.__repr__(True)
         return self
 
     def rotate(self):
@@ -138,6 +142,7 @@ class _SingleProjectiveRelation:
 
     def add_rel(self, *relations):
         self.__relations = set.union(self.__relations, *relations)
+        self.__repr=self.__repr__(True)
         return self
 
     def add_rel_from_str(self, rel):
@@ -155,17 +160,18 @@ class _SingleProjectiveRelation:
     def remove_relations(self, *relations):
         for r in relations:
             self.__relations.remove(r)
-
+        self.__repr=self.__repr__(True) 
 
 class ProjectiveRelation:
     __relations = set()
     __iterated = []
-
+    __repr= None
     def __init__(self, *basic_relations):
         self.add_rel(*basic_relations)
         
-
-    def __repr__(self):
+    def __repr__(self,update=False):
+        if update == False and (not self.__repr == None) :
+            return self.__repr
         rel = sorted(self.__relations, key=lambda rel: ProjectiveRelation.order_position(str(rel)))
         relations = ""
         for i in rel:
@@ -218,6 +224,7 @@ class ProjectiveRelation:
         return _Operations.augment(self, other)
 
     def product(self, other):
+        self.__repr__(True)
         return _Operations.product(self, other)
 
     def delta(self):
@@ -255,6 +262,7 @@ class ProjectiveRelation:
                 r=str(r)
             if isinstance(r, _SingleProjectiveRelation):  # check if it is yet a _SingleProjectiveRelation
                 self.__relations = set.union(self.__relations, basic_relations)
+
             elif isinstance(r, str):
                 r=r.replace("{","").replace("}","").replace(" ", "").replace("'", "")
                 if "," in r:
@@ -262,8 +270,10 @@ class ProjectiveRelation:
                 else:
                     if str(r) != "set()":  #temp fix for passing empty set as a string (don't know who is doing such)
                         self._add_rel_from_str(r)
+                        self.__repr__(True)
             elif isinstance(r, ProjectiveRelation):
                 self.__relations = self.__relations.union(r.get_relations())
+                self.__repr__(True)
             else:  # maybe it is a set
                 for rel_name in r:
                     tmp = _SingleProjectiveRelation()
@@ -319,6 +329,7 @@ class ProjectiveRelation:
                 to_be_deleted.add(r)
         if to_be_deleted:
             self.__relations.remove(to_be_deleted.pop())
+
 
 
 class _Operations:
@@ -411,20 +422,19 @@ class _Operations:
 
     @staticmethod
     def composition(r:ProjectiveRelation, q:ProjectiveRelation):
-        T = TABLE5
-        inOutColumns_Table4 = TABLE4
         subRowsList = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
         result = set()
+        r_SplittedRelation=r.__repr__().split(":")
 
         if "in:ou" in str(r.get_relations()):
-            result = result.union(_Operations.product(inOutColumns_Table4.get_value(q.get_relations(),"in"),inOutColumns_Table4.get_value(q.get_relations(),"ou")).get_relations())
+            result = result.union(_Operations.product(TABLE4.get_value(q.get_relations(),"in"),TABLE4.get_value(q.get_relations(),"ou")).get_relations())
         else:
-            for i in range(len(T.get_subrows(q))):
+            for i in range(len(TABLE5.get_subrows(q))):
                 factors = []
-                for rel in r.__repr__().split(":"):
-                    factors.append((T.get_value(str(q), subRowsList[i], str(rel))))
+                for rel in r_SplittedRelation:
+                    factors.append((TABLE5.get_value(str(q), subRowsList[i], str(rel))))
                 product = concatenatedProduct(factors)
-                if not product is None:
+                if product != None:
                     result = result.union(product.get_relations())
 
         return result
