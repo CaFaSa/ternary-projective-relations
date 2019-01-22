@@ -442,23 +442,28 @@ class _Operations:
         subRowsList = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
         result = set()
         r_SplittedRelation=r.__repr__().split(":")
-
-        if "in:ou" in str(r.get_relations()):
-            result = result.union(_Operations.product(TABLE4.get_value(q.get_relations(),"in"),TABLE4.get_value(q.get_relations(),"ou")).get_relations())
+        storedResult=PRODUCTSLOOKUPTABLE.table.get(str(r)+str(q))
+ 
+        if storedResult != None:
+            result = storedResult
+            tempResult=set()
+            for element in result.replace("{","").replace("}","").replace(" ","").split(","):
+                tempResult.add(element)
+            result= tempResult
         else:
-            for i in range(len(TABLE5.get_subrows(q))):
-                factors = []
-                for rel in r_SplittedRelation:
-                    factors.append((TABLE5.get_value(str(q), subRowsList[i], str(rel))))
-                keyForSearchingFactors= ''.join(str(factors))
-                storedResult=PRODUCTSLOOKUPTABLE.table.get(keyForSearchingFactors)
-                if storedResult!= None:
-                    product=ProjectiveRelation(storedResult)
-                else:
+            if "in:ou" in str(r.get_relations()):
+                result = result.union(_Operations.product(TABLE4.get_value(q.get_relations(),"in"),TABLE4.get_value(q.get_relations(),"ou")).get_relations())
+            else:
+                for i in range(len(TABLE5.get_subrows(q))):
+                    factors = []
+                    for rel in r_SplittedRelation:
+                        factors.append((TABLE5.get_value(str(q), subRowsList[i], str(rel))))
                     product = concatenatedProduct(factors)
-                    PRODUCTSLOOKUPTABLE.insert(keyForSearchingFactors,str(product))
-                if product != None:
-                    result = result.union(product.get_relations())
+
+                    if product != None:
+                        result = result.union(product.get_relations())
+                        
+                    PRODUCTSLOOKUPTABLE.insert(str(r)+str(q),str(result))
 
         return result
 

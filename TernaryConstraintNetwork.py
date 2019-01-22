@@ -192,10 +192,12 @@ class ConstraintNetwork:
         #when queue is empty the network is set back all to visited = False
         C.setvisitedfalse()
 
+
     def __str__(self):
         s = ''
         for arc in self.triplets:
             s = s + str(arc) + ': ' + str(C.triplets[arc]) + '\n'
+
         return s
 
 
@@ -205,7 +207,7 @@ if __name__ == '__main__':
     start = time.time()
     C = ConstraintNetwork()
     print("start. Adding first relation to C...")
-    C.addrel('A', 'B', 'C','bf')
+    C.addrel('A', 'B', 'C','bf:ls')
     print("done. Now adding second relation to C...")
     C.addrel('B', 'C', 'D','rs')
     print("done! Now adding third relation to C...")
@@ -222,6 +224,17 @@ if __name__ == '__main__':
     C.addrel('I','H','F','bt')
     print("done! Now adding nineth relation to C...")    
     C.addrel('L','H','A','rs')
+    print("done! Now adding tenth relation to C...")    
+    C.addrel('L','A','F','af')
+    print("done! Now adding eleventh relation to C...")    
+    C.addrel('L','H','D','ls')
+    print("done! Now adding twelveth relation to C...")    
+    C.addrel('A','L','C','rs')
+    print("done! Now adding thirteenth relation to C...")    
+    C.addrel('B','A','L','bt')
+
+    print("done! Now adding nineth relation to C...")    
+    
     end = time.time()
     print("done! Now trying to print out C")
     print(C)
