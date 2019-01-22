@@ -210,6 +210,7 @@ if __name__ == '__main__':
     C.addrel('B', 'C', 'D','rs')
     print("done! Now adding third relation to C...")
     C.addrel('C', 'D', 'E', 'ls')
+    C.addrel('D','A','B','af')
     end = time.time()
     print("done! Now trying to print out C")
     print(C)

@@ -3,6 +3,7 @@ import itertools
 import pickle
 import os
 from collections import defaultdict
+from Model.ReprLookupTable import REPRLOOKUPTABLE
 import sys
 
 # Relation's constants
@@ -108,8 +109,9 @@ class _SingleProjectiveRelation:
         for r in sorted_relations:
             relation_string = relation_string + r + ":"
         relation_string = relation_string[:-1]
+        self.__repr=relation_string
 
-        return relation_string
+        return self.__repr
 
     def __hash__(self):
         return hash(repr(self))
@@ -134,7 +136,7 @@ class _SingleProjectiveRelation:
 
     def converse(self):
         self = _Operations.converse(self)
-        self.__repr=self.__repr__(True)
+        self.__repr__(True)
         return self
 
     def rotate(self):
@@ -142,7 +144,7 @@ class _SingleProjectiveRelation:
 
     def add_rel(self, *relations):
         self.__relations = set.union(self.__relations, *relations)
-        self.__repr=self.__repr__(True)
+        self.__repr__(True)
         return self
 
     def add_rel_from_str(self, rel):
@@ -160,7 +162,7 @@ class _SingleProjectiveRelation:
     def remove_relations(self, *relations):
         for r in relations:
             self.__relations.remove(r)
-        self.__repr=self.__repr__(True) 
+        self.__repr__(True) 
 
 class ProjectiveRelation:
     __relations = set()
@@ -172,12 +174,20 @@ class ProjectiveRelation:
     def __repr__(self,update=False):
         if update == False and (not self.__repr == None) :
             return self.__repr
-        rel = sorted(self.__relations, key=lambda rel: ProjectiveRelation.order_position(str(rel)))
-        relations = ""
-        for i in rel:
-            relations = relations + str(i) + ", "
+        representation = REPRLOOKUPTABLE.table.get(str(self.__relations))
+        
+        if representation != None:
+            self.__repr=representation
+        else: 
+            rel = sorted(self.__relations, key=lambda rel: ProjectiveRelation.order_position(str(rel)))
+            relations = ""
+            for i in rel:
+                relations = relations + str(i) + ", "
+            self.__repr=relations[:-2]
+            print(relations[:-2])
+            REPRLOOKUPTABLE.insert(str(self.__relations),self.__repr)
 
-        return relations[:-2]
+        return self.__repr
 
     def __eq__(self, other):
         return repr(self) == repr(other)
@@ -224,7 +234,6 @@ class ProjectiveRelation:
         return _Operations.augment(self, other)
 
     def product(self, other):
-        self.__repr__(True)
         return _Operations.product(self, other)
 
     def delta(self):
@@ -262,7 +271,7 @@ class ProjectiveRelation:
                 r=str(r)
             if isinstance(r, _SingleProjectiveRelation):  # check if it is yet a _SingleProjectiveRelation
                 self.__relations = set.union(self.__relations, basic_relations)
-
+                self.__repr__(True)
             elif isinstance(r, str):
                 r=r.replace("{","").replace("}","").replace(" ", "").replace("'", "")
                 if "," in r:
@@ -270,7 +279,6 @@ class ProjectiveRelation:
                 else:
                     if str(r) != "set()":  #temp fix for passing empty set as a string (don't know who is doing such)
                         self._add_rel_from_str(r)
-                        self.__repr__(True)
             elif isinstance(r, ProjectiveRelation):
                 self.__relations = self.__relations.union(r.get_relations())
                 self.__repr__(True)
