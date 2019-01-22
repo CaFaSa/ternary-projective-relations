@@ -4,6 +4,8 @@ import pickle
 import os
 from collections import defaultdict
 from Model.ReprLookupTable import REPRLOOKUPTABLE
+from Model.ValidatorLookupTable import VALIDATORLOOKUPTABLE
+from Model.ProductsLookupTable import PRODUCTSLOOKUPTABLE
 import sys
 
 # Relation's constants
@@ -174,6 +176,7 @@ class ProjectiveRelation:
     def __repr__(self,update=False):
         if update == False and (not self.__repr == None) :
             return self.__repr
+
         representation = REPRLOOKUPTABLE.table.get(str(self.__relations))
         
         if representation != None:
@@ -329,12 +332,18 @@ class ProjectiveRelation:
 
         return ret_rel
 
+
     def validate_relations(self):
         to_be_deleted = set()
         for r in self.__relations: #type: _SingleProjectiveRelation
-            relation_set = r.get_relations()
-            if relation_set.intersection(SINGLETILESET_NO_OVERLAP) and relation_set.intersection(SINGLETILESET_OVERLAP):
+            toBeDeleted=VALIDATORLOOKUPTABLE.table.get(str(r))
+            if toBeDeleted != None:
                 to_be_deleted.add(r)
+            else:
+                relation_set = r.get_relations()
+                if relation_set.intersection(SINGLETILESET_NO_OVERLAP) and relation_set.intersection(SINGLETILESET_OVERLAP):
+                    to_be_deleted.add(r)
+                    VALIDATORLOOKUPTABLE.insert(str(r),0)
         if to_be_deleted:
             self.__relations.remove(to_be_deleted.pop())
 
@@ -441,7 +450,13 @@ class _Operations:
                 factors = []
                 for rel in r_SplittedRelation:
                     factors.append((TABLE5.get_value(str(q), subRowsList[i], str(rel))))
-                product = concatenatedProduct(factors)
+                keyForSearchingFactors= ''.join(str(factors))
+                storedResult=PRODUCTSLOOKUPTABLE.table.get(keyForSearchingFactors)
+                if storedResult!= None:
+                    product=ProjectiveRelation(storedResult)
+                else:
+                    product = concatenatedProduct(factors)
+                    PRODUCTSLOOKUPTABLE.insert(keyForSearchingFactors,str(product))
                 if product != None:
                     result = result.union(product.get_relations())
 

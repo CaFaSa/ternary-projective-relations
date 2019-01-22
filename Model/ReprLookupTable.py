@@ -4,6 +4,7 @@ import atexit
 
 class ReprLookupTable:
     table=dict()
+    
     def __init__(self):
         self.table=self.readTable()
         if self.table == None:
@@ -14,8 +15,9 @@ class ReprLookupTable:
             fileName = os.path.join(os.path.dirname(os.path.dirname(__file__)),"data","reprLookupTable.pickle")
             with open(fileName, 'rb') as f:
                 return pickle.load(f)
-        except:
-            print("Error loading reprLookupTable")
+        except Exception as e:
+            print("Error loading reprLookupTable",e)
+            print("Starting with empty reprLookupTable...")
             return None
 
     def writeTable(self):
