@@ -184,7 +184,7 @@ class ProjectiveRelation:
             for i in rel:
                 relations = relations + str(i) + ", "
             self.__repr=relations[:-2]
-            print(relations[:-2])
+ 
             REPRLOOKUPTABLE.insert(str(self.__relations),self.__repr)
 
         return self.__repr
