@@ -3,7 +3,7 @@ from collections import defaultdict
 from Model.Relations import *
 from Model.Relations import _Operations
 import time
-
+import threading
 '''
 def Constraints(re1, re2):
     comp = set()
@@ -24,6 +24,8 @@ def rot(R):
         rotR.add(r.rotate())
     return rotR
 '''
+lock = threading.Lock()
+
 class ConstraintNetwork:
     def __init__(self, triplets={}):
         self.triplets = triplets
@@ -55,6 +57,7 @@ class ConstraintNetwork:
         return array_op[i]
 
     def getrel(self, R1, R2, R3):
+        
         permutations = tuple(itertools.permutations((R1, R2, R3)))
         for i in range(len(permutations)):
             triplet=permutations[i]
@@ -73,6 +76,7 @@ class ConstraintNetwork:
             nodes.add(b)
             nodes.add(c)
         return nodes
+
 
     def adjtrip(self, R1, R2, R3):
         '''
@@ -125,6 +129,50 @@ class ConstraintNetwork:
         RA = abcset.pop()
         return (RA, RB, RC, RD)
 
+
+
+    def calculate(self,triplet,R1,R2,R3,queue,C):
+        #(R1,R2,R3) is the triplet extracted from the queue
+        # <triplet> is one of the adjacent triplets to (R1,R2,R3)
+        C.visited[triplet] = True
+        # we need to find the regions that are in common with function regions_in_common:
+        # where RD is the region not in common in (R1,R2,R3), RB and RC are the regions in common,
+        # and RA is the region not in common in <triplet>
+        (RA,RB,RC,RD)=self.regions_in_common((R1,R2,R3),triplet)
+        # the two new triplets to be added to the network are (RA,RC,RD) and (RA,RB,RD)
+        t1=(RA, RC, RD)
+        t2=(RA, RB, RD)
+        # getrel must take into account permutations
+        # compositions to be calculated are RA,RB,RC + RB,RC,RD = RA,RC,RD
+        # and RA,RC,RB + RC,RB,RD = RA,RB,RD
+        r1=C.getrel(RA, RB, RC)
+        r2=C.getrel(RB, RC, RD)
+        newr1 = r1.composition(r2)
+        r3=C.getrel(RA, RC, RB)
+        r4=C.getrel(RC, RB, RD)
+        newr2 = r3.composition(r4)
+        #print(r3)
+        #print(r4)
+        oldr1 = C.getrel(RA, RC, RD)
+        oldr2 = C.getrel(RA, RB, RD)
+        inters1 = oldr1.intersection(newr1)
+        inters2 = oldr2.intersection(newr2)
+        with lock:
+            if inters1 != oldr1:
+                C.setrel(RA, RC, RD, inters1)
+                C.visited[RA, RC, RD] = True
+                queue.append(t1)
+            if inters2 != oldr2:
+                C.setrel(RA, RB, RD, inters2)
+                C.visited[RA, RB, RD] = True
+                queue.append(t2)
+            # print("processing adjacent triplet ", triplet, " to ", (R1,R2,R3))
+            # print("two new relations are added")
+            # print("now constraint network is :")
+            # print(C)
+
+
+
     def addrel(self, R1, R2, R3, rel):
         C = self
         queue = []
@@ -140,7 +188,6 @@ class ConstraintNetwork:
         # print("set relation")
         # print("now constraint network is :")
         # print(C)
-
         while queue != []:
             # adjtrip finds triplets with two regions in common with (R1,R2,R3)
             (R1, R2, R3) = queue.pop(0)
@@ -148,74 +195,23 @@ class ConstraintNetwork:
             adjtrip = C.adjtrip(R1, R2, R3)
             #print("now finding adjacent triplets. They are:")
             #print(adjtrip)
-
+            threads= []
             for triplet in adjtrip:
-                #(R1,R2,R3) is the triplet extracted from the queue
-                # <triplet> is one of the adjacent triplets to (R1,R2,R3)
-                C.visited[triplet] = True
-                # we need to find the regions that are in common with function regions_in_common:
-                # where RD is the region not in common in (R1,R2,R3), RB and RC are the regions in common,
-                # and RA is the region not in common in <triplet>
-                (RA,RB,RC,RD)=self.regions_in_common((R1,R2,R3),triplet)
-                # the two new triplets to be added to the network are (RA,RC,RD) and (RA,RB,RD)
-                t1=(RA, RC, RD)
-                t2=(RA, RB, RD)
-                # getrel must take into account permutations
-                # compositions to be calculated are RA,RB,RC + RB,RC,RD = RA,RC,RD
-                # and RA,RC,RB + RC,RB,RD = RA,RB,RD
-                r1=C.getrel(RA, RB, RC)
-                r2=C.getrel(RB, RC, RD)
-                newr1 = r1.composition(r2)
-                r3=C.getrel(RA, RC, RB)
-                r4=C.getrel(RC, RB, RD)
-                newr2 = r3.composition(r4)
-                #print(r3)
-                #print(r4)
-                oldr1 = C.getrel(RA, RC, RD)
-                oldr2 = C.getrel(RA, RB, RD)
-                inters1 = oldr1.intersection(newr1)
-                inters2 = oldr2.intersection(newr2)
-                if inters1 != oldr1:
-                    C.setrel(RA, RC, RD, inters1)
-                    C.visited[RA, RC, RD] = True
-                    queue.append(t1)
-                if inters2 != oldr2:
-                    C.setrel(RA, RB, RD, inters2)
-                    C.visited[RA, RB, RD] = True
-                    queue.append(t2)
-                # print("processing adjacent triplet ", triplet, " to ", (R1,R2,R3))
-                # print("two new relations are added")
-                # print("now constraint network is :")
-                # print(C)
+                t = threading.Thread(target=self.calculate,args=(triplet,R1,R2,R3,queue,C,))
+                threads.append(t)
+                t.start()
+
+            for thread in threads:
+                thread.join()
 
         #when queue is empty the network is set back all to visited = False
         C.setvisitedfalse()
-
-
-    def printMostAccurateResults(self,accuracyLevel):
-        if accuracyLevel > 100 or accuracyLevel < 0:
-            print("Accuracy Level must be between 0 and 100. Setting AccuracyLevel=90...")
-            accuracyLevel = 90
-
-        accuracyLevel=103-accuracyLevel     
-        queue=[]
-        for arc in self.triplets:
-            if len(str(C.triplets[arc])) < accuracyLevel and len(str(C.triplets[arc]))>0:
-                queue.append(arc)
-
-        s = ''
-        print("\n\n\nThe most accurate results are:\n_________________________")
-
-        for arc in queue:
-            s = s + str(arc) + ': ' + str(C.triplets[arc]) + '\n'
-        print(s)    
 
 
     def __str__(self):
         s = ''
         for arc in self.triplets:
             s = s + str(arc) + ': ' + str(C.triplets[arc]) + '\n'
-
         return s
 
 
@@ -228,53 +224,11 @@ if __name__ == '__main__':
     C.addrel('A', 'B', 'C','bf')
     print("done. Now adding second relation to C...")
     C.addrel('B', 'C', 'D','rs')
-        
     print("done! Now adding third relation to C...")
     C.addrel('C', 'D', 'E', 'ls')
-
-    print("done! Now adding fourth relation to C...")
-    C.addrel('D','A','B','af')
-    print("done! Now adding fifth relation to C...")    
-    C.addrel('F','A','B','ls')
-    print("done! Now adding sixth relation to C...")    
-    C.addrel('G','A','E','af')
-    print("done! Now adding seventh relation to C...")    
-    C.addrel('H','F','E','bf')
-    print("done! Now adding eighth relation to C...")
-    C.addrel('I','H','F','bt')
-    print("done! Now adding nineth relation to C...")    
-
-    C.addrel('L','H','A','rs')
-    print("done! Now adding tenth relation to C...")    
-    C.addrel('L','A','F','af')
-    print("done! Now adding eleventh relation to C...")    
-    C.addrel('L','H','D','ls')
-    print("done! Now adding twelveth relation to C...")    
-    C.addrel('A','L','C','rs')
-    print("done! Now adding thirteenth relation to C...")    
-    C.addrel('B','A','L','bt')
-    print("done! Now adding fourteenth relation to C...")
-    C.addrel('M','A','Q','af')
-    print("done! Now adding fifteenth relation to C...")
-    C.addrel('Q','B','M','ls')
-    print("done! Now adding sixteenth relation to C...")
-    C.addrel('A','Q','N','rs')
-    print("done! Now adding seventeenth relation to C...")
-    C.addrel('M','H','L','af')
-    
-    print("done! Now adding eighteenth relation to C...")
-    C.addrel('O','H','L','ls')
-    print("done! Now adding nineteenth relation to C...")
-    C.addrel('O','G','F','bf')
-    print("done! Now adding twentieth relation to C...")
-    C.addrel('P','G','F','rs')
-    print("done! Now adding twenty-first relation to C...")
-    C.addrel('P','B','M','af')
     end = time.time()
     print("done! Now trying to print out C")
     print(C)
-    #accuracyLevel=100
-    #C.printMostAccurateResults(accuracyLevel)
     print("ELAPSED TIME: ", end - start)
 
 

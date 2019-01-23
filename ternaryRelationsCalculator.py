@@ -277,6 +277,7 @@ class TernaryRelationCalculator:
         #plt.gca().invert_xaxis()
         #plt.gca().invert_yaxis()
         plt.show()
+        plt.close()
 
 
     def classify(self):
@@ -407,9 +408,15 @@ def main():
     secondPolygon=CGU.randomPolyGenerator(12,None)
     thirdPolygon=CGU.randomPolyGenerator(15,secondPolygon)
     firstPolygon=CGU.randomPolyGenerator(4,None,totallyRandom=True)
-    TRC=TernaryRelationCalculator(-100,200,firstPolygon,secondPolygon,thirdPolygon)
+    TRC=TernaryRelationCalculator(0,800,firstPolygon,secondPolygon,thirdPolygon)
+    TRC2=TernaryRelationCalculator(0,800,secondPolygon,firstPolygon,thirdPolygon)
+    TRC3=TernaryRelationCalculator(0,800,thirdPolygon,secondPolygon,firstPolygon)
     TRC.classify()
     TRC.view()
+    TRC2.classify()
+    TRC2.view()
+    TRC3.classify()
+    TRC3.view()
 
 
 if __name__=="__main__":

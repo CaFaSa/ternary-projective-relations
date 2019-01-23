@@ -3,8 +3,10 @@ import itertools
 import pickle
 import os
 from collections import defaultdict
+from Model.ReprLookupTable import REPRLOOKUPTABLE
+from Model.ValidatorLookupTable import VALIDATORLOOKUPTABLE
+from Model.CompositionLookupTable import COMPOSITIONLOOKUPTABLE
 import sys
-import traceback
 
 # Relation's constants
 BT = {"bt"}
@@ -95,19 +97,23 @@ def _set_global_values():
 class _SingleProjectiveRelation:
     __relations = set()
     __iterated = []
-
+    __repr= None
     def __init__(self, *single_tile_relations):
         for relation in single_tile_relations:
             self.add_rel(relation)
 
-    def __repr__(self):
+    def __repr__(self,update=False):
+        if update == False and (self.__repr != None) :
+            return self.__repr
+
         sorted_relations = sorted(self.__relations, key=lambda x: order.index(x))
         relation_string = ""
         for r in sorted_relations:
             relation_string = relation_string + r + ":"
         relation_string = relation_string[:-1]
+        self.__repr=relation_string
 
-        return relation_string
+        return self.__repr
 
     def __hash__(self):
         return hash(repr(self))
@@ -132,6 +138,7 @@ class _SingleProjectiveRelation:
 
     def converse(self):
         self = _Operations.converse(self)
+        self.__repr__(True)
         return self
 
     def rotate(self):
@@ -139,6 +146,7 @@ class _SingleProjectiveRelation:
 
     def add_rel(self, *relations):
         self.__relations = set.union(self.__relations, *relations)
+        self.__repr__(True)
         return self
 
     def add_rel_from_str(self, rel):
@@ -156,23 +164,43 @@ class _SingleProjectiveRelation:
     def remove_relations(self, *relations):
         for r in relations:
             self.__relations.remove(r)
-
+        self.__repr__(True) 
 
 class ProjectiveRelation:
     __relations = set()
     __iterated = []
-
+    __repr= None
     def __init__(self, *basic_relations):
         self.add_rel(*basic_relations)
+
+    def __str__(self):
+        # well known relation are shown using acronyms DD, DC, U
+        if self==U:
+            return "U"
+        if self == DD:
+            return "DD"
+        if self == DC:
+            return "DC"
+
+        return self.__repr__()
         
+    def __repr__(self,update=False):
+        if update == False and (self.__repr != None) :
+            return self.__repr
+        else:
+            representation= REPRLOOKUPTABLE.table.get(str(self.__relations))
+            if representation!= None:
+                self.__repr=representation
+            else:
+                rel = sorted(self.__relations, key=lambda rel: ProjectiveRelation.order_position(str(rel)))
+                relations = ""
+                for i in rel:
+                    relations = relations + str(i) + ", "
+                self.__repr=relations[:-2]
 
-    def __repr__(self):
-        rel = sorted(self.__relations, key=lambda rel: ProjectiveRelation.order_position(str(rel)))
-        relations = ""
-        for i in rel:
-            relations = relations + str(i) + ", "
+            REPRLOOKUPTABLE.insert(str(self.__relations),self.__repr)
 
-        return relations[:-2]
+        return self.__repr
 
     def __eq__(self, other):
         return repr(self) == repr(other)
@@ -256,6 +284,7 @@ class ProjectiveRelation:
                 r=str(r)
             if isinstance(r, _SingleProjectiveRelation):  # check if it is yet a _SingleProjectiveRelation
                 self.__relations = set.union(self.__relations, basic_relations)
+                self.__repr__(True)
             elif isinstance(r, str):
                 r=r.replace("{","").replace("}","").replace(" ", "").replace("'", "")
                 if "," in r:
@@ -265,6 +294,7 @@ class ProjectiveRelation:
                         self._add_rel_from_str(r)
             elif isinstance(r, ProjectiveRelation):
                 self.__relations = self.__relations.union(r.get_relations())
+                self.__repr__(True)
             else:  # maybe it is a set
                 for rel_name in r:
                     tmp = _SingleProjectiveRelation()
@@ -312,14 +342,21 @@ class ProjectiveRelation:
 
         return ret_rel
 
+
     def validate_relations(self):
         to_be_deleted = set()
         for r in self.__relations: #type: _SingleProjectiveRelation
-            relation_set = r.get_relations()
-            if relation_set.intersection(SINGLETILESET_NO_OVERLAP) and relation_set.intersection(SINGLETILESET_OVERLAP):
+            toBeDeleted=VALIDATORLOOKUPTABLE.table.get(str(r))
+            if toBeDeleted != None:
                 to_be_deleted.add(r)
+            else:
+                relation_set = r.get_relations()
+                if relation_set.intersection(SINGLETILESET_NO_OVERLAP) and relation_set.intersection(SINGLETILESET_OVERLAP):
+                    to_be_deleted.add(r)
+                    VALIDATORLOOKUPTABLE.insert(str(r),0)
         if to_be_deleted:
             self.__relations.remove(to_be_deleted.pop())
+
 
 
 class _Operations:
@@ -364,7 +401,6 @@ class _Operations:
     @staticmethod
     def delta(relation):
         result = ProjectiveRelation()
-
         for n in range(len(relation) + 1):
             iterator = itertools.combinations(relation, n + 1)
             partial_rel = _SingleProjectiveRelation()
@@ -412,22 +448,31 @@ class _Operations:
 
     @staticmethod
     def composition(r:ProjectiveRelation, q:ProjectiveRelation):
-        T = Table5_composition()
-        inOutColumns_Table4 = Table4_in_ou_columns()
-        columnList = ['bt', 'rs', 'bf', 'ls', 'af']
-        subRowsList = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
         result = set()
 
-        if "in:ou" in str(r.get_relations()):
-            result = result.union(_Operations.product(inOutColumns_Table4.get_value(q.get_relations(),"in"),inOutColumns_Table4.get_value(q.get_relations(),"ou")).get_relations())
+        storedResult=COMPOSITIONLOOKUPTABLE.table.get(str(r)+str(q))
+        if storedResult != None:
+            result = storedResult
+            tempResult=set()
+            for element in result.replace("{","").replace("}","").replace(" ","").split(","):
+                tempResult.add(element)
+            result= tempResult
         else:
-            for i in range(len(T.get_subrows(q))):
-                factors = []
-                for rel in r.__repr__().split(":"):
-                    factors.append((T.get_value(str(q), subRowsList[i], str(rel))))
-                product = concatenatedProduct(factors)
-                if not product is None:
-                    result = result.union(product.get_relations())
+            subRowsList = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+            r_SplittedRelation=r.__repr__().split(":")
+            if "in:ou" in str(r.get_relations()):
+                result = result.union(_Operations.product(TABLE4.get_value(q.get_relations(),"in"),TABLE4.get_value(q.get_relations(),"ou")).get_relations())
+            else:
+                for i in range(len(TABLE5.get_subrows(q))):
+                    factors = []
+                    for rel in r_SplittedRelation:
+                        factors.append((TABLE5.get_value(str(q), subRowsList[i], str(rel))))
+                    product = concatenatedProduct(factors)
+
+                    if product != None:
+                        result = result.union(product.get_relations())
+                        
+                    COMPOSITIONLOOKUPTABLE.insert(str(r)+str(q),str(result))
 
         return result
 
@@ -445,8 +490,6 @@ def concatenatedProduct(factors):
             else:
                 result = result.product(ProjectiveRelation(factors[i]))
     return result
-
-
 
 
 class Table4_in_ou_columns:
@@ -505,7 +548,6 @@ class Table4_in_ou_columns:
         self.__inColumn.append(DC)
 
 
-
 class Table5_composition:
     __table = None
 
@@ -515,10 +557,9 @@ class Table5_composition:
             return pickle.load(f)
 
     def get_value(self, rowKey, subRowKey, columnKey):
-
-
         try:
-            self.__table = self.readTable()
+            if self.__table == None:
+                self.__table = self.readTable()
         except:
             print("Unable to load table.\n")
             exit()
@@ -526,7 +567,6 @@ class Table5_composition:
         try:
             columnList = ['bt', 'rs', 'bf', 'ls', 'af']
             subRowsList = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
-            #print(subRowKey)
             if columnKey=="in" or columnKey=="ou":
                 Table4=Table4_in_ou_columns()
                 return Table4.get_value(rowKey,columnKey)
@@ -536,12 +576,10 @@ class Table5_composition:
                 print("GetVALUE",rowKey,subRowKey,columnKey)
                 print("Errore nella Table5_composition", sys.exc_info())
                 return None
-                exit()
 
     def get_subrows(self, rowKey):
-        self.__table = self.readTable()
-        columnList = ['bt', 'rs', 'bf', 'ls', 'af']
-        subRowsList = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+        if self.__table==None:
+            self.__table = self.readTable()
         return self.__table[str(rowKey)][:][:]
 
     def get_ProjectiveRelation_object(self, rowKey, subRowKey, columnKey):
@@ -553,8 +591,13 @@ class Table5_composition:
         return returning_rel
 
 
+
+
+
 # now it is possible to initialize global variables
 _set_global_values()
+TABLE4=Table4_in_ou_columns()
+TABLE5=Table5_composition()
 
 '''
 r=ProjectiveRelation("bf:ls")
