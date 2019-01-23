@@ -193,6 +193,19 @@ class ConstraintNetwork:
         C.setvisitedfalse()
 
 
+    def printMostAccurate(self):
+        queue=[]
+        for arc in self.triplets:
+            if len(str(C.triplets[arc])) < 20:
+                queue.append(arc)
+        s = ''
+        print("\n\n\nThe most accurate results are:\n_________________________")
+
+        for arc in queue:
+            s = s + str(arc) + ': ' + str(C.triplets[arc]) + '\n'
+        print(s)    
+
+
     def __str__(self):
         s = ''
         for arc in self.triplets:
@@ -207,11 +220,13 @@ if __name__ == '__main__':
     start = time.time()
     C = ConstraintNetwork()
     print("start. Adding first relation to C...")
-    C.addrel('A', 'B', 'C','bf:ls')
+    C.addrel('A', 'B', 'C','bf')
     print("done. Now adding second relation to C...")
     C.addrel('B', 'C', 'D','rs')
+    
     print("done! Now adding third relation to C...")
     C.addrel('C', 'D', 'E', 'ls')
+    
     print("done! Now adding fourth relation to C...")
     C.addrel('D','A','B','af')
     print("done! Now adding fifth relation to C...")    
@@ -232,12 +247,12 @@ if __name__ == '__main__':
     C.addrel('A','L','C','rs')
     print("done! Now adding thirteenth relation to C...")    
     C.addrel('B','A','L','bt')
-
-    print("done! Now adding nineth relation to C...")    
-    
+    '''
+    '''
     end = time.time()
     print("done! Now trying to print out C")
-    print(C)
+    #print(C)
+    C.printMostAccurate()
     print("ELAPSED TIME: ", end - start)
 
 
