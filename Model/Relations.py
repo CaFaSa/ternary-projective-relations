@@ -5,7 +5,7 @@ import os
 from collections import defaultdict
 from Model.ReprLookupTable import REPRLOOKUPTABLE
 from Model.ValidatorLookupTable import VALIDATORLOOKUPTABLE
-from Model.ProductsLookupTable import PRODUCTSLOOKUPTABLE
+from Model.CompositionLookupTable import COMPOSITIONLOOKUPTABLE
 import sys
 
 # Relation's constants
@@ -103,7 +103,7 @@ class _SingleProjectiveRelation:
             self.add_rel(relation)
 
     def __repr__(self,update=False):
-        if update == False and (not self.__repr == None) :
+        if update == False and (self.__repr != None) :
             return self.__repr
 
         sorted_relations = sorted(self.__relations, key=lambda x: order.index(x))
@@ -174,20 +174,19 @@ class ProjectiveRelation:
         self.add_rel(*basic_relations)
         
     def __repr__(self,update=False):
-        if update == False and (not self.__repr == None) :
+        if update == False and (self.__repr != None) :
             return self.__repr
+        else:
+            representation= REPRLOOKUPTABLE.table.get(str(self.__relations))
+            if representation!= None:
+                self.__repr=representation
+            else:
+                rel = sorted(self.__relations, key=lambda rel: ProjectiveRelation.order_position(str(rel)))
+                relations = ""
+                for i in rel:
+                    relations = relations + str(i) + ", "
+                self.__repr=relations[:-2]
 
-        representation = REPRLOOKUPTABLE.table.get(str(self.__relations))
-        
-        if representation != None:
-            self.__repr=representation
-        else: 
-            rel = sorted(self.__relations, key=lambda rel: ProjectiveRelation.order_position(str(rel)))
-            relations = ""
-            for i in rel:
-                relations = relations + str(i) + ", "
-            self.__repr=relations[:-2]
- 
             REPRLOOKUPTABLE.insert(str(self.__relations),self.__repr)
 
         return self.__repr
@@ -391,7 +390,6 @@ class _Operations:
     @staticmethod
     def delta(relation):
         result = ProjectiveRelation()
-
         for n in range(len(relation) + 1):
             iterator = itertools.combinations(relation, n + 1)
             partial_rel = _SingleProjectiveRelation()
@@ -439,11 +437,9 @@ class _Operations:
 
     @staticmethod
     def composition(r:ProjectiveRelation, q:ProjectiveRelation):
-        subRowsList = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
         result = set()
-        r_SplittedRelation=r.__repr__().split(":")
-        storedResult=PRODUCTSLOOKUPTABLE.table.get(str(r)+str(q))
- 
+
+        storedResult=COMPOSITIONLOOKUPTABLE.table.get(str(r)+str(q))
         if storedResult != None:
             result = storedResult
             tempResult=set()
@@ -451,6 +447,8 @@ class _Operations:
                 tempResult.add(element)
             result= tempResult
         else:
+            subRowsList = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+            r_SplittedRelation=r.__repr__().split(":")
             if "in:ou" in str(r.get_relations()):
                 result = result.union(_Operations.product(TABLE4.get_value(q.get_relations(),"in"),TABLE4.get_value(q.get_relations(),"ou")).get_relations())
             else:
@@ -463,7 +461,7 @@ class _Operations:
                     if product != None:
                         result = result.union(product.get_relations())
                         
-                    PRODUCTSLOOKUPTABLE.insert(str(r)+str(q),str(result))
+                    COMPOSITIONLOOKUPTABLE.insert(str(r)+str(q),str(result))
 
         return result
 

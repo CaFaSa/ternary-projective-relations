@@ -55,7 +55,6 @@ class ConstraintNetwork:
         return array_op[i]
 
     def getrel(self, R1, R2, R3):
-        
         permutations = tuple(itertools.permutations((R1, R2, R3)))
         for i in range(len(permutations)):
             triplet=permutations[i]
@@ -193,11 +192,17 @@ class ConstraintNetwork:
         C.setvisitedfalse()
 
 
-    def printMostAccurate(self):
+    def printMostAccurateResults(self,accuracyLevel):
+        if accuracyLevel > 100 or accuracyLevel < 0:
+            print("Accuracy Level must be between 0 and 100. Setting AccuracyLevel=90...")
+            accuracyLevel = 90
+
+        accuracyLevel=103-accuracyLevel     
         queue=[]
         for arc in self.triplets:
-            if len(str(C.triplets[arc])) < 20:
+            if len(str(C.triplets[arc])) < accuracyLevel and len(str(C.triplets[arc]))>0:
                 queue.append(arc)
+
         s = ''
         print("\n\n\nThe most accurate results are:\n_________________________")
 
@@ -223,10 +228,10 @@ if __name__ == '__main__':
     C.addrel('A', 'B', 'C','bf')
     print("done. Now adding second relation to C...")
     C.addrel('B', 'C', 'D','rs')
-    
+        
     print("done! Now adding third relation to C...")
     C.addrel('C', 'D', 'E', 'ls')
-    
+
     print("done! Now adding fourth relation to C...")
     C.addrel('D','A','B','af')
     print("done! Now adding fifth relation to C...")    
@@ -238,6 +243,7 @@ if __name__ == '__main__':
     print("done! Now adding eighth relation to C...")
     C.addrel('I','H','F','bt')
     print("done! Now adding nineth relation to C...")    
+
     C.addrel('L','H','A','rs')
     print("done! Now adding tenth relation to C...")    
     C.addrel('L','A','F','af')
@@ -247,12 +253,28 @@ if __name__ == '__main__':
     C.addrel('A','L','C','rs')
     print("done! Now adding thirteenth relation to C...")    
     C.addrel('B','A','L','bt')
-    '''
-    '''
+    print("done! Now adding fourteenth relation to C...")
+    C.addrel('M','A','Q','af')
+    print("done! Now adding fifteenth relation to C...")
+    C.addrel('Q','B','M','ls')
+    print("done! Now adding sixteenth relation to C...")
+    C.addrel('A','Q','N','rs')
+    print("done! Now adding seventeenth relation to C...")
+    C.addrel('M','H','L','af')
+    
+    print("done! Now adding eighteenth relation to C...")
+    C.addrel('O','H','L','ls')
+    print("done! Now adding nineteenth relation to C...")
+    C.addrel('O','G','F','bf')
+    print("done! Now adding twentieth relation to C...")
+    C.addrel('P','G','F','rs')
+    print("done! Now adding twenty-first relation to C...")
+    C.addrel('P','B','M','af')
     end = time.time()
     print("done! Now trying to print out C")
-    #print(C)
-    C.printMostAccurate()
+    print(C)
+    #accuracyLevel=100
+    #C.printMostAccurateResults(accuracyLevel)
     print("ELAPSED TIME: ", end - start)
 
 

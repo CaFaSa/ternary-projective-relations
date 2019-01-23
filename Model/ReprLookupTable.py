@@ -6,7 +6,6 @@ class ReprLookupTable:
     table=dict()
     
     def __init__(self):
-        self.table=self.readTable()
         if self.table == None:
             self.table=dict()
 
@@ -31,4 +30,4 @@ class ReprLookupTable:
 
 REPRLOOKUPTABLE=ReprLookupTable()
 #Update Table when program ends normally, without CTRL+C
-atexit.register(REPRLOOKUPTABLE.writeTable)
+#atexit.register(REPRLOOKUPTABLE.writeTable)
