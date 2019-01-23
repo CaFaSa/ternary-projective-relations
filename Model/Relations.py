@@ -172,6 +172,17 @@ class ProjectiveRelation:
     __repr= None
     def __init__(self, *basic_relations):
         self.add_rel(*basic_relations)
+
+    def __str__(self):
+        # well known relation are shown using acronyms DD, DC, U
+        if self==U:
+            return "U"
+        if self == DD:
+            return "DD"
+        if self == DC:
+            return "DC"
+
+        return self.__repr__()
         
     def __repr__(self,update=False):
         if update == False and (self.__repr != None) :
